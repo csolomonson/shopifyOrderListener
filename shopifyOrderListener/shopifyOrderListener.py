@@ -3,6 +3,7 @@ import os
 import time
 
 from imap_tools import A, MailBox, MailMessageFlags
+from parser.shopify_parser import parse_lines, parse_customer
 
 
 IMAP_HOST = "imap.gmail.com"
@@ -18,7 +19,7 @@ def handle_email(message) -> None:
     print("New email received")
     print(f"From: {message.from_}")
     print(f"Subject: {message.subject}")
-    print(f"Body: {message.text}")
+    print(f"Body: {message.text}\n\n")
     print("-" * 50)
 
 
