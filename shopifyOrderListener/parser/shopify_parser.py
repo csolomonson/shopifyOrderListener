@@ -184,9 +184,19 @@ Shopify
 
 151 O'Connor Street, Ground floor, Ottawa, ON, K2P 2L8'''
 
+def parse_shopify(message):
+    #print(message.text.split('\n'))
+    subject = message.subject
+    order_id = subject.split('Order ')[1][:6]
+    body = message.text.replace('\r', '')
+    lines = parse_lines(body)
+    customer = parse_customer(body)
+    return {'Customer PO': order_id,
+            'Lines': lines,
+            'Customer': customer}
 
-def parse_lines(email_body):
-    body_lines = email_body.split('\n')
+def parse_lines(email_body):  
+    body_lines =  email_body.split('\n')
     summary = body_lines[body_lines.index('Order summary'):]
 
     line_lines = summary[2: summary.index('Subtotal')]
@@ -224,8 +234,9 @@ def parse_customer(body):
         state = customer_body[7]
         zip_code = customer_body[8]
         country = customer_body[10]
-        phone = customer_body[11]
+        phone = customer_body[12]
         email = customer_body[customer_body.index('Customer email')+2]
+        
     else:
         name = customer_body[2]
         business = customer_body[4]
@@ -250,9 +261,7 @@ def parse_customer(body):
             'Phone': phone,
             'Email' : email}
     
-
-    
-
 if __name__ == '__main__':
     parse_lines(TEST_BODY)
     print(parse_customer(TEST_BODY))
+    

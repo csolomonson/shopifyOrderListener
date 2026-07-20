@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="api\reader.py" />
     <Compile Include="parser\shopify_parser.py" />
     <Compile Include="shopifyOrderListener.py" />
   </ItemGroup>
@@ -29,6 +30,7 @@
     <InterpreterReference Include="Global|VisualStudio|IMAP and M1 API tools" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="api\" />
     <Folder Include="parser\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
