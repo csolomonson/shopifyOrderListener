@@ -23,6 +23,7 @@ from integrations.m1 import M1Client
 from integrations.shopify import ShopifyClient
 from storage import get_store
 from sync_service import SyncService
+from user_management import UserStoreError, change_own_password
 
 
 logger = logging.getLogger(__name__)
@@ -80,7 +81,7 @@ app = FastAPI(title="Shopify Sales Order Queue", version="0.1.0", lifespan=lifes
 app.mount(f"{BASE_PATH}/static", StaticFiles(directory=STATIC_DIR), name="sales-order-static")
 
 
-PUBLIC_PATHS = {f"{BASE_PATH}/api/health", f"{BASE_PATH}/shopify"}
+PUBLIC_PATHS = {f"{BASE_PATH}/api/health", f"{BASE_PATH}/shopify", f"{BASE_PATH}/logout"}
 
 
 def _customer_matcher() -> CustomerMatcher:
@@ -127,6 +128,33 @@ def _shell(mode: str, principal: dict[str, Any]) -> HTMLResponse:
 def index(request: Request):
     principal = request.state.principal
     return _shell("queue", {"username": principal.username, "groups": principal.groups})
+
+
+@app.get(f"{BASE_PATH}/logout", response_class=HTMLResponse)
+def logout():
+    html = f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signed out</title>
+  <style>
+    body {{ background: #f4f7fb; color: #172033; display: grid; font-family: system-ui, sans-serif; margin: 0; min-height: 100vh; place-items: center; }}
+    main {{ background: #fff; border: 1px solid #d7dee8; border-radius: 12px; box-shadow: 0 12px 32px #1b2b4b1a; max-width: 420px; padding: 32px; text-align: center; }}
+    h1 {{ margin: 0 0 10px; }}
+    p {{ color: #5f6b7a; margin: 0 0 22px; }}
+    a {{ background: #245bc7; border-radius: 7px; color: #fff; display: inline-block; font-weight: 800; padding: 10px 16px; text-decoration: none; }}
+  </style>
+</head>
+<body><main><h1>Signed out</h1><p>Your Meziere application credentials have been cleared from this browser.</p><a href="{BASE_PATH}/">Sign in again</a></main></body>
+</html>"""
+    return HTMLResponse(
+        html,
+        headers={
+            "Clear-Site-Data": '"cache", "cookies", "storage"',
+            "Cache-Control": "no-store",
+        },
+    )
 
 
 @app.get(f"{BASE_PATH}/shopify")
@@ -182,6 +210,28 @@ class MatchRequest(BaseModel):
     billing_location_id: str | None = Field(default=None, max_length=5)
     billing_contact_id: str | None = Field(default=None, max_length=5)
     requires_review: bool = False
+
+
+class PasswordChangeRequest(BaseModel):
+    current_password: str = Field(min_length=1, max_length=1024)
+    new_password: str = Field(min_length=8, max_length=1024)
+
+
+@app.post(f"{BASE_PATH}/api/account/password")
+def change_password(payload: PasswordChangeRequest, request: Request):
+    try:
+        change_own_password(
+            request.state.principal.username,
+            payload.current_password,
+            payload.new_password,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="User was not found") from exc
+    except UserStoreError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    return {"changed": True}
 
 
 @app.get(f"{BASE_PATH}/api/orders/{{order_id}}/customer-candidates")

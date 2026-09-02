@@ -42,6 +42,12 @@ select { background: #fff; border: 1px solid var(--line-strong); border-radius: 
 .app-header { align-items: center; background: #fff; border-bottom: 1px solid var(--line); display: flex; gap: 20px; justify-content: space-between; padding: 15px 20px; }
 .app-header h1 { font-size: 24px; line-height: 1.1; margin: 3px 0 0; }
 .header-meta { align-items: center; color: var(--muted); display: flex; font-size: 12px; font-weight: 800; gap: 10px; }
+.header-account, .header-logout { min-height: 32px; padding: 5px 10px; }
+.modal-backdrop { align-items: center; background: rgba(16, 24, 40, .45); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 1000; }
+.password-modal { background: #fff; border-radius: 12px; box-shadow: 0 22px 70px rgba(20, 35, 50, .28); width: min(480px, 94vw); }
+.password-modal-head { align-items: center; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; padding: 18px 20px; }
+.password-modal-head h2 { margin: 3px 0 0; }
+.password-modal form { display: grid; gap: 14px; padding: 20px; }
 .alert { border: 1px solid; border-radius: 8px; padding: 11px 12px; }
 .alert strong { display: block; font-size: 13px; margin-bottom: 3px; }
 .alert p { font-size: 12px; line-height: 1.45; margin: 0; }

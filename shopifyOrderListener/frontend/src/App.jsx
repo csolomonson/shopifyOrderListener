@@ -4,8 +4,23 @@ import { api, bootstrap } from "./api.js";
 import { Alert, Badge, Button, Field, Toggle } from "./components.jsx";
 import { date, money, stateTone, statusLabel } from "./format.js";
 
+function ChangePasswordModal({ onClose }) {
+  const [currentPassword, setCurrentPassword] = useState(""), [newPassword, setNewPassword] = useState(""), [confirmation, setConfirmation] = useState(""), [error, setError] = useState(""), [saving, setSaving] = useState(false);
+  async function submit(event) {
+    event.preventDefault();
+    if (newPassword !== confirmation) { setError("The new passwords do not match."); return; }
+    try {
+      setSaving(true); setError("");
+      await api("/account/password", { method: "POST", body: JSON.stringify({ current_password: currentPassword, new_password: newPassword }) });
+      window.location.assign(`${bootstrap.basePath}/logout`);
+    } catch (exception) { setError(exception.message || "The password could not be changed."); setSaving(false); }
+  }
+  return <div className="modal-backdrop"><section className="password-modal"><div className="password-modal-head"><div><span className="eyebrow">Account</span><h2>Change password</h2></div><Button tone="secondary" onClick={onClose}>Close</Button></div><form onSubmit={submit}><Field label="Current password" type="password" autoComplete="current-password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} required /><Field label="New password" type="password" autoComplete="new-password" minLength="8" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} required /><Field label="Confirm new password" type="password" autoComplete="new-password" minLength="8" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required />{error && <Alert tone="danger" title="Password not changed">{error}</Alert>}<div className="section-actions"><Button type="button" tone="secondary" onClick={onClose}>Cancel</Button><Button type="submit" disabled={saving}>{saving ? "Changing…" : "Change password"}</Button></div></form></section></div>;
+}
+
 function Header({ compact = false }) {
-  return <header className="app-header"><div><span className="eyebrow">Meziere Enterprises</span><h1>{compact ? "Shopify order connection" : "Sales order queue"}</h1></div><div className="header-meta"><Badge tone="blue">M1 staged workflow</Badge><span>{bootstrap.principal?.username}</span></div></header>;
+  const [changingPassword, setChangingPassword] = useState(false);
+  return <><header className="app-header"><div><span className="eyebrow">Meziere Enterprises</span><h1>{compact ? "Shopify order connection" : "Sales order queue"}</h1></div><div className="header-meta"><Badge tone="blue">M1 staged workflow</Badge><span>{bootstrap.principal?.username}</span>{bootstrap.mode !== "shopify" && <><Button tone="secondary" className="header-account" onClick={() => setChangingPassword(true)}>Change password</Button><a className="button secondary header-logout" href={`${bootstrap.basePath}/logout`}>Log out</a></>}</div></header>{changingPassword && <ChangePasswordModal onClose={() => setChangingPassword(false)} />}</>;
 }
 
 function Stats({ values, selected, onSelect }) {

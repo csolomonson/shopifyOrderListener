@@ -52,7 +52,7 @@ def _users() -> dict[str, dict]:
     return {username: {"password": password, "groups": ["administrators"]}} if username and password else {}
 
 
-def _verify_password(password: str, user: dict) -> bool:
+def password_matches_record(password: str, user: dict) -> bool:
     encoded = user.get("password_hash")
     if encoded:
         try:
@@ -63,6 +63,12 @@ def _verify_password(password: str, user: dict) -> bool:
             return False
     configured = user.get("password")
     return configured is not None and secrets.compare_digest(password, str(configured))
+
+
+def password_hash(password: str, iterations: int = 600_000) -> str:
+    salt = secrets.token_bytes(16)
+    digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, iterations).hex()
+    return f"pbkdf2_sha256${iterations}${salt.hex()}${digest}"
 
 
 def _session_secret() -> bytes:
@@ -122,6 +128,6 @@ def authenticate_request(request: Request) -> Principal:
     except (binascii.Error, UnicodeDecodeError, ValueError):
         raise AuthenticationError from None
     user = _users().get(username)
-    if not user or not _verify_password(password, user):
+    if not user or not password_matches_record(password, user):
         raise AuthenticationError
     return Principal(username, tuple(user.get("groups", ())))
