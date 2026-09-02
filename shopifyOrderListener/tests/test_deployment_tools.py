@@ -7,6 +7,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 CADDY_PATCHER = ROOT / "deployment" / "ubuntu" / "ensure-caddy-route.py"
+SAME_VM_INSTALLER = ROOT / "deployment" / "ubuntu" / "deploy-on-costing-vm.sh"
 
 
 class CaddyRouteTests(unittest.TestCase):
@@ -40,6 +41,13 @@ class CaddyRouteTests(unittest.TestCase):
 
             self.assertNotEqual(0, result.returncode)
             self.assertEqual(source, path.read_text(encoding="utf-8"))
+
+
+class InstallerRegressionTests(unittest.TestCase):
+    def test_retaining_an_existing_secret_returns_success(self):
+        installer = SAME_VM_INSTALLER.read_text(encoding="utf-8")
+
+        self.assertIn('[[ -n "$first" ]] || return 0', installer)
 
 
 if __name__ == "__main__":

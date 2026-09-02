@@ -98,7 +98,10 @@ write_secret() {
     if [[ -s "$path" ]]; then
         read -r -s -p "$label (Enter to keep the existing value): " first
         printf '\n'
-        [[ -n "$first" ]] || return
+        # An explicit zero status is required because this script uses `set -e`.
+        # A bare `return` would propagate the failed `[[ -n ... ]]` status and
+        # terminate an otherwise valid repeat deployment.
+        [[ -n "$first" ]] || return 0
     else
         while [[ -z "${first:-}" ]]; do
             read -r -s -p "$label: " first
