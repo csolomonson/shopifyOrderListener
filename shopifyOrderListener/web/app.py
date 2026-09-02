@@ -16,7 +16,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from app_config import BASE_PATH, boolean_setting, integer_setting, setting
-from authentication import AuthenticationError, authenticate_request, embed_cookie, verify_shopify_query
+from authentication import AuthorizationError, AuthenticationError, authenticate_request, authorize_sales_orders, embed_cookie, verify_shopify_query
 from commit_service import CommitError, CommitService
 from customer_matching import CustomerMatcher
 from integrations.m1 import M1Client
@@ -95,12 +95,15 @@ async def authentication_and_headers(request: Request, call_next):
     else:
         try:
             request.state.principal = authenticate_request(request)
+            authorize_sales_orders(request.state.principal)
         except AuthenticationError:
             return JSONResponse(
                 {"detail": "Authentication required"},
                 status_code=401,
                 headers={"WWW-Authenticate": 'Basic realm="Sales Orders", charset="UTF-8"'},
             )
+        except AuthorizationError as exc:
+            return JSONResponse({"detail": str(exc)}, status_code=403)
         except RuntimeError as exc:
             return JSONResponse({"detail": str(exc)}, status_code=503)
         response = await call_next(request)

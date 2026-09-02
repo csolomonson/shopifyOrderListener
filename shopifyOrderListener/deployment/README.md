@@ -70,6 +70,11 @@ The installer prompts for Shopify and M1 credentials without displaying secret
 values. Existing values are retained when the installer is run again and the
 secret prompt is left blank.
 
+The shared user directory also supplies authorization groups. Assign
+`sales-orders` to employees who need this queue. Administrators are accepted
+automatically. Do not assign `users` to a sales-order-only employee, because
+that group authorizes the Product Cost Calculator.
+
 The installer performs the following operations:
 
 1. Reads the SQL connection from `/etc/cost-calculator/runtime.env`.

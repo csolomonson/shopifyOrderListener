@@ -29,6 +29,16 @@ class AuthenticationError(Exception):
     pass
 
 
+class AuthorizationError(Exception):
+    pass
+
+
+def authorize_sales_orders(principal: Principal) -> None:
+    required = setting("SALES_ORDER_ACCESS_GROUP", "sales-orders") or "sales-orders"
+    if required not in principal.groups and "administrators" not in principal.groups:
+        raise AuthorizationError(f"Membership in {required} is required")
+
+
 def _users() -> dict[str, dict]:
     filename = setting("SALES_ORDER_USERS_JSON_FILE") or setting("COST_APP_USERS_JSON_FILE")
     if filename:

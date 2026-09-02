@@ -22,6 +22,8 @@ and all other ERP operations remain behind the M1 Public API.
 - Supports incremental synchronization, full reconciliation, and an external
   scheduler command.
 - Runs below `/sales-orders` when deployed behind the existing costing server.
+- Restricts access to members of `sales-orders` and `administrators` in the
+  shared application user directory.
 
 ## Project requirements
 

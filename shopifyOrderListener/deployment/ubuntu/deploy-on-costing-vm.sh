@@ -158,6 +158,7 @@ temporary_runtime="$(mktemp "$config_root/runtime.XXXXXX")"
 {
     write_environment_value APP_VERSION "$version"
     write_environment_value SALES_ORDER_AUTH_REQUIRED true
+    write_environment_value SALES_ORDER_ACCESS_GROUP sales-orders
     write_environment_value SALES_ORDER_USERS_JSON_FILE "$cost_users"
     write_environment_value SALES_ORDER_SESSION_SECRET_FILE "$secret_root/session_secret.txt"
     write_environment_value SALES_ORDER_STARTUP_SYNC true
