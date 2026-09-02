@@ -39,6 +39,21 @@ class MemoryStoreTests(unittest.TestCase):
         row = store.upsert_order(order)
         self.assertEqual(Decimal("2"), row["lines"][0]["current_quantity"])
 
+    def test_line_edit_does_not_double_apply_shipping_discount(self):
+        node = sample_node()
+        node["lineItems"]["nodes"][0]["originalUnitPriceSet"]["shopMoney"]["amount"] = "0.00"
+        node["currentSubtotalPriceSet"]["shopMoney"]["amount"] = "0.00"
+        node["currentTotalDiscountsSet"]["shopMoney"]["amount"] = "16.78"
+        node["currentShippingPriceSet"]["shopMoney"]["amount"] = "0.00"
+        node["currentTotalPriceSet"]["shopMoney"]["amount"] = "0.00"
+        store = MemoryStore()
+        order = normalize_shopify_order(node)
+        row = store.upsert_order(order)
+
+        row = store.update_lines(row["order_id"], order["lines"], "tester")
+
+        self.assertEqual(Decimal("0.00"), row["total"])
+
     def test_address_override_cannot_bypass_non_address_review(self):
         store = MemoryStore()
         row = store.upsert_order(normalize_shopify_order(sample_node()))

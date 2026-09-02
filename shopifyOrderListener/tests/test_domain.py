@@ -40,6 +40,16 @@ class DomainTests(unittest.TestCase):
         self.assertEqual("49.12", str(order["total"]))
         self.assertEqual("Escondido", order["shipping_address"]["city"])
 
+    def test_missing_shipping_address_uses_billing_address(self):
+        node = sample_node()
+        node["billingAddress"] = node["shippingAddress"]
+        node["shippingAddress"] = None
+
+        order = normalize_shopify_order(node)
+
+        self.assertEqual(order["billing_address"], order["shipping_address"])
+        self.assertTrue(order["shipping_address_from_billing"])
+
     def test_uncommitted_cancel_does_not_enter_erp(self):
         node = sample_node()
         node["cancelledAt"] = "2026-08-30T11:00:00Z"

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 import { api, bootstrap } from "./api.js";
 import { Alert, Badge, Button, Field, Toggle } from "./components.jsx";
@@ -29,7 +29,7 @@ function QueueRow({ row, active, onClick }) {
 }
 
 function Address({ value }) {
-  if (!value) return <p className="muted">No address provided.</p>;
+  if (!value?.address1) return <p className="muted">No address provided.</p>;
   return <address>{value.name && <strong>{value.name}</strong>}{value.company && <span>{value.company}</span>}<span>{value.address1}</span>{value.address2 && <span>{value.address2}</span>}<span>{[value.city, value.province, value.postal_code].filter(Boolean).join(", ")}</span><span>{value.country}</span>{value.phone && <span>{value.phone}</span>}</address>;
 }
 
@@ -64,7 +64,7 @@ function LineEditor({ order, onChanged }) {
   return <section className="detail-section line-editor"><div className="section-title"><h3>Edit staged lines</h3><button type="button" onClick={() => setEditing(false)}>Cancel</button></div>{error && <Alert tone="danger" title="Lines were not saved">{error}</Alert>}{lines.map((line, index) => <div className="line-edit-row" key={line.shopify_line_id}><input value={line.sku} onChange={(e) => change(index, "sku", e.target.value)} aria-label="SKU"/><input value={line.description} onChange={(e) => change(index, "description", e.target.value)} aria-label="Description"/><input type="number" min="0" step="1" value={line.current_quantity} onChange={(e) => change(index, "current_quantity", e.target.value)} aria-label="Quantity"/><input type="number" min="0" step="0.01" value={line.unit_price} onChange={(e) => change(index, "unit_price", e.target.value)} aria-label="Unit price"/><button type="button" className="remove-line" onClick={() => remove(index)} aria-label={`Remove ${line.sku || "line"}`}>Remove</button></div>)}<div className="section-actions"><Button tone="secondary" onClick={add}>Add line</Button><Button onClick={save} disabled={!lines.length}>Save line edits</Button></div></section>;
 }
 
-function CommitPanel({ order, onChanged }) {
+function CommitPanel({ order, onCommitted }) {
   const [preview, setPreview] = useState(null), [loading, setLoading] = useState(false), [error, setError] = useState("");
   async function loadPreview() { try { setLoading(true); setError(""); setPreview(await api(`/orders/${order.order_id}/m1-preview`)); } catch (err) { setError(err.message); } finally { setLoading(false); } }
   useEffect(() => {
@@ -75,30 +75,32 @@ function CommitPanel({ order, onChanged }) {
     api(`/orders/${order.order_id}/m1-preview`).then((value) => { if (active) setPreview(value); }).catch((err) => { if (active) setError(err.message); }).finally(() => { if (active) setLoading(false); });
     return () => { active = false; };
   }, [order.order_id, order.blocks_commit, order.matched_organization_id, order.matched_location_id, order.matched_contact_id, order.matched_billing_location_id, order.matched_billing_contact_id]);
-  async function commit() { if (!window.confirm(`Add ${order.order_name} to M1? Shipping may process it immediately.`)) return; try { setLoading(true); setError(""); const row = await api(`/orders/${order.order_id}/commit`, { method: "POST", body: JSON.stringify({ confirmed: true }) }); setPreview(null); onChanged(row); } catch (err) { setError(err.message); } finally { setLoading(false); } }
+  async function commit() { if (!window.confirm(`Add ${order.order_name} to M1? Shipping may process it immediately.`)) return; try { setLoading(true); setError(""); const row = await api(`/orders/${order.order_id}/commit`, { method: "POST", body: JSON.stringify({ confirmed: true }) }); setPreview(null); onCommitted(row); } catch (err) { setError(err.message); } finally { setLoading(false); } }
   return <section className="commit-panel"><div><span className="eyebrow">ERP boundary</span><h3>{order.action_title}</h3><p>{order.action_detail}</p></div>{error && <Alert tone="danger" title="M1 action unavailable">{error}</Alert>}{loading && !preview && <div className="preview-box"><strong>Preparing the M1 order…</strong><span>Checking the customer and order number</span></div>}{preview && <div className="preview-box"><strong>{preview.already_exists ? `Existing M1 order ${preview.erp_order_id}` : "Ready to add to M1"}</strong>{!preview.already_exists && <span>{order.lines?.length || 0} line item{order.lines?.length === 1 ? "" : "s"} validated · customer setup prepared</span>}</div>}<div className="section-actions"><Button tone="secondary" onClick={loadPreview} disabled={loading || order.blocks_commit}>Recheck M1 plan</Button><Button onClick={commit} disabled={loading || order.blocks_commit || !preview}>{loading ? "Working…" : "Add to M1"}</Button></div></section>;
 }
 
-function OrderDetail({ order, onChanged, onClose }) {
+function OrderDetail({ order, onChanged, onCommitted, onClose }) {
   return <aside className="order-detail"><div className="detail-head"><div><span className="eyebrow">Shopify {order.order_name}</span><h2>{order.shipping_address?.company || order.customer_name || order.shipping_address?.name}</h2></div><button className="icon-button" onClick={onClose} aria-label="Close details">×</button></div>
     <div className="detail-status"><Badge tone={stateTone(order)}>{statusLabel(order.state)}</Badge><span>Updated {date(order.updated_at)}</span></div>
     {(order.state?.endsWith("_review") || order.state === "cancelled_before_erp") && <Alert tone={order.severity === "danger" ? "danger" : "warning"} title={order.action_title}>{order.action_detail}</Alert>}
     <section className="detail-section summary-grid"><div><span>Subtotal</span><strong>{money(order.subtotal, order.currency)}</strong></div><div><span>Shipping</span><strong>{money(order.shipping, order.currency)}</strong></div><div><span>Tax</span><strong>{money(order.tax, order.currency)}</strong></div><div className="total"><span>Total</span><strong>{money(order.total, order.currency)}</strong></div></section>
-    <section className="detail-section address-grid"><div><span className="eyebrow">Ship to</span><Address value={order.shipping_address} /></div><div><span className="eyebrow">Bill to</span><Address value={order.billing_address} /></div></section>
+    <section className="detail-section address-grid"><div><span className="eyebrow">Ship to</span>{order.shipping_address_from_billing && <small className="muted">Using billing address</small>}<Address value={order.shipping_address} /></div><div><span className="eyebrow">Bill to</span><Address value={order.billing_address} /></div></section>
     <CustomerMatch order={order} onChanged={onChanged} />
     <LineEditor order={order} onChanged={onChanged} />
     {order.refunds?.length > 0 && <section className="detail-section"><span className="eyebrow">Refunds</span>{order.refunds.map((refund) => <div className="refund-row" key={refund.shopify_refund_id}><div><strong>{money(refund.total, order.currency)}</strong><span>{date(refund.created_at)}</span></div><p>{refund.note || "No Shopify refund note"}</p></div>)}</section>}
-    <CommitPanel order={order} onChanged={onChanged} />
+    <CommitPanel order={order} onCommitted={onCommitted} />
   </aside>;
 }
 
 function QueueApp() {
   const [dashboard, setDashboard] = useState({}), [orders, setOrders] = useState([]), [selected, setSelected] = useState(null), [filter, setFilter] = useState("all"), [search, setSearch] = useState(""), [loading, setLoading] = useState(true), [error, setError] = useState("");
   const actualState = filter === "review" ? "all" : filter;
-  async function load() { try { setLoading(true); setError(""); const [stats, payload] = await Promise.all([api("/dashboard"), api(`/orders?state=${encodeURIComponent(actualState)}&search=${encodeURIComponent(search)}`)]); setDashboard(stats); let rows = payload.orders || []; if (filter === "review") rows = rows.filter((row) => row.state?.endsWith("_review")); rows.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0)); setOrders(rows); if (selected) setSelected(rows.find((row) => row.order_id === selected.order_id) || selected); } catch (err) { setError(err.message); } finally { setLoading(false); } }
-  useEffect(() => { const timeout = setTimeout(load, 150); return () => clearTimeout(timeout); }, [filter, search]);
-  function update(row) { setSelected(row); setOrders((rows) => rows.map((item) => item.order_id === row.order_id ? row : item)); load(); }
-  return <div className="page-shell"><Header /><main className="queue-main"><Stats values={dashboard} selected={filter} onSelect={setFilter} /><section className="home-panel queue-panel"><div className="panel-title"><div><span className="eyebrow">Review workflow</span><h2>Shopify orders</h2></div><div className="toolbar"><input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search order, customer, M1 ID…" /><Button tone="secondary" onClick={load}>Refresh</Button></div></div>{error && <Alert tone="danger" title="Could not load the queue">{error}</Alert>}<div className="queue-table"><div className="queue-head"><span>Order</span><span>Customer</span><span>Status</span><span>Total</span><span>M1 SO</span></div>{orders.map((row) => <QueueRow key={row.order_id} row={row} active={selected?.order_id === row.order_id} onClick={() => setSelected(row)} />)}{!loading && !orders.length && <div className="empty-state">No orders match this view.</div>}{loading && <div className="empty-state">Loading orders…</div>}</div></section></main>{selected && <OrderDetail key={selected.order_id} order={selected} onChanged={update} onClose={() => setSelected(null)} />}</div>;
+  const load = useCallback(async ({ silent = false } = {}) => { try { if (!silent) setLoading(true); setError(""); const [stats, payload] = await Promise.all([api("/dashboard"), api(`/orders?state=${encodeURIComponent(actualState)}&search=${encodeURIComponent(search)}`)]); setDashboard(stats); let rows = payload.orders || []; if (filter === "review") rows = rows.filter((row) => row.state?.endsWith("_review")); rows.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0)); setOrders(rows); setSelected((current) => current ? rows.find((row) => row.order_id === current.order_id) || current : null); } catch (err) { setError(err.message); } finally { if (!silent) setLoading(false); } }, [actualState, filter, search]);
+  useEffect(() => { const timeout = setTimeout(() => load(), 150); return () => clearTimeout(timeout); }, [load]);
+  useEffect(() => { const interval = window.setInterval(() => { if (!document.hidden) load({ silent: true }); }, 5000); return () => window.clearInterval(interval); }, [load]);
+  function update(row) { setSelected(row); setOrders((rows) => rows.map((item) => item.order_id === row.order_id ? row : item)); load({ silent: true }); }
+  function committed(row) { setSelected(null); setOrders((rows) => rows.map((item) => item.order_id === row.order_id ? row : item)); load({ silent: true }); }
+  return <div className="page-shell"><Header /><main className="queue-main"><Stats values={dashboard} selected={filter} onSelect={setFilter} /><section className="home-panel queue-panel"><div className="panel-title"><div><span className="eyebrow">Review workflow</span><h2>Shopify orders</h2></div><div className="toolbar"><input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search order, customer, M1 ID…" /><Button tone="secondary" onClick={() => load()}>Refresh</Button></div></div>{error && <Alert tone="danger" title="Could not load the queue">{error}</Alert>}<div className="queue-table"><div className="queue-head"><span>Order</span><span>Customer</span><span>Status</span><span>Total</span><span>M1 SO</span></div>{orders.map((row) => <QueueRow key={row.order_id} row={row} active={selected?.order_id === row.order_id} onClick={() => setSelected(row)} />)}{!loading && !orders.length && <div className="empty-state">No orders match this view.</div>}{loading && <div className="empty-state">Loading orders…</div>}</div></section></main>{selected && <OrderDetail key={selected.order_id} order={selected} onChanged={update} onCommitted={committed} onClose={() => setSelected(null)} />}</div>;
 }
 
 function HealthCard({ label, value, tone = "green", detail }) {

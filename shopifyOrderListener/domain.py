@@ -39,9 +39,38 @@ def _address(value: dict[str, Any] | None) -> dict[str, str]:
     }
 
 
+def total_after_line_edits(order: dict[str, Any], subtotal: Decimal) -> Decimal:
+    """Preserve Shopify's non-line charges while applying staged line edits.
+
+    Shopify's current total already includes product and shipping discounts.
+    Rebuilding it as subtotal - total_discounts + current_shipping can subtract
+    a shipping discount twice.  An edit therefore changes the authoritative
+    Shopify total only by the difference between the original and edited line
+    subtotals.
+    """
+    raw = order.get("raw") or {}
+    original_subtotal = (
+        money(raw.get("currentSubtotalPriceSet"))
+        if "currentSubtotalPriceSet" in raw
+        else Decimal(str(order.get("subtotal") or 0))
+    )
+    original_total = (
+        money(raw.get("currentTotalPriceSet"))
+        if "currentTotalPriceSet" in raw
+        else Decimal(str(order.get("total") or 0))
+    )
+    return original_total + subtotal - original_subtotal
+
+
 def normalize_shopify_order(node: dict[str, Any]) -> dict[str, Any]:
     customer = node.get("customer") or {}
     cancellation = node.get("cancellation") or {}
+    billing_address = _address(node.get("billingAddress"))
+    shipping_address = _address(node.get("shippingAddress"))
+    shipping_address_from_billing = False
+    if not shipping_address.get("address1") and billing_address.get("address1"):
+        shipping_address = dict(billing_address)
+        shipping_address_from_billing = True
     lines = []
     for index, item in enumerate((node.get("lineItems") or {}).get("nodes", []), start=1):
         quantity = int(item.get("quantity") or 0)
@@ -96,8 +125,9 @@ def normalize_shopify_order(node: dict[str, Any]) -> dict[str, Any]:
         "phone": node.get("phone") or customer.get("phone") or "",
         "customer_name": customer.get("displayName") or "",
         "shopify_customer_id": customer.get("id"),
-        "billing_address": _address(node.get("billingAddress")),
-        "shipping_address": _address(node.get("shippingAddress")),
+        "billing_address": billing_address,
+        "shipping_address": shipping_address,
+        **({"shipping_address_from_billing": True} if shipping_address_from_billing else {}),
         "shipping_method": (node.get("shippingLine") or {}).get("title") or "",
         "subtotal": money(node.get("currentSubtotalPriceSet")),
         "discount": money(node.get("currentTotalDiscountsSet")),

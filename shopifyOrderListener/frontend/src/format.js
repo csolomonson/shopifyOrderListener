@@ -12,6 +12,7 @@ export function statusLabel(value) {
 }
 
 export function stateTone(row) {
+  if (row?.state === "ready") return "blue";
   if (row?.severity === "danger") return "red";
   if (row?.severity === "warning") return "amber";
   if (row?.severity === "success") return "green";

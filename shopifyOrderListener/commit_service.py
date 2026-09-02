@@ -73,7 +73,14 @@ def build_m1_resource_plan(order: dict[str, Any], sales_order_id: str, organizat
             "omdShippingPaymentTypeID": "SHIP",
         })
     subtotal = sum((Decimal(str(line["line_total"])) for line in order.get("lines", [])), Decimal("0"))
-    total = subtotal - Decimal(str(order.get("discount") or 0)) + Decimal(str(order.get("shipping") or 0)) + Decimal(str(order.get("tax") or 0))
+    shipping = Decimal(str(order.get("shipping") or 0))
+    tax = Decimal(str(order.get("tax") or 0))
+    # currentTotalPriceSet is Shopify's authoritative, already-discounted value.
+    # Derive the discount represented by the M1 components instead of blindly
+    # applying currentTotalDiscountsSet, which may include a shipping discount
+    # already reflected in currentShippingPriceSet.
+    total = Decimal(str(order.get("total") or 0))
+    discount = max(Decimal("0"), subtotal + shipping + tax - total)
     billing_location_id, billing_contact_id = billing_location_id or location_id, billing_contact_id or contact_id
     header = {
         "ompUniqueID": str(uuid.uuid4()),
@@ -96,16 +103,16 @@ def build_m1_resource_plan(order: dict[str, Any], sales_order_id: str, organizat
         "ompExchangeRate": "1",
         "ompFullOrderSubtotalBase": str(subtotal),
         "ompFullOrderSubtotalForeign": str(subtotal),
-        "ompDiscountTotalBase": str(order["discount"]),
-        "ompDiscountTotalForeign": str(order["discount"]),
-        "ompFreightAmountBase": str(order["shipping"]),
-        "ompFreightAmountForeign": str(order["shipping"]),
-        "ompFreightTotalBase": str(order["shipping"]),
-        "ompFreightTotalForeign": str(order["shipping"]),
+        "ompDiscountTotalBase": str(discount),
+        "ompDiscountTotalForeign": str(discount),
+        "ompFreightAmountBase": str(shipping),
+        "ompFreightAmountForeign": str(shipping),
+        "ompFreightTotalBase": str(shipping),
+        "ompFreightTotalForeign": str(shipping),
         "ompOrderSubtotalBase": str(subtotal),
         "ompOrderSubTotalForeign": str(subtotal),
-        "ompOrderTaxAmountBase": str(order["tax"]),
-        "ompOrderTaxAmountForeign": str(order["tax"]),
+        "ompOrderTaxAmountBase": str(tax),
+        "ompOrderTaxAmountForeign": str(tax),
         "ompOrderTotalBase": str(total),
         "ompOrderTotalForeign": str(total),
         "ompStatus": 3,

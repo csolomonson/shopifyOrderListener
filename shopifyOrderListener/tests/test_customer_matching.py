@@ -90,6 +90,22 @@ class CustomerMatchingTests(unittest.TestCase):
         self.assertEqual("100", recommendation["selection"]["location_id"])
         self.assertEqual("1", recommendation["selection"]["contact_id"])
 
+    def test_billing_address_is_reused_when_shopify_has_no_shipping_address(self):
+        node = sample_node()
+        node["billingAddress"] = node["shippingAddress"]
+        node["shippingAddress"] = None
+
+        order = normalize_shopify_order(node)
+        recommendation = CustomerMatcher(FakeM1()).resolution(order)
+        selection = recommendation["selection"]
+
+        self.assertEqual("100", selection["location_id"])
+        self.assertEqual("100", selection["billing_location_id"])
+        self.assertTrue(CustomerMatcher(FakeM1()).validate_selection(
+            order, "C100", selection["location_id"], selection["contact_id"],
+            selection["billing_location_id"], selection["billing_contact_id"],
+        )["safe"])
+
     def test_exact_identity_with_new_address_recommends_new_location(self):
         node = sample_node()
         node["shippingAddress"].update(address1="500 New Road", city="Vista", zip="92081")

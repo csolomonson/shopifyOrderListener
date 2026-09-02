@@ -19,7 +19,7 @@ except ModuleNotFoundError:  # Pure domain tests can run before production deps 
         return statement
 
 from app_config import database_url, setting
-from domain import lifecycle_decision
+from domain import lifecycle_decision, total_after_line_edits
 
 
 def _json_default(value: Any) -> Any:
@@ -188,8 +188,9 @@ class MemoryStore:
         stored = self.orders[row["shopify_order_id"]]
         stored["line_overrides"] = lines
         stored["lines"] = lines
-        stored["subtotal"] = sum((Decimal(str(line["line_total"])) for line in lines), Decimal("0"))
-        stored["total"] = stored["subtotal"] - Decimal(str(stored.get("discount") or 0)) + Decimal(str(stored.get("shipping") or 0)) + Decimal(str(stored.get("tax") or 0))
+        subtotal = sum((Decimal(str(line["line_total"])) for line in lines), Decimal("0"))
+        stored["total"] = total_after_line_edits(stored, subtotal)
+        stored["subtotal"] = subtotal
         self.add_event(order_id, "order_lines_edited", {"lines": lines}, actor)
         return dict(stored)
 
@@ -312,7 +313,7 @@ class SqlServerStore:
         if normalized.get("line_overrides") is not None:
             normalized["lines"] = normalized["line_overrides"]
             normalized["subtotal"] = sum((Decimal(str(line["line_total"])) for line in normalized["lines"]), Decimal("0"))
-            normalized["total"] = normalized["subtotal"] - Decimal(str(normalized.get("discount") or 0)) + Decimal(str(normalized.get("shipping") or 0)) + Decimal(str(normalized.get("tax") or 0))
+            normalized["total"] = total_after_line_edits(normalized, normalized["subtotal"])
         return normalized
 
     def upsert_order(self, order: dict[str, Any]) -> dict[str, Any]:

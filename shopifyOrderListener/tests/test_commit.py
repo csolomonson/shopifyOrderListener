@@ -160,6 +160,20 @@ class CommitPayloadTests(unittest.TestCase):
 
         self.assertEqual(50, len(payload["ompOrderCommentsText"]))
 
+    def test_shipping_discount_does_not_make_a_free_order_negative(self):
+        node = sample_node()
+        node["lineItems"]["nodes"][0]["originalUnitPriceSet"]["shopMoney"]["amount"] = "0.00"
+        node["currentSubtotalPriceSet"]["shopMoney"]["amount"] = "0.00"
+        node["currentTotalDiscountsSet"]["shopMoney"]["amount"] = "16.78"
+        node["currentShippingPriceSet"]["shopMoney"]["amount"] = "0.00"
+        node["currentTotalPriceSet"]["shopMoney"]["amount"] = "0.00"
+        order = normalize_shopify_order(node)
+
+        payload = build_m1_resource_plan(order, "113000", "C100", "100", "1")["SalesOrders"][0]
+
+        self.assertEqual(0, float(payload["ompOrderTotalBase"]))
+        self.assertEqual(0, float(payload["ompDiscountTotalBase"]))
+
     def test_commit_uses_m1_home_currency_id_not_shopify_currency_code(self):
         store = MemoryStore()
         staged = store.upsert_order(normalize_shopify_order(sample_node()))

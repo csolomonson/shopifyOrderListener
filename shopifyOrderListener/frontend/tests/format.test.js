@@ -10,3 +10,7 @@ test("review states are presented as readable labels", () => {
 test("danger lifecycle events use the red queue tone", () => {
   assert.equal(stateTone({ severity: "danger" }), "red");
 });
+
+test("ready orders use the blue queue tone", () => {
+  assert.equal(stateTone({ state: "ready", severity: "success" }), "blue");
+});
