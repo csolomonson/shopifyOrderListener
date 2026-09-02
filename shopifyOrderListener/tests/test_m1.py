@@ -1,10 +1,15 @@
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 from integrations.m1 import M1Client, M1Error
 
 
 class M1ReadTests(unittest.TestCase):
+    def test_bare_m1_address_is_normalized_to_http(self):
+        client = M1Client("172.28.160.1:1937", "id", "key")
+
+        self.assertEqual("http://172.28.160.1:1937", client.base_url)
+
     def test_bulk_shopify_po_index_discards_nearby_customer_pos(self):
         client = M1Client("http://m1.test", "id", "key")
         client._request = Mock(return_value={
@@ -71,6 +76,17 @@ class PaginationTests(unittest.TestCase):
 
         params = client._request.call_args.kwargs["params"]
         self.assertIn(("orderBy", "ompSalesOrderID[Asc]"), params)
+        self.assertIn(("pageSize", 250), params)
+
+    @patch("requests.request")
+    def test_transport_error_preserves_the_underlying_reason(self, request):
+        import requests
+
+        request.side_effect = requests.ReadTimeout("server did not respond")
+        client = M1Client("http://page.test", "page-id", "key")
+
+        with self.assertRaisesRegex(M1Error, "ReadTimeout: server did not respond"):
+            client.get("NextIDs")
 
     def test_an_unlisted_resource_refuses_to_page(self):
         client = M1Client("http://page.test", "page-id", "key")

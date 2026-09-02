@@ -172,6 +172,8 @@ temporary_runtime="$(mktemp "$config_root/runtime.XXXXXX")"
     write_environment_value M1_API_BASE_URL "$m1_url"
     write_environment_value M1_API_ID "$m1_api_id"
     write_environment_value M1_API_KEY_FILE "$secret_root/m1_api_key.txt"
+    write_environment_value M1_API_TIMEOUT_SECONDS 120
+    write_environment_value M1_API_PAGE_SIZE 250
     write_environment_value M1_WRITES_ENABLED "$enable_writes"
     write_environment_value M1_DEFAULT_WAREHOUSE 142
     write_environment_value M1_DEFAULT_BIN BIN1

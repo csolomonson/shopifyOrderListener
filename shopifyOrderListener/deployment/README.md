@@ -188,6 +188,10 @@ summary, and returns a nonzero exit status on failure. A non-blocking file lock
 causes overlapping scheduled invocations to exit successfully without starting
 a second reconciliation.
 
+M1 reads use a 120-second response timeout and request at most 250 records per
+page by default. These limits can be adjusted with `M1_API_TIMEOUT_SECONDS` and
+`M1_API_PAGE_SIZE` if the M1 host requires different values.
+
 Before configuring cron or a systemd timer, edit
 `/etc/shopify-order-listener/runtime.env`:
 

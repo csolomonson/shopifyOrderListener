@@ -9,7 +9,7 @@ from __future__ import annotations
 from collections import Counter
 from typing import Any
 
-from app_config import boolean_setting, setting
+from app_config import boolean_setting, integer_setting, setting
 
 
 class M1Error(RuntimeError):
@@ -19,10 +19,16 @@ class M1Error(RuntimeError):
 class M1Client:
     _home_currency_cache: dict[tuple[str, str], str] = {}
 
-    def __init__(self, base_url: str | None = None, api_id: str | None = None, api_key: str | None = None):
-        self.base_url = (base_url or setting("M1_API_BASE_URL", "")).rstrip("/")
+    def __init__(self, base_url: str | None = None, api_id: str | None = None, api_key: str | None = None,
+                 timeout_seconds: int | None = None, page_size: int | None = None):
+        configured_url = (base_url or setting("M1_API_BASE_URL", "")).strip()
+        if configured_url and "://" not in configured_url:
+            configured_url = f"http://{configured_url}"
+        self.base_url = configured_url.rstrip("/")
         self.api_id = api_id or setting("M1_API_ID", "")
         self.api_key = api_key or setting("M1_API_KEY", "")
+        self.timeout_seconds = max(1, timeout_seconds or integer_setting("M1_API_TIMEOUT_SECONDS", 120))
+        self.page_size = min(1000, max(1, page_size or integer_setting("M1_API_PAGE_SIZE", 250)))
 
     @property
     def configured(self) -> bool:
@@ -48,14 +54,16 @@ class M1Client:
                     "Content-Type": "application/json",
                     "Authorization": f"apikey {self.api_id}:{self.api_key}",
                 },
-                timeout=20,
+                # Fail fast when the host is unreachable, but allow M1 enough
+                # time to materialize and serialize its larger ERP resources.
+                timeout=(10, self.timeout_seconds),
                 **kwargs,
             )
             response.raise_for_status()
         except requests.RequestException as exc:
             response = getattr(exc, "response", None)
             status = f"HTTP {response.status_code}" if response is not None else "connection error"
-            detail = ""
+            detail = "" if response is not None else f"{type(exc).__name__}: {exc}"
             if response is not None:
                 try:
                     body = response.json()
@@ -106,7 +114,7 @@ class M1Client:
 
     def get_all(self, resource: str, filters: list[str] | None = None) -> list[dict[str, Any]]:
         rows: list[dict[str, Any]] = []
-        page_size = 1000
+        page_size = self.page_size
         page_number = 0
         while True:
             params: list[tuple[str, Any]] = [
@@ -173,7 +181,7 @@ class M1Client:
         names fit inside this narrow range; a local prefix check removes nearby
         non-Shopify customer POs returned by the database collation.
         """
-        page_size = 1000
+        page_size = self.page_size
         page_number = 0
         result: dict[str, dict[str, Any]] = {}
         while True:
