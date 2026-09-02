@@ -79,7 +79,7 @@ The installer performs the following operations:
 5. Installs and starts `shopify-order-listener.service` on `127.0.0.1:8010`.
 6. Adds a persistent `/sales-orders*` route to the existing Caddy configuration.
 7. Validates SQL Server, Shopify, and M1 connectivity.
-8. Runs the startup reconciliation and verifies the HTTPS application path.
+8. Starts reconciliation and verifies the HTTPS application path.
 
 M1 writes remain disabled unless `--enable-m1-writes` is supplied.
 
@@ -155,11 +155,15 @@ Only one automatic synchronization mode should be enabled at a time.
 
 The default deployment uses the FastAPI process for synchronization:
 
-- `SALES_ORDER_STARTUP_SYNC=true` performs a full reconciliation before the web
-  application begins serving requests.
+- `SALES_ORDER_STARTUP_SYNC=true` starts a full reconciliation immediately after
+  process startup without delaying the health endpoint or review interface.
 - `SALES_ORDER_BACKGROUND_SYNC=true` starts the incremental polling loop.
 - The default polling interval is 60 seconds.
 - Incremental runs include a 10-minute overlap to prevent gaps.
+
+Startup reconciliation and incremental polling share one worker. The first
+incremental polling interval begins only after the full startup pass finishes,
+so the two operations cannot overlap.
 
 This mode requires no cron entry or systemd timer.
 

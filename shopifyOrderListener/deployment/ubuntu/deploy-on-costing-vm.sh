@@ -255,7 +255,7 @@ log "Verifying SQL, M1, and Shopify"
 run_app_python -m tools.deployment_preflight
 systemctl restart shopify-order-listener.service
 
-printf 'Waiting for the startup reconciliation to complete'
+printf 'Waiting for the web service to become ready'
 ready=false
 for _ in $(seq 1 90); do
     if curl --fail --silent --max-time 3 http://127.0.0.1:8010/sales-orders/api/health >/dev/null; then

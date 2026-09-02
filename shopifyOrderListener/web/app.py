@@ -30,7 +30,19 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 STATIC_DIR = BASE_DIR / "static"
 
 
-async def _poll_shopify() -> None:
+async def _shopify_worker(*, startup_sync: bool, background_sync: bool) -> None:
+    """Run startup reconciliation and polling serially outside app readiness."""
+    if startup_sync:
+        shopify = ShopifyClient()
+        if shopify.configured:
+            try:
+                await asyncio.to_thread(SyncService(get_store(), shopify=shopify).run, full=True)
+            except Exception:
+                logger.exception("Startup Shopify/M1 reconciliation failed")
+
+    if not background_sync:
+        return
+
     while True:
         store = get_store()
         settings = store.get_settings()
@@ -46,17 +58,15 @@ async def _poll_shopify() -> None:
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     task = None
-    shopify = ShopifyClient()
-    if boolean_setting("SALES_ORDER_STARTUP_SYNC", True) and shopify.configured:
-        try:
-            # Reconcile all Shopify orders before accepting requests. Orders
-            # received during downtime are therefore present in the queue as
-            # soon as startup completes.
-            await asyncio.to_thread(SyncService(get_store(), shopify=shopify).run, full=True)
-        except Exception:
-            logger.exception("Startup Shopify/M1 reconciliation failed")
-    if boolean_setting("SALES_ORDER_BACKGROUND_SYNC", True):
-        task = asyncio.create_task(_poll_shopify())
+    startup_sync = boolean_setting("SALES_ORDER_STARTUP_SYNC", True)
+    background_sync = boolean_setting("SALES_ORDER_BACKGROUND_SYNC", True)
+    if startup_sync or background_sync:
+        # The full pass runs first in this single worker, so it cannot overlap
+        # periodic polling. Scheduling it instead of awaiting it lets health
+        # checks and the review UI come online independently of backlog size.
+        task = asyncio.create_task(
+            _shopify_worker(startup_sync=startup_sync, background_sync=background_sync)
+        )
     yield
     if task:
         task.cancel()
@@ -340,4 +350,3 @@ def diagnostics():
         "ingestion": "outbound_polling",
         "public_webhooks_required": False,
     }
-
