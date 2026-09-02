@@ -1,0 +1,1512 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDObjects" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDObjects">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="doObjectID" type="xs:string" minOccurs="0" />
+                <xs:element name="doTable" type="xs:string" minOccurs="0" />
+                <xs:element name="doName" type="xs:string" minOccurs="0" />
+                <xs:element name="doTitle" type="xs:string" minOccurs="0" />
+                <xs:element name="doTreeLoader" type="xs:string" minOccurs="0" />
+                <xs:element name="doModule" type="xs:string" minOccurs="0" />
+                <xs:element name="doAppExtensionID" type="xs:string" minOccurs="0" />
+                <xs:element name="doCustom" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDObjects>
+    <doObjectID>Aging</doObjectID>
+    <doTable>AGINGBUCKETS</doTable>
+    <doName>Aging Bucket</doName>
+    <doTitle>Aging Bucket Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Allowance</doObjectID>
+    <doTable>ALLOWANCES</doTable>
+    <doName>Allowance</doName>
+    <doTitle>Payroll Allowance/Benefit Maintenance</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>APInvoice</doObjectID>
+    <doTable>APINVOICES</doTable>
+    <doName>AP Invoice</doName>
+    <doTitle>AP Invoice Entry</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>APInvoiceExplorer</doObjectID>
+    <doTable>APINVOICES</doTable>
+    <doName>AP Invoice</doName>
+    <doTitle>AP Invoice Explorer</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>APOpenInvoice</doObjectID>
+    <doTable>APINVOICES</doTable>
+    <doName>AP Open Invoices</doName>
+    <doTitle>AP Open Invoice Load</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>APOpenPaymentSession</doObjectID>
+    <doTable>APPAYMENTSESSIONS</doTable>
+    <doName>AP Open Payment</doName>
+    <doTitle>AP Open Payment Session</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>APPayment</doObjectID>
+    <doTable>APPAYMENTSESSIONS</doTable>
+    <doName>AP Payment</doName>
+    <doTitle>AP Payment Entry</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>APTaxablePayment</doObjectID>
+    <doTable>APTAXABLEPAYMENTS</doTable>
+    <doName>Taxable Payment</doName>
+    <doTitle>Taxable Payment Reporting</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ARInvoice</doObjectID>
+    <doTable>ARINVOICES</doTable>
+    <doName>AR Invoice</doName>
+    <doTitle>AR Invoice Entry</doTitle>
+    <doModule>AR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ARInvoiceExplorer</doObjectID>
+    <doTable>ARINVOICES</doTable>
+    <doName>AR Invoice</doName>
+    <doTitle>AR Invoice Explorer</doTitle>
+    <doModule>AR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AROpenInvoice</doObjectID>
+    <doTable>ARINVOICES</doTable>
+    <doName>AR Open Invoices</doName>
+    <doTitle>AR Open Invoice Load</doTitle>
+    <doModule>AR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AROpenPaymentSession</doObjectID>
+    <doTable>ARPAYMENTSESSIONS</doTable>
+    <doName>AR Open Payment</doName>
+    <doTitle>AR Open Payment Session</doTitle>
+    <doModule>AR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ARPayment</doObjectID>
+    <doTable>ARPAYMENTSESSIONS</doTable>
+    <doName>AR Payment</doName>
+    <doTitle>AR Payment Entry</doTitle>
+    <doModule>AR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ARRecurringInvoice</doObjectID>
+    <doTable>ARRECURRINGINVOICES</doTable>
+    <doName>Recurring AR Invoice</doName>
+    <doTitle>Recurring AR Invoice Maintenance</doTitle>
+    <doModule>AR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Asset</doObjectID>
+    <doTable>ASSETS</doTable>
+    <doName>Fixed Asset</doName>
+    <doTitle>Fixed Asset Entry</doTitle>
+    <doModule>FA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AssetAdjustment</doObjectID>
+    <doTable>ASSETADJUSTMENTS</doTable>
+    <doName>Asset Adjustment</doName>
+    <doTitle>Asset Adjustment Entry</doTitle>
+    <doModule>FA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AssetExplorer</doObjectID>
+    <doTable>ASSETS</doTable>
+    <doName>Asset</doName>
+    <doTitle>Asset Explorer</doTitle>
+    <doModule>FA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AssetLowValuePool</doObjectID>
+    <doTable>ASSETLOWVALUEPOOL</doTable>
+    <doName>Low Value Asset Pool</doName>
+    <doTitle>Low Value Asset Pool</doTitle>
+    <doModule>FA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AssetType</doObjectID>
+    <doTable>ASSETTYPES</doTable>
+    <doName>Asset Type</doName>
+    <doTitle>Asset Type Maintenance</doTitle>
+    <doModule>FA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Attachment</doObjectID>
+    <doTable>ATTACHMENTS</doTable>
+    <doName>Attachment</doName>
+    <doTitle>Attachment Entry</doTitle>
+    <doModule>AT</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>AttachmentType</doObjectID>
+    <doTable>ATTACHMENTTYPES</doTable>
+    <doName>Attachment Type</doName>
+    <doTitle>Attachment Type Maintenance</doTitle>
+    <doModule>AT</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>BankAccount</doObjectID>
+    <doTable>BANKACCOUNTS</doTable>
+    <doName>Bank Account</doName>
+    <doTitle>Bank Account Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>BankRec</doObjectID>
+    <doTable>BANKSTATEMENTS</doTable>
+    <doName>Bank Rec</doName>
+    <doTitle>Bank Reconciliation Entry</doTitle>
+    <doModule>GL</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Call</doObjectID>
+    <doTable>CALLS</doTable>
+    <doName>Call</doName>
+    <doTitle>Call Entry</doTitle>
+    <doModule>HD</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CallType</doObjectID>
+    <doTable>CALLTYPES</doTable>
+    <doName>Call Type</doName>
+    <doTitle>Call Type Maintenance</doTitle>
+    <doModule>HD</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ChangeRequest</doObjectID>
+    <doTable>CHANGEREQUESTS</doTable>
+    <doName>Change Request</doName>
+    <doTitle>Change Request Entry</doTitle>
+    <doModule>CH</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ChangeRequestGroup</doObjectID>
+    <doTable>CHANGEREQUESTGROUPS</doTable>
+    <doName>Change Request Group</doName>
+    <doTitle>Change Request Group Maintenance</doTitle>
+    <doModule>CH</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ChangeRequestType</doObjectID>
+    <doTable>CHANGEREQUESTTYPES</doTable>
+    <doName>Change Request Type</doName>
+    <doTitle>Change Request Type Maintenance</doTitle>
+    <doModule>CH</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ContactGroup</doObjectID>
+    <doTable>CONTACTGROUPS</doTable>
+    <doName>Contact Group</doName>
+    <doTitle>Contact Group Maintenance</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ContactMethod</doObjectID>
+    <doTable>CONTACTMETHODS</doTable>
+    <doName>Contact Method</doName>
+    <doTitle>Contact Method Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ContactTitle</doObjectID>
+    <doTable>CONTACTTITLES</doTable>
+    <doName>Contact Title</doName>
+    <doTitle>Contact Title Maintenance</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CorrectActionCat</doObjectID>
+    <doTable>CORRECTIVEACTIONCATEGORIES</doTable>
+    <doName>Action Category</doName>
+    <doTitle>Corrective Action Category Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CorrectiveActionCode</doObjectID>
+    <doTable>CORRECTIVEACTIONCODES</doTable>
+    <doName>Action Code</doName>
+    <doTitle>Corrective Action Code Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CountyCode</doObjectID>
+    <doTable>CountyCodes</doTable>
+    <doName>County Code</doName>
+    <doTitle>County Code Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CustomerGroup</doObjectID>
+    <doTable>CUSTOMERGROUPS</doTable>
+    <doName>Customer Group</doName>
+    <doTitle>Customer Group Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CustomerPackage</doObjectID>
+    <doTable>CustomerPackages</doTable>
+    <doName>Customer Package</doName>
+    <doTitle>Customer Package Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>CycleCode</doObjectID>
+    <doTable>CYCLECODES</doTable>
+    <doName>Cycle Code</doName>
+    <doTitle>Cycle Code Maintenance</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Deduction</doObjectID>
+    <doTable>DEDUCTIONS</doTable>
+    <doName>Deduction</doName>
+    <doTitle>Payroll Deduction Maintenance</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>DMRClaim</doObjectID>
+    <doTable>DMRCLAIMS</doTable>
+    <doName>DMR Claim</doName>
+    <doTitle>DMR Claim Entry</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>DMRClaimExplorer</doObjectID>
+    <doTable>DMRCLAIMS</doTable>
+    <doName>DMR Claim</doName>
+    <doTitle>DMR Claim Explorer</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>DMRShipment</doObjectID>
+    <doTable>DMRSHIPMENTS</doTable>
+    <doName>DMR Shipment</doName>
+    <doTitle>DMR Shipment Entry</doTitle>
+    <doModule>SM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Employee</doObjectID>
+    <doTable>EMPLOYEES</doTable>
+    <doName>Employee</doName>
+    <doTitle>Employee Entry</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>EmployeeAttachment</doObjectID>
+    <doTable>EMPLOYEEATTACHMENTS</doTable>
+    <doName>Employee Attachment</doName>
+    <doTitle>Employee Attachment Entry</doTitle>
+    <doModule>LM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>EmployeeAward</doObjectID>
+    <doTable>EMPLOYEEAWARDS</doTable>
+    <doName>Employee Award</doName>
+    <doTitle>Award Classification Maintenance</doTitle>
+    <doModule>LM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>EmployeeExplorer</doObjectID>
+    <doTable>EMPLOYEES</doTable>
+    <doName>Employee</doName>
+    <doTitle>Employee Explorer</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Expense</doObjectID>
+    <doTable>EXPENSES</doTable>
+    <doName>Expense</doName>
+    <doTitle>Expense Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Followup</doObjectID>
+    <doTable>FOLLOWUPS</doTable>
+    <doName>Follow-up</doName>
+    <doTitle>Follow-up Entry</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Form1094Year</doObjectID>
+    <doTable>FORM1094YEARS</doTable>
+    <doName>Form 1094 Years</doName>
+    <doTitle>Generate Form 1094C</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Form1099Type</doObjectID>
+    <doTable>FORM1099TYPES</doTable>
+    <doName>Form 1099 Types</doName>
+    <doTitle>1099 Types Maintenance</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Form1099Year</doObjectID>
+    <doTable>FORM1099YEARS</doTable>
+    <doName>Form 1099 Years</doName>
+    <doTitle>Generate 1099 Forms</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Form940Year</doObjectID>
+    <doTable>Form940Years</doTable>
+    <doName>Form 940 Years</doName>
+    <doTitle>Generate 940 Form</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Form941Year</doObjectID>
+    <doTable>FORM941YEARS</doTable>
+    <doName>Form 941 Years</doName>
+    <doTitle>Generate 941 Form</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLAccountExplorer</doObjectID>
+    <doTable>GLACCOUNTS</doTable>
+    <doName>GL Account</doName>
+    <doTitle>GL Account Explorer</doTitle>
+    <doModule>GL</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLCategory</doObjectID>
+    <doTable>GLCATEGORIES</doTable>
+    <doName>GL Category</doName>
+    <doTitle>GL Category Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLChart</doObjectID>
+    <doTable>GLCHARTS</doTable>
+    <doName>GL Chart</doName>
+    <doTitle>Chart of Accounts Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLDepartment</doObjectID>
+    <doTable>GLDEPARTMENTS</doTable>
+    <doName>GL Department</doName>
+    <doTitle>GL Department Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLDivision</doObjectID>
+    <doTable>GLDIVISIONS</doTable>
+    <doName>GL Division</doName>
+    <doTitle>GL Division Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLFiscalYear</doObjectID>
+    <doTable>GLFISCALYEARS</doTable>
+    <doName>Fiscal Year</doName>
+    <doTitle>Fiscal Year Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>GLJournal</doObjectID>
+    <doTable>GLJOURNALS</doTable>
+    <doName>General Ledger</doName>
+    <doTitle>General Ledger Entry</doTitle>
+    <doModule>GL</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>IncomeTax</doObjectID>
+    <doTable>INCOMETAXES</doTable>
+    <doName>Income Tax</doName>
+    <doTitle>Income Tax Maintenance</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>IncomeTaxYear</doObjectID>
+    <doTable>INCOMETAXYEARS</doTable>
+    <doName>Income Tax Year</doName>
+    <doTitle>Income Tax Year Processing</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>IndirectLabor</doObjectID>
+    <doTable>INDIRECTLABORCODES</doTable>
+    <doName>Indirect Labour</doName>
+    <doTitle>Indirect Labor Maintenance</doTitle>
+    <doModule>LM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>IndustryType</doObjectID>
+    <doTable>INDUSTRYTYPES</doTable>
+    <doName>Industry Type</doName>
+    <doTitle>Industry Type Maintenance</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Inspection</doObjectID>
+    <doTable>INSPECTIONS</doTable>
+    <doName>Inspection</doName>
+    <doTitle>Inspection Entry</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Inspection1</doObjectID>
+    <doTable>Inspections</doTable>
+    <doName>Inspection</doName>
+    <doTitle>Inspection Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>InventoryCount</doObjectID>
+    <doTable>INVENTORYCOUNTS</doTable>
+    <doName>Inventory Count</doName>
+    <doTitle>Inventory Count Entry</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Job</doObjectID>
+    <doTable>JOBS</doTable>
+    <doName>Job</doName>
+    <doTitle>Job Entry</doTitle>
+    <doModule>JM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>JobExplorer</doObjectID>
+    <doTable>JOBS</doTable>
+    <doName>Job</doName>
+    <doTitle>Job Explorer</doTitle>
+    <doModule>JM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>JobGantt</doObjectID>
+    <doTable>JOBS</doTable>
+    <doName>Job</doName>
+    <doTitle>Scheduling Board</doTitle>
+    <doModule>VS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>JobPriority</doObjectID>
+    <doTable>JOBPRIORITIES</doTable>
+    <doName>Job Priority</doName>
+    <doTitle>Job Priority Maintenance</doTitle>
+    <doModule>JM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>KnowledgebasePage</doObjectID>
+    <doTable>KNOWLEDGEBASEPAGES</doTable>
+    <doName>KnowledgeBase Page</doName>
+    <doTitle>KnowledgeBase Page Entry</doTitle>
+    <doModule>HD</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>LandedCost</doObjectID>
+    <doTable>LANDEDCOSTS</doTable>
+    <doName>Landed Costs</doName>
+    <doTitle>Landed Cost Entry</doTitle>
+    <doModule>RM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>LandedCostCategory</doObjectID>
+    <doTable>LANDEDCOSTCATEGORIES</doTable>
+    <doName>LC Categories</doName>
+    <doTitle>Landed Cost Category Maintenance</doTitle>
+    <doModule>RM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>LaserMaterialType</doObjectID>
+    <doTable>LASERMATERIALTYPES</doTable>
+    <doName>Laser Material Type</doName>
+    <doTitle>Laser Material Type Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Lead</doObjectID>
+    <doTable>LEADS</doTable>
+    <doName>Lead</doName>
+    <doTitle>Lead Entry</doTitle>
+    <doModule>LO</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>LeadExplorer</doObjectID>
+    <doTable>LEADS</doTable>
+    <doName>Lead</doName>
+    <doTitle>Lead Explorer</doTitle>
+    <doModule>LO</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>LeaveAccrual</doObjectID>
+    <doTable>LEAVEACCRUALS</doTable>
+    <doName>Leave Accrual</doName>
+    <doTitle>Leave Accrual Maintenance</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>LotNumberExplorer</doObjectID>
+    <doTable>LOTNUMBERS</doTable>
+    <doName>Lot Number</doName>
+    <doTitle>Lot Number Explorer</doTitle>
+    <doModule>AB</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>MarketingProgram</doObjectID>
+    <doTable>MARKETINGPROGRAMS</doTable>
+    <doName>Marketing Program</doName>
+    <doTitle>Marketing Program Maintenance</doTitle>
+    <doModule>LO</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>MaterialIssue</doObjectID>
+    <doTable>MATERIALISSUES</doTable>
+    <doName>Material Issue</doName>
+    <doTitle>Material Issue Entry</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>MfgReceipt</doObjectID>
+    <doTable>MFGRECEIPTS</doTable>
+    <doName>Mfg/Misc Receipt</doName>
+    <doTitle>Mfg/Misc Receipt Entry</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Milestone</doObjectID>
+    <doTable>MILESTONES</doTable>
+    <doName>Milestone</doName>
+    <doTitle>Milestone Maintenance</doTitle>
+    <doModule>LO</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>MiscReceipt</doObjectID>
+    <doTable>PARTTRANSACTIONS</doTable>
+    <doName>Misc Receipt</doName>
+    <doTitle>Miscellaneous Receipt Entry</doTitle>
+    <doModule>RM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>MRP</doObjectID>
+    <doTable>MRPSessions</doTable>
+    <doName>Mfg Req Planner</doName>
+    <doTitle>Mfg Req Planner</doTitle>
+    <doModule>JM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>NonConformance</doObjectID>
+    <doTable>NONCONFORMANCES</doTable>
+    <doName>NonConformance</doName>
+    <doTitle>NonConformance Entry</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>NonConformanceCause</doObjectID>
+    <doTable>NONCONFORMANCECAUSES</doTable>
+    <doName>NonConformance Cause</doName>
+    <doTitle>NonConformance Cause Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>NonConformanceCode</doObjectID>
+    <doTable>NONCONFORMANCECODES</doTable>
+    <doName>NonConformance Code</doName>
+    <doTitle>NonConformance Code Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>NonConformCategory</doObjectID>
+    <doTable>NONCONFORMANCECATEGORIES</doTable>
+    <doName>NonCon Category</doName>
+    <doTitle>NonConformance Category Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Organization</doObjectID>
+    <doTable>ORGANIZATIONS</doTable>
+    <doName>Organization</doName>
+    <doTitle>Organization Entry</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>OrganizationExplorer</doObjectID>
+    <doTable>ORGANIZATIONS</doTable>
+    <doName>Organization</doName>
+    <doTitle>Organization Explorer</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Part</doObjectID>
+    <doTable>PARTS</doTable>
+    <doName>Part</doName>
+    <doTitle>Part Entry</doTitle>
+    <doTreeLoader>M1.Ax.Erp.Forms.Production.Inventory.PartSchemaDataLoader</doTreeLoader>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PartAdvisorPO</doObjectID>
+    <doTable>PARTS</doTable>
+    <doName>Part</doName>
+    <doTitle>Part Advisor (Purchasing)</doTitle>
+    <doModule>PM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PartAdvisorQuote</doObjectID>
+    <doTable>PARTS</doTable>
+    <doName>Part</doName>
+    <doTitle>Part Advisor (Quoting)</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PartClass</doObjectID>
+    <doTable>PARTCLASSES</doTable>
+    <doName>Part Class</doName>
+    <doTitle>Part Class Maintenance</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PartExplorer</doObjectID>
+    <doTable>PARTS</doTable>
+    <doName>Part</doName>
+    <doTitle>Part Explorer</doTitle>
+    <doTreeLoader>M1.Ax.Erp.Forms.Production.Inventory.PartSchemaDataLoader</doTreeLoader>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PARTFORECAST</doObjectID>
+    <doTable>PARTFORECASTS</doTable>
+    <doName>Part Forecasts</doName>
+    <doTitle>Part Forecast Entry</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PartGroup</doObjectID>
+    <doTable>PARTGROUPS</doTable>
+    <doName>Part Group</doName>
+    <doTitle>Part Group Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PartPrice</doObjectID>
+    <doTable>PARTPRICES</doTable>
+    <doName>Part Price</doName>
+    <doTitle>Part Price Maintenance</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PaymentMethod</doObjectID>
+    <doTable>PAYMENTMETHODS</doTable>
+    <doName>Payment Method</doName>
+    <doTitle>Payment Method Maintenance</doTitle>
+    <doModule>PS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PaymentTerm</doObjectID>
+    <doTable>PAYMENTTERMS</doTable>
+    <doName>Payment Term</doName>
+    <doTitle>Payment Term Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Payroll</doObjectID>
+    <doTable>PAYROLLSESSIONS</doTable>
+    <doName>Payroll</doName>
+    <doTitle>Payroll Entry</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PayrollDefinition</doObjectID>
+    <doTable>PAYROLLDEFINITIONS</doTable>
+    <doName>Payroll Definition</doName>
+    <doTitle>Payroll Definition Maintenance</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PayrollNZYear</doObjectID>
+    <doTable>PAYROLLNZYEARS</doTable>
+    <doName>Payroll NZ Year</doName>
+    <doTitle>Payroll NZ E-File Entry</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PayrollOpenLoad</doObjectID>
+    <doTable>PAYROLLSESSIONS</doTable>
+    <doName>Payroll</doName>
+    <doTitle>Payroll Open Balance Load</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PayrollRate</doObjectID>
+    <doTable>PAYROLLRATES</doTable>
+    <doName>Payroll Rate</doName>
+    <doTitle>Payroll Rate Maintenance</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Plant</doObjectID>
+    <doTable>PLANTS</doTable>
+    <doName>Plant</doName>
+    <doTitle>Plant Maintenance</doTitle>
+    <doModule>MW</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PO</doObjectID>
+    <doTable>PURCHASEORDERS</doTable>
+    <doName>PO</doName>
+    <doTitle>Purchase Order Entry</doTitle>
+    <doModule>PM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>POExplorer</doObjectID>
+    <doTable>PURCHASEORDERS</doTable>
+    <doName>PO</doName>
+    <doTitle>Purchase Order Explorer</doTitle>
+    <doModule>PM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PointOfSaleTerminal</doObjectID>
+    <doTable>POINTOFSALETERMINALS</doTable>
+    <doName>POS Terminal</doName>
+    <doTitle>Point of Sale Terminal</doTitle>
+    <doModule>PS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>POSSessionExplorer</doObjectID>
+    <doTable>POSSESSIONS</doTable>
+    <doName>POS Session</doName>
+    <doTitle>Point Of Sale Session</doTitle>
+    <doModule>PS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>POSTransExplorer</doObjectID>
+    <doTable>POSTRANSACTIONS</doTable>
+    <doName>POS Transaction</doName>
+    <doTitle>Point Of Sale Transaction</doTitle>
+    <doModule>PS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Priority</doObjectID>
+    <doTable>PRIORITIES</doTable>
+    <doName>Priority</doName>
+    <doTitle>Priority Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Process</doObjectID>
+    <doTable>PROCESSES</doTable>
+    <doName>Process</doName>
+    <doTitle>Process Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ProductCategory</doObjectID>
+    <doTable>PRODUCTCATEGORIES</doTable>
+    <doName>Product Category</doName>
+    <doTitle>Product Category Maintenance</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ProductConfigurator</doObjectID>
+    <doTable>PARTS</doTable>
+    <doName>Part</doName>
+    <doTitle>Product Configurator</doTitle>
+    <doModule>PC</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ProductionCalendar</doObjectID>
+    <doTable>PRODUCTIONCALENDARS</doTable>
+    <doName>Production Calendar</doName>
+    <doTitle>Production Calendar Maintenance</doTitle>
+    <doModule>JM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ProductionDepartment</doObjectID>
+    <doTable>PRODUCTIONDEPARTMENTS</doTable>
+    <doName>Department</doName>
+    <doTitle>Production Department Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Project</doObjectID>
+    <doTable>PROJECTS</doTable>
+    <doName>Project</doName>
+    <doTitle>Project Entry</doTitle>
+    <doModule>PR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ProjectedPayment</doObjectID>
+    <doTable>PROJECTEDPAYMENTS</doTable>
+    <doName>Projected Payment</doName>
+    <doTitle>Projected Payment Maintenance</doTitle>
+    <doModule>GL</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ProjectType</doObjectID>
+    <doTable>PROJECTTYPES</doTable>
+    <doName>Project Type</doName>
+    <doTitle>Project Type Maintenance</doTitle>
+    <doModule>PR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>PurchasePlanner</doObjectID>
+    <doTable>PURCHASEPLANNERSESSIONS</doTable>
+    <doName>Purchase Planner</doName>
+    <doTitle>Purchase Planner</doTitle>
+    <doModule>PM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>QuantityAdjustment</doObjectID>
+    <doTable>QUANTITYADJUSTMENTS</doTable>
+    <doName>Quantity Adjustment</doName>
+    <doTitle>Quantity Adjustment Entry</doTitle>
+    <doModule>IM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Quote</doObjectID>
+    <doTable>QUOTES</doTable>
+    <doName>Quote</doName>
+    <doTitle>Quote Entry</doTitle>
+    <doModule>QM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>QuoteExplorer</doObjectID>
+    <doTable>QUOTES</doTable>
+    <doName>Quote</doName>
+    <doTitle>Quote Explorer</doTitle>
+    <doModule>QM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Reason</doObjectID>
+    <doTable>REASONS</doTable>
+    <doName>Reason</doName>
+    <doTitle>Reason Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Receipt</doObjectID>
+    <doTable>RECEIPTS</doTable>
+    <doName>Receipt</doName>
+    <doTitle>Receipt Entry</doTitle>
+    <doModule>RM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ReceiptExplorer</doObjectID>
+    <doTable>RECEIPTS</doTable>
+    <doName>Receipt</doName>
+    <doTitle>Receipt Explorer</doTitle>
+    <doModule>RM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RecurringJournal</doObjectID>
+    <doTable>GLRECURRINGJOURNALS</doTable>
+    <doName>Recurring Journal</doName>
+    <doTitle>Recurring Journal Maintenance</doTitle>
+    <doModule>GL</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RecurringPayment</doObjectID>
+    <doTable>APRECURRINGPAYMENTS</doTable>
+    <doName>Recurring Payment</doName>
+    <doTitle>Recurring Payment Maintenance</doTitle>
+    <doModule>AP</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RFQ</doObjectID>
+    <doTable>RFQS</doTable>
+    <doName>RFQ</doName>
+    <doTitle>RFQ Entry</doTitle>
+    <doModule>RQ</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RFQExplorer</doObjectID>
+    <doTable>RFQS</doTable>
+    <doName>RFQ</doName>
+    <doTitle>RFQ Explorer</doTitle>
+    <doModule>RQ</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RMAActionType</doObjectID>
+    <doTable>RMAACTIONTYPES</doTable>
+    <doName>RMA Action Types</doName>
+    <doTitle>RMA Action Type Maintenance</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RMAClaim</doObjectID>
+    <doTable>RMACLAIMS</doTable>
+    <doName>RMA Claim</doName>
+    <doTitle>RMA Claim Entry</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RMAClaimExplorer</doObjectID>
+    <doTable>RMACLAIMS</doTable>
+    <doName>RMA Claim</doName>
+    <doTitle>RMA Claim Explorer</doTitle>
+    <doModule>QA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>RMAReceipt</doObjectID>
+    <doTable>RMARECEIPTS</doTable>
+    <doName>RMA Receipt</doName>
+    <doTitle>RMA Receipt Entry</doTitle>
+    <doModule>RR</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SalesOrder</doObjectID>
+    <doTable>SALESORDERS</doTable>
+    <doName>Sales Order</doName>
+    <doTitle>Sales Order Entry</doTitle>
+    <doModule>OM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SalesOrderExplorer</doObjectID>
+    <doTable>SALESORDERS</doTable>
+    <doName>Sales Order</doName>
+    <doTitle>Sales Order Explorer</doTitle>
+    <doModule>OM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SalesOrderPicklist</doObjectID>
+    <doTable>SALESORDERPICKLISTSESSIONS</doTable>
+    <doName>Pick List Session</doName>
+    <doTitle>Pick List Session</doTitle>
+    <doModule>OM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Scenario</doObjectID>
+    <doTable>JOBSCENARIOS</doTable>
+    <doName>Scenario</doName>
+    <doTitle>Scenario Maintenance</doTitle>
+    <doModule>VS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SerialNumberExplorer</doObjectID>
+    <doTable>SERIALNUMBERS</doTable>
+    <doName>Serial Number</doName>
+    <doTitle>Serial Number Explorer</doTitle>
+    <doModule>AB</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ServiceContract</doObjectID>
+    <doTable>SERVICECONTRACTS</doTable>
+    <doName>Service Contract</doName>
+    <doTitle>Service Contract Entry</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ServiceContractType</doObjectID>
+    <doTable>SERVICECONTRACTTYPES</doTable>
+    <doName>Contract Type</doName>
+    <doTitle>Service Contract Type Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Shift</doObjectID>
+    <doTable>SHIFTS</doTable>
+    <doName>Shift</doName>
+    <doTitle>Shift Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Shipment</doObjectID>
+    <doTable>SHIPMENTS</doTable>
+    <doName>Shipment</doName>
+    <doTitle>Shipment Entry</doTitle>
+    <doModule>SM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ShipmentExplorer</doObjectID>
+    <doTable>SHIPMENTS</doTable>
+    <doName>Shipment</doName>
+    <doTitle>Shipment Explorer</doTitle>
+    <doModule>SM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ShippingMethod</doObjectID>
+    <doTable>SHIPPINGMETHODS</doTable>
+    <doName>Shipping Method</doName>
+    <doTitle>Shipping Method Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ShippingPaymentType</doObjectID>
+    <doTable>SHIPPINGPAYMENTTYPES</doTable>
+    <doName>Ship Payment Type</doName>
+    <doTitle>Shipping Payment Type Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SKILL</doObjectID>
+    <doTable>SKILLS</doTable>
+    <doName>Skills</doName>
+    <doTitle>Skills Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SKILLCOMPETENCY</doObjectID>
+    <doTable>SKILLCOMPETENCIES</doTable>
+    <doName>Skill Competencies</doName>
+    <doTitle>Competency Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>StandardMessage</doObjectID>
+    <doTable>STANDARDMESSAGES</doTable>
+    <doName>Standard Message</doName>
+    <doTitle>Standard Message Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>StateUITaxYear</doObjectID>
+    <doTable>StateUITaxYears</doTable>
+    <doName>State UITax Year</doName>
+    <doTitle>State UITax Year Form</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>STP</doObjectID>
+    <doTable>STPSessions</doTable>
+    <doName>STP Session</doName>
+    <doTitle>STP Entry</doTitle>
+    <doModule>PA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SuperannuationFund</doObjectID>
+    <doTable>SuperannuationFunds</doTable>
+    <doName>Superannuation Fund</doName>
+    <doTitle>Superannuation Fund Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>SupplierRating</doObjectID>
+    <doTable>SUPPLIERRATINGS</doTable>
+    <doName>Supplier Rating</doName>
+    <doTitle>Supplier Rating Maintenance</doTitle>
+    <doModule>CM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Tax</doObjectID>
+    <doTable>TAXCODES</doTable>
+    <doName>Tax</doName>
+    <doTitle>Tax Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Timecard</doObjectID>
+    <doTable>TIMECARDS</doTable>
+    <doName>Timecard</doName>
+    <doTitle>Timecard Entry</doTitle>
+    <doModule>LM</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Tool</doObjectID>
+    <doTable>Tools</doTable>
+    <doName>Tool</doName>
+    <doTitle>Tool Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ToolCategory</doObjectID>
+    <doTable>ToolCategories</doTable>
+    <doName>Tool Category</doName>
+    <doTitle>Tool Category Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>ToolMovement</doObjectID>
+    <doTable>ToolMovements</doTable>
+    <doName>Tool Movement</doName>
+    <doTitle>Tool Movement Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>Warehouse</doObjectID>
+    <doTable>WAREHOUSES</doTable>
+    <doName>Warehouse</doName>
+    <doTitle>Warehouse Maintenance</doTitle>
+    <doModule>MW</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>WarehouseReceipt</doObjectID>
+    <doTable>WarehouseReceipts</doTable>
+    <doName>Warehouse Receipt</doName>
+    <doTitle>Warehouse Receipt Entry</doTitle>
+    <doModule>MW</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>WarehouseRequisition</doObjectID>
+    <doTable>WAREHOUSEREQUISITIONS</doTable>
+    <doName>WH Requisition</doName>
+    <doTitle>Warehouse Requisition Entry</doTitle>
+    <doModule>MW</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>WarehouseTransfer</doObjectID>
+    <doTable>WAREHOUSETRANSFERS</doTable>
+    <doName>Warehouse Transfer</doName>
+    <doTitle>Warehouse Transfer Entry</doTitle>
+    <doModule>MW</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>WorkCenter</doObjectID>
+    <doTable>WORKCENTERS</doTable>
+    <doName>Work Centre</doName>
+    <doTitle>Work Center Maintenance</doTitle>
+    <doModule>XA</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+  <DDObjects>
+    <doObjectID>WorkCenterGantt</doObjectID>
+    <doTable>WORKCENTERS</doTable>
+    <doName>Work Centre</doName>
+    <doTitle>Scheduling Board</doTitle>
+    <doModule>VS</doModule>
+    <doAppExtensionID>M1ERP</doAppExtensionID>
+    <doCustom>false</doCustom>
+  </DDObjects>
+</NewDataSet>

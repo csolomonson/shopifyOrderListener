@@ -1,0 +1,103 @@
+using M1.Core;
+
+namespace M1.Ax.Erp.DD;
+
+[DBConversion("8.10.050", "Convert APInvoiceLines to support unicode", "2013-10-17")]
+public class v810RebuildAPInvoiceLines
+{
+	public v810RebuildAPInvoiceLines(DBConversionParms parms)
+	{
+		parms.ServerManager.ExecuteCommand(null, parms.User, parms.DatabaseName, "Update APInvoiceLines Set aplForm1099Box = 0 Where aplForm1099Box = -1");
+		parms.Dmo.RebuildTable(null, parms.User, parms.DataDictionary, parms.DatabaseName, "APInvoiceLines", new DmoField[62]
+		{
+			new DmoField("aplAPInvoiceID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplAPInvoiceLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("aplPurchaseOrderID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplPurchaseOrderLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("aplReceiptID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplReceiptLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("aplRMAClaimID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplDMRClaimID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplDMRClaimLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("aplRMAClaimLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("aplJobID", "nvarchar", 20, 0, nullable: false),
+			new DmoField("aplJobAssemblyID", "int", 5, 0, nullable: false),
+			new DmoField("aplJobType", "tinyint", 1, 0, nullable: false),
+			new DmoField("aplJobMaterialID", "int", 5, 0, nullable: false),
+			new DmoField("aplJobOperationID", "int", 5, 0, nullable: false),
+			new DmoField("aplPartID", "nvarchar", 30, 0, nullable: false),
+			new DmoField("aplOrgPartID", "nvarchar", 30, 0, nullable: false),
+			new DmoField("aplPartRevisionID", "nvarchar", 15, 0, nullable: false),
+			new DmoField("aplPartDescription", "nvarchar", 50, 0, nullable: false),
+			new DmoField("aplOrgPartShortDescription", "nvarchar", 50, 0, nullable: false),
+			new DmoField("aplPartLongDescriptionRTF", "nvarchar(max)", 50, 0, nullable: true),
+			new DmoField("aplPartLongDescriptionText", "nvarchar(max)", 50, 0, nullable: true),
+			new DmoField("aplPurchaseQuantity", "numeric", 15, 5, nullable: false),
+			new DmoField("aplPurchaseUnitOfMeasure", "nvarchar", 2, 0, nullable: false),
+			new DmoField("aplPurchaseUnitCostBase", "numeric", 15, 5, nullable: false),
+			new DmoField("aplPurchaseUnitCostForeign", "numeric", 15, 5, nullable: false),
+			new DmoField("aplSetupChargeBase", "numeric", 9, 2, nullable: false),
+			new DmoField("aplSetupChargeForeign", "numeric", 9, 2, nullable: false),
+			new DmoField("aplConversionFactor", "numeric", 14, 8, nullable: false),
+			new DmoField("aplReceivedQuantity", "numeric", 15, 5, nullable: false),
+			new DmoField("aplReceivedUnitOfMeasure", "nvarchar", 2, 0, nullable: false),
+			new DmoField("aplExtendedCostBase", "money", 12, 2, nullable: false),
+			new DmoField("aplExtendedCostForeign", "money", 12, 2, nullable: false),
+			new DmoField("aplTaxCodeID", "nvarchar", 5, 0, nullable: false),
+			new DmoField("aplTaxAmountBase", "money", 14, 4, nullable: false),
+			new DmoField("aplTaxAmountForeign", "money", 14, 4, nullable: false),
+			new DmoField("aplNonTaxReasonID", "nvarchar", 5, 0, nullable: false),
+			new DmoField("aplSecondTaxCodeID", "nvarchar", 5, 0, nullable: false),
+			new DmoField("aplSecondTaxAmountBase", "money", 14, 4, nullable: false),
+			new DmoField("aplSecondTaxAmountForeign", "money", 14, 4, nullable: false),
+			new DmoField("aplInvoicedComplete", "bit", 1, 0, nullable: false),
+			new DmoField("aplPostedToGL", "bit", 1, 0, nullable: false),
+			new DmoField("aplDMRShipmentID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplDMRShipmentLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("aplRetention", "bit", 1, 0, nullable: false),
+			new DmoField("aplRetentionPercent", "numeric", 6, 2, nullable: false),
+			new DmoField("aplRetentionAmountBase", "money", 12, 2, nullable: false),
+			new DmoField("aplRetentionAmountForeign", "money", 12, 2, nullable: false),
+			new DmoField("aplRetentionReleaseDate", "datetime", 14, 0, nullable: true),
+			new DmoField("aplAssetTypeID", "nvarchar", 5, 0, nullable: false),
+			new DmoField("aplAssetID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplItemType", "nvarchar", 1, 0, nullable: false),
+			new DmoField("aplTotalExtendedCostBase", "money", 12, 2, nullable: false),
+			new DmoField("aplTotalExtendedCostForeign", "money", 12, 2, nullable: false),
+			new DmoField("aplLandedCostID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplLandedCostChargeID", "smallint", 3, 0, nullable: false),
+			new DmoField("aplForm1099Box", "tinyint", 2, 0, nullable: false),
+			new DmoField("aplCreatedBy", "nvarchar", 20, 0, nullable: false),
+			new DmoField("aplCreatedDate", "datetime", 14, 0, nullable: true),
+			new DmoField("aplUniqueID", "uniqueidentifier", 16, 0, nullable: false),
+			new DmoField("aplProjectID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("aplProjectAreaID", "nvarchar", 15, 0, nullable: false)
+		}, new DmoIndex[24]
+		{
+			new DmoIndex("APLAPINVOICEID,APLAPINVOICELINEID", unique: true),
+			new DmoIndex("APLUNIQUEID", unique: true),
+			new DmoIndex("aplAPInvoiceID", unique: false),
+			new DmoIndex("aplAPInvoiceLineID", unique: false),
+			new DmoIndex("aplPurchaseOrderID", unique: false),
+			new DmoIndex("aplPurchaseOrderLineID", unique: false),
+			new DmoIndex("aplReceiptID", unique: false),
+			new DmoIndex("aplReceiptLineID", unique: false),
+			new DmoIndex("aplRMAClaimID", unique: false),
+			new DmoIndex("aplDMRClaimID", unique: false),
+			new DmoIndex("aplDMRClaimLineID", unique: false),
+			new DmoIndex("aplRMAClaimLineID", unique: false),
+			new DmoIndex("aplPartID", unique: false),
+			new DmoIndex("aplOrgPartID", unique: false),
+			new DmoIndex("aplPartRevisionID", unique: false),
+			new DmoIndex("aplPostedToGL", unique: false),
+			new DmoIndex("aplDMRShipmentID", unique: false),
+			new DmoIndex("aplDMRShipmentLineID", unique: false),
+			new DmoIndex("aplAssetTypeID", unique: false),
+			new DmoIndex("aplAssetID", unique: false),
+			new DmoIndex("aplLandedCostID", unique: false),
+			new DmoIndex("aplLandedCostChargeID", unique: false),
+			new DmoIndex("aplProjectID", unique: false),
+			new DmoIndex("aplProjectAreaID", unique: false)
+		}, mergeCustomFields: true, disableTriggers: true);
+	}
+}

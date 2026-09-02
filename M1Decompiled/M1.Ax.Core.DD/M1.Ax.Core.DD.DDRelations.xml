@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDRelations" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDRelations">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="drRelationID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="drPTable" type="xs:string" minOccurs="0" />
+                <xs:element name="drPField" type="xs:string" minOccurs="0" />
+                <xs:element name="drCTable" type="xs:string" minOccurs="0" />
+                <xs:element name="drCField" type="xs:string" minOccurs="0" />
+                <xs:element name="drFilter" type="xs:string" minOccurs="0" />
+                <xs:element name="drPersist" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drSaveAs" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drForeign" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drNonKey" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drReseqDetails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drDFilter" type="xs:string" minOccurs="0" />
+                <xs:element name="drCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drIgnore" type="xs:boolean" minOccurs="0" />
+                <xs:element name="drAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDRelations>
+    <drRelationID>c1fe213f-1397-4460-96e1-f5d8191b914c</drRelationID>
+    <drPTable>CurrencyRates</drPTable>
+    <drPField>MCPCURRENCYRATEID</drPField>
+    <drCTable>CurrencyRateLines</drCTable>
+    <drCField>MCLCURRENCYRATEID</drCField>
+    <drFilter />
+    <drPersist>true</drPersist>
+    <drSaveAs>false</drSaveAs>
+    <drForeign>false</drForeign>
+    <drNonKey>false</drNonKey>
+    <drReseqDetails>false</drReseqDetails>
+    <drDFilter />
+    <drCustom>false</drCustom>
+    <drIgnore>false</drIgnore>
+    <drAppExtensionID>M1CORE</drAppExtensionID>
+  </DDRelations>
+</NewDataSet>

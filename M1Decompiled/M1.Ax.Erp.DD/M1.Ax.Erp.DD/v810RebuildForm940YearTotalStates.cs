@@ -1,0 +1,34 @@
+using M1.Core;
+
+namespace M1.Ax.Erp.DD;
+
+[DBConversion("8.10.050", "Convert Form940YearTotalStates to support unicode", "2013-10-17")]
+public class v810RebuildForm940YearTotalStates
+{
+	public v810RebuildForm940YearTotalStates(DBConversionParms parms)
+	{
+		parms.Dmo.RebuildTable(null, parms.User, parms.DataDictionary, parms.DatabaseName, "Form940YearTotalStates", new DmoField[12]
+		{
+			new DmoField("pfsForm940YearID", "smallint", 4, 0, nullable: false),
+			new DmoField("pfsPlantID", "nvarchar", 5, 0, nullable: false),
+			new DmoField("pfsForm940YearTotalID", "smallint", 4, 0, nullable: false),
+			new DmoField("pfsForm940YearTotalStateID", "tinyint", 2, 0, nullable: false),
+			new DmoField("pfsState", "nvarchar", 2, 0, nullable: false),
+			new DmoField("pfsFUTATaxableWages", "money", 12, 2, nullable: false),
+			new DmoField("pfsReductionRate", "numeric", 5, 3, nullable: false),
+			new DmoField("pfsCreditReduction", "money", 12, 2, nullable: false),
+			new DmoField("pfsClosed", "bit", 1, 0, nullable: false),
+			new DmoField("pfsCreatedBy", "nvarchar", 20, 0, nullable: false),
+			new DmoField("pfsCreatedDate", "datetime", 14, 0, nullable: true),
+			new DmoField("pfsUniqueID", "uniqueidentifier", 16, 0, nullable: false)
+		}, new DmoIndex[6]
+		{
+			new DmoIndex("PFSFORM940YEARID,PFSPLANTID,PFSFORM940YEARTOTALID,PFSFORM940YEARTOTALSTATEID", unique: true),
+			new DmoIndex("PFSUNIQUEID", unique: true),
+			new DmoIndex("pfsForm940YearID", unique: false),
+			new DmoIndex("pfsPlantID", unique: false),
+			new DmoIndex("pfsForm940YearTotalID", unique: false),
+			new DmoIndex("pfsForm940YearTotalStateID", unique: false)
+		}, mergeCustomFields: true, disableTriggers: true);
+	}
+}

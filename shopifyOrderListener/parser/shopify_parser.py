@@ -183,6 +183,7 @@ CENTRALGARAGEREPAIRS@GMAIL.COM
 Shopify
 
 151 O'Connor Street, Ground floor, Ottawa, ON, K2P 2L8'''
+from api.reader import get_customer_by_email
 
 def parse_shopify(message):
     #print(message.text.split('\n'))
@@ -248,7 +249,7 @@ def parse_customer(body):
         country = customer_body[12]
         phone = customer_body[14]
         email = customer_body[customer_body.index('Customer email')+2]
-
+    print(get_customer_by_email(email))
     return {'Is Business' : is_business,
             'Name': name,
             'Business': business,

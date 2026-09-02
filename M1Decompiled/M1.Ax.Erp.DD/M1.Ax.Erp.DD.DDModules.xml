@@ -1,0 +1,591 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDModules" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDModules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ddmModuleID" type="xs:string" minOccurs="0" />
+                <xs:element name="ddmCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="ddmPropertiesTable" type="xs:string" minOccurs="0" />
+                <xs:element name="ddmSecurityTables" type="xs:string" minOccurs="0" />
+                <xs:element name="ddmSecurityModules" type="xs:string" minOccurs="0" />
+                <xs:element name="ddmVirtual" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ddmPropertiesFieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="ddmPropertiesFieldValue" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ddmCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ddmAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDModules>
+    <ddmModuleID>AB</ddmModuleID>
+    <ddmCaption>Advanced Bill of Material</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>AP</ddmModuleID>
+    <ddmCaption>Accounts Payable</ddmCaption>
+    <ddmPropertiesTable>FinancialProperties</ddmPropertiesTable>
+    <ddmSecurityTables>APInvoices,APPaymentSessions</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>AR</ddmModuleID>
+    <ddmCaption>Accounts Receivable</ddmCaption>
+    <ddmPropertiesTable>FinancialProperties</ddmPropertiesTable>
+    <ddmSecurityTables>ARInvoices,ARPaymentSessions</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>AT</ddmModuleID>
+    <ddmCaption>Attachments</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules>DM,HD</ddmSecurityModules>
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>CH</ddmModuleID>
+    <ddmCaption>Change Request Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>ChangeRequests</ddmSecurityTables>
+    <ddmSecurityModules>AB,HD</ddmSecurityModules>
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>CM</ddmModuleID>
+    <ddmCaption>Contact Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Organizations</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>DC</ddmModuleID>
+    <ddmCaption>Shop Floor Entry</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>DM</ddmModuleID>
+    <ddmCaption>Document Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>DocumentLinks</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>DR</ddmModuleID>
+    <ddmCaption>DMRClaims</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>DMRClaims</ddmSecurityTables>
+    <ddmSecurityModules>QA</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>DS</ddmModuleID>
+    <ddmCaption>Database</ddmCaption>
+    <ddmPropertiesTable>DatasetProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>EM</ddmModuleID>
+    <ddmCaption>HR Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Employees</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>FA</ddmModuleID>
+    <ddmCaption>Fixed Assets</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Assets</ddmSecurityTables>
+    <ddmSecurityModules>GL</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>FN</ddmModuleID>
+    <ddmCaption>Financial</ddmCaption>
+    <ddmPropertiesTable>FinancialProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>GL</ddmModuleID>
+    <ddmCaption>General Ledger</ddmCaption>
+    <ddmPropertiesTable>FinancialProperties</ddmPropertiesTable>
+    <ddmSecurityTables>GLJournals</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>HD</ddmModuleID>
+    <ddmCaption>Call Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Calls</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>IM</ddmModuleID>
+    <ddmCaption>Inventory Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Parts</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>JM</ddmModuleID>
+    <ddmCaption>Job Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Jobs</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>LB</ddmModuleID>
+    <ddmCaption>Leave Board</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules>PA</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>LM</ddmModuleID>
+    <ddmCaption>Timecard Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Timecards</ddmSecurityTables>
+    <ddmSecurityModules>JM</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>LN</ddmModuleID>
+    <ddmCaption>Lot Numbers</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules>AB</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName>xadDisableLotNumbers</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>LO</ddmModuleID>
+    <ddmCaption>Lead Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Leads</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>MC</ddmModuleID>
+    <ddmCaption>Multi-currency</ddmCaption>
+    <ddmPropertiesTable>DatasetProperties</ddmPropertiesTable>
+    <ddmSecurityTables>CurrencyRates</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName>xadEnableMultiCurrency</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>true</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>MP</ddmModuleID>
+    <ddmCaption>Multi-plant</ddmCaption>
+    <ddmPropertiesTable>FinancialProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules>MW</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName>xafDisableMultiplePlants</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>MW</ddmModuleID>
+    <ddmCaption>Advanced Inventory Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>WarehouseTransfers</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>NN</ddmModuleID>
+    <ddmCaption>Non-nettable</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules>MW</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName>xadEnableNonNettable</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>true</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>OM</ddmModuleID>
+    <ddmCaption>Sales Order Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>SalesOrders</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PA</ddmModuleID>
+    <ddmCaption>Payroll</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>PayrollSessions</ddmSecurityTables>
+    <ddmSecurityModules>PA</ddmSecurityModules>
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PC</ddmModuleID>
+    <ddmCaption>Product Configurator</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PG</ddmModuleID>
+    <ddmCaption>Point of Sale Manufacturing</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>ARInvoices</ddmSecurityTables>
+    <ddmSecurityModules>PS</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName>xadDisablePOSManufacturing</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PL</ddmModuleID>
+    <ddmCaption>Point of Sale Retail</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>POSSessions</ddmSecurityTables>
+    <ddmSecurityModules>PS</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName>xadDisablePOSRetail</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PM</ddmModuleID>
+    <ddmCaption>Purchasing Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>PurchaseOrders</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PN</ddmModuleID>
+    <ddmCaption>Production</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PR</ddmModuleID>
+    <ddmCaption>Project Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Projects</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>PS</ddmModuleID>
+    <ddmCaption>Point of Sale</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>ARInvoices</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>QA</ddmModuleID>
+    <ddmCaption>Quality Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Inspections,RMAClaims,DMRClaims</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>QM</ddmModuleID>
+    <ddmCaption>Quote Management</ddmCaption>
+    <ddmPropertiesTable>ProductionProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Quotes</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>RA</ddmModuleID>
+    <ddmCaption>RMAClaims</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>RMAClaims</ddmSecurityTables>
+    <ddmSecurityModules>QA</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>RM</ddmModuleID>
+    <ddmCaption>Receipts</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Receipts</ddmSecurityTables>
+    <ddmSecurityModules>PM</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>RQ</ddmModuleID>
+    <ddmCaption>RFQ Management</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Rfqs</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>RR</ddmModuleID>
+    <ddmCaption>RmaReceipts</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>RmaReceipts</ddmSecurityTables>
+    <ddmSecurityModules>PM</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>RS</ddmModuleID>
+    <ddmCaption>Receipts and RMAReceipts</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>Receipts,RMAReceipts</ddmSecurityTables>
+    <ddmSecurityModules>PM</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>SM</ddmModuleID>
+    <ddmCaption>Shipping Management</ddmCaption>
+    <ddmPropertiesTable>ShippingProperties</ddmPropertiesTable>
+    <ddmSecurityTables>Shipments</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>SN</ddmModuleID>
+    <ddmCaption>Serial Numbers</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules>AB</ddmSecurityModules>
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName>xadDisableSerialNumbers</ddmPropertiesFieldName>
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>VS</ddmModuleID>
+    <ddmCaption>Scheduling</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables>JobSchedules</ddmSecurityTables>
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>WE</ddmModuleID>
+    <ddmCaption>WebGear E-Commerce</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>WG</ddmModuleID>
+    <ddmCaption>WebGear Explorer</ddmCaption>
+    <ddmPropertiesTable>WebGearProperties</ddmPropertiesTable>
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>false</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+  <DDModules>
+    <ddmModuleID>XA</ddmModuleID>
+    <ddmCaption>Cross Application</ddmCaption>
+    <ddmPropertiesTable />
+    <ddmSecurityTables />
+    <ddmSecurityModules />
+    <ddmVirtual>true</ddmVirtual>
+    <ddmPropertiesFieldName />
+    <ddmPropertiesFieldValue>false</ddmPropertiesFieldValue>
+    <ddmCustom>false</ddmCustom>
+    <ddmAppExtensionID>M1ERP</ddmAppExtensionID>
+  </DDModules>
+</NewDataSet>

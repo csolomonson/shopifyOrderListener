@@ -1,0 +1,5349 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDForms" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDForms">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dmUniqueID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="dmFormID" type="xs:string" minOccurs="0" />
+                <xs:element name="dmTable" type="xs:string" minOccurs="0" />
+                <xs:element name="dmCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="dmHelpLink" type="xs:string" minOccurs="0" />
+                <xs:element name="dmVID" type="xs:string" minOccurs="0" />
+                <xs:element name="dmCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dmType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dmFormType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dmAllInDD" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dmDesGroup" type="xs:string" minOccurs="0" />
+                <xs:element name="dmAssemblies" type="xs:string" minOccurs="0" />
+                <xs:element name="dmAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDForms>
+    <dmUniqueID>4c202f47-b945-4ca6-ac5f-3e6274c3da8a</dmUniqueID>
+    <dmFormID>CountyCodeView</dmFormID>
+    <dmTable>CountyCodes</dmTable>
+    <dmCaption>County Code</dmCaption>
+    <dmHelpLink>LM_CountyCodeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e5d6f581-a3f7-44a8-a14b-c8ca4f72fe6b</dmUniqueID>
+    <dmFormID>DMRShipmentView</dmFormID>
+    <dmTable>DMRShipments</dmTable>
+    <dmCaption>DMRShipment</dmCaption>
+    <dmHelpLink>SM_DMRShipEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c4d91a25-b1a9-488f-a9fd-41d643223658</dmUniqueID>
+    <dmFormID>Form940YearTotalStateView</dmFormID>
+    <dmTable>Form940YearTotalStates</dmTable>
+    <dmCaption>Form940 Year Total State</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c62352f1-0717-4057-8eaf-56f8aed016fe</dmUniqueID>
+    <dmFormID>Form940YearTotalView</dmFormID>
+    <dmTable>Form940YearTotals</dmTable>
+    <dmCaption>Form940 Year Total</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>08e29032-6b9f-4c4e-a561-5666061905e2</dmUniqueID>
+    <dmFormID>Form940YearView</dmFormID>
+    <dmTable>Form940Years</dmTable>
+    <dmCaption>Form940 Year</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ad4f7ec4-711f-4732-936c-2f70cb08e343</dmUniqueID>
+    <dmFormID>frmAdjustLeaveHours</dmFormID>
+    <dmTable />
+    <dmCaption>Adjust Leave Hours</dmCaption>
+    <dmHelpLink>PA_AdjustLeaveHours.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5a7354cc-a1da-49c5-a78d-d5cf0fc88d51</dmUniqueID>
+    <dmFormID>frmAgingSelect</dmFormID>
+    <dmTable />
+    <dmCaption>Select Aging Definition</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d826f553-3a6a-4c5e-a8c9-14a783e62e02</dmUniqueID>
+    <dmFormID>frmAPAutopay</dmFormID>
+    <dmTable>APINVOICES</dmTable>
+    <dmCaption>Autopay Invoices</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>2273ec7f-0cbe-4899-b3bb-5108ba1ac168</dmUniqueID>
+    <dmFormID>frmAPInvoiceWizard</dmFormID>
+    <dmTable>APINVOICES</dmTable>
+    <dmCaption>AP Invoicing Wizard</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>395c3df7-82ae-412d-871c-551fa1637a87</dmUniqueID>
+    <dmFormID>frmAPRevaluateInvoices</dmFormID>
+    <dmTable>APINVOICES</dmTable>
+    <dmCaption>Revaluate AP Invoices</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9ef2a3a4-9890-4951-b91d-6a0fb9f740f4</dmUniqueID>
+    <dmFormID>frmAPVoid</dmFormID>
+    <dmTable />
+    <dmCaption>Void AP Payments</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5027158b-ed9a-4465-8a48-e1b6afd11bf1</dmUniqueID>
+    <dmFormID>frmARCreateDepositFromOrder</dmFormID>
+    <dmTable />
+    <dmCaption>Create Deposit Invoice</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a38a047d-f674-454e-aac2-7a5097f9874f</dmUniqueID>
+    <dmFormID>frmARRevaluateInvoices</dmFormID>
+    <dmTable>ARINVOICES</dmTable>
+    <dmCaption>Revaluate AR Invoices</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8696eb78-ff02-4b43-b8dc-67c3e0f41ffd</dmUniqueID>
+    <dmFormID>frmARTransferCOGS</dmFormID>
+    <dmTable>ARINVOICES</dmTable>
+    <dmCaption>Transfer Cost of Goods Sold</dmCaption>
+    <dmHelpLink>ar_transcogscostofsales.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>79de83db-9901-4dc6-9963-b7d5e0502731</dmUniqueID>
+    <dmFormID>frmARVoid</dmFormID>
+    <dmTable />
+    <dmCaption>Void AR Payments</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7cc63f7b-67e9-4065-a93a-38d0e6eb712f</dmUniqueID>
+    <dmFormID>frmAssetCreateJournals</dmFormID>
+    <dmTable />
+    <dmCaption>Create Journals</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4317d87c-cdbb-4b6e-a05c-13522c049856</dmUniqueID>
+    <dmFormID>frmBankRec</dmFormID>
+    <dmTable />
+    <dmCaption>Bank Reconciliation Statement</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>69db6bcf-35d5-4f6a-a7df-0b63ba9ea82f</dmUniqueID>
+    <dmFormID>frmCalculatorPunch</dmFormID>
+    <dmTable>PUNCHCALCULATORS</dmTable>
+    <dmCaption>Punch Calculator</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Calculators</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>685f909b-f695-43f7-86b3-1988661b0729</dmUniqueID>
+    <dmFormID>frmCalculatorSheet</dmFormID>
+    <dmTable>SHEETCALCULATORS</dmTable>
+    <dmCaption>Sheet Calculator</dmCaption>
+    <dmHelpLink>calculator_sheet.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Calculators</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c998aa32-5e18-477e-bc2f-6db654c430b9</dmUniqueID>
+    <dmFormID>frmCallQuickCreate</dmFormID>
+    <dmTable>CALLS</dmTable>
+    <dmCaption>Add Call To Queue</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9368d1c2-a16a-4ba9-bed6-e6e5e0fbb816</dmUniqueID>
+    <dmFormID>FRMCHANGEPASSWORD</dmFormID>
+    <dmTable />
+    <dmCaption>Change Password</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bf1a01b6-157a-4d95-8355-4783c1012a25</dmUniqueID>
+    <dmFormID>frmCostRollup</dmFormID>
+    <dmTable />
+    <dmCaption>Standard Cost Rollups</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4e49303f-507d-4132-acdc-0d06e06202ea</dmUniqueID>
+    <dmFormID>FRMCURRENTACTIVITY</dmFormID>
+    <dmTable />
+    <dmCaption>Current Activity</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>259ac5f6-b6a2-4cad-8621-87782a0d465e</dmUniqueID>
+    <dmFormID>FRMDBCONVERSIONS</dmFormID>
+    <dmTable />
+    <dmCaption>Confirm Update</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3c12f457-bb9c-47f4-92fc-4627e1ea09a1</dmUniqueID>
+    <dmFormID>FRMDESIGNSTUDIO</dmFormID>
+    <dmTable />
+    <dmCaption>M1 Design Studio</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d3600773-e178-4700-9d41-c1c36529658a</dmUniqueID>
+    <dmFormID>frmDocMgr</dmFormID>
+    <dmTable>DOCUMENTLINKS</dmTable>
+    <dmCaption>Document Manager</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f4d055d0-5137-49ce-871c-00653761f702</dmUniqueID>
+    <dmFormID>FRMDSMAINTBACKUP</dmFormID>
+    <dmTable />
+    <dmCaption>Backup Data</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d368cef0-0e80-4347-a480-479e53b7d2b7</dmUniqueID>
+    <dmFormID>FRMDSMAINTCODETOCHECK</dmFormID>
+    <dmTable />
+    <dmCaption>Confirm Code To Check</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>218d77fd-6085-4e3d-84f2-f76b54e6f5e4</dmUniqueID>
+    <dmFormID>FRMDSMAINTCOPY</dmFormID>
+    <dmTable />
+    <dmCaption>Attach Dataset</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b6e636da-fa80-47ad-a37b-ddba14c2dddc</dmUniqueID>
+    <dmFormID>FRMDSMAINTCURRENTCONNECTIONS</dmFormID>
+    <dmTable />
+    <dmCaption>Current SQL Server Connections</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d642f5a1-5208-48df-9634-cb8c3c70601e</dmUniqueID>
+    <dmFormID>FRMDSMAINTMAIN</dmFormID>
+    <dmTable />
+    <dmCaption>M1 Dataset Maintenance</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>20fbab12-830d-4e6f-bcf4-ad08b8e9eed6</dmUniqueID>
+    <dmFormID>FRMDSMAINTRENAME</dmFormID>
+    <dmTable />
+    <dmCaption>Rename Dataset</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ec3d9f3b-a710-4849-837c-8ea10ca247ce</dmUniqueID>
+    <dmFormID>FRMDSMAINTRESTORE</dmFormID>
+    <dmTable />
+    <dmCaption>Restore Data</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>fb674fbd-cb94-4700-a02f-c82bcc53f6b6</dmUniqueID>
+    <dmFormID>FRMDSMAINTSPACEUSED</dmFormID>
+    <dmTable />
+    <dmCaption>Space Used In Database</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8f353da4-8af6-4b2e-a1fe-8db3cdce7ba9</dmUniqueID>
+    <dmFormID>FRMDSMAINTSQLMEMORY</dmFormID>
+    <dmTable />
+    <dmCaption>SQL Server Memory</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>662ff145-0e3e-4afa-b355-106297cf2d1a</dmUniqueID>
+    <dmFormID>FRMDSMAINTSYSTEMPROPS</dmFormID>
+    <dmTable />
+    <dmCaption>System Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d35dc2a9-3fe6-4e83-9774-e42dbfd824eb</dmUniqueID>
+    <dmFormID>frmGLClosePeriod</dmFormID>
+    <dmTable />
+    <dmCaption>GL Close Period</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4163d7da-13a2-4537-9bdd-8d4841c4b1df</dmUniqueID>
+    <dmFormID>frmGLRecurringJournals</dmFormID>
+    <dmTable />
+    <dmCaption>Process Recurring Journals</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b6997201-292e-46b0-9d97-d1c3fa7ee2c4</dmUniqueID>
+    <dmFormID>frmIMRefreshAllocations</dmFormID>
+    <dmTable>PARTS</dmTable>
+    <dmCaption>Refresh Allocations</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>938ee19f-b996-4e67-90dd-1b863a6ac5b4</dmUniqueID>
+    <dmFormID>frmIMRefreshOnOrderQty</dmFormID>
+    <dmTable>PARTS</dmTable>
+    <dmCaption>Refresh On-Order Quantity</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>32609d0f-0697-4627-b863-1e4e69dd0aa6</dmUniqueID>
+    <dmFormID>FRMIMREFRESHPARTFORECASTS</dmFormID>
+    <dmTable>PARTFORECASTS</dmTable>
+    <dmCaption>Refresh Part Forecasts</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>54f068dc-6612-4a6f-b6a8-64f4fd46e5f4</dmUniqueID>
+    <dmFormID>frmInfoBox</dmFormID>
+    <dmTable />
+    <dmCaption>Information Message</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>88edc539-0308-43de-90d4-8c3e68be1fe2</dmUniqueID>
+    <dmFormID>frmJobChangeWC</dmFormID>
+    <dmTable>JOBOPERATIONS</dmTable>
+    <dmCaption>Change Job Work Centers</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b15ad7f2-1b8b-438e-afd9-950350803535</dmUniqueID>
+    <dmFormID>frmJobMethodSave</dmFormID>
+    <dmTable />
+    <dmCaption>Job Save Method</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e51ba35e-3f6d-467f-9af7-e3398f715baf</dmUniqueID>
+    <dmFormID>frmJobWizardNew</dmFormID>
+    <dmTable>JOBS</dmTable>
+    <dmCaption>Job Wizard</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f0bf4bc6-adfe-4d14-82b6-a12a145d65c8</dmUniqueID>
+    <dmFormID>FRMLANGUAGECOPY</dmFormID>
+    <dmTable />
+    <dmCaption>Copy Language</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bc9ecd0d-4d8f-4248-9137-346b7b9639b2</dmUniqueID>
+    <dmFormID>FRMLANGUAGELOAD</dmFormID>
+    <dmTable />
+    <dmCaption>Load Language</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>45deac76-ffc8-4e28-ad83-f301490cf85d</dmUniqueID>
+    <dmFormID>frmLMWeeklyTimecardWizard</dmFormID>
+    <dmTable />
+    <dmCaption>Weekly Timecard Wizard</dmCaption>
+    <dmHelpLink>LM_WkTCWizard.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7a5a0ac8-4389-402c-b134-06ea5db5abab</dmUniqueID>
+    <dmFormID>FRMLOGIN</dmFormID>
+    <dmTable />
+    <dmCaption>M1 Login - Version %</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>18b6f4b0-890f-424a-9a15-45597a3f1334</dmUniqueID>
+    <dmFormID>FRMM1EXPLORER</dmFormID>
+    <dmTable />
+    <dmCaption>M1 Explorer - %</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9bacf164-ab44-459a-92a1-774b10a64b6a</dmUniqueID>
+    <dmFormID>FRMOPTIONS</dmFormID>
+    <dmTable />
+    <dmCaption>Options</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4efd562e-eda4-449b-83da-fd90ae4927d6</dmUniqueID>
+    <dmFormID>frmPartFindAndReplace</dmFormID>
+    <dmTable />
+    <dmCaption>Part Find and Replace</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>259c1bc3-9cb3-4df2-a2bf-93a7bcd60dbf</dmUniqueID>
+    <dmFormID>frmPayrollVoid</dmFormID>
+    <dmTable />
+    <dmCaption>Void Payroll Payment</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>df5c07d5-6a1a-40b7-8ef9-b98c552979a2</dmUniqueID>
+    <dmFormID>frmPOPurchasingWizard</dmFormID>
+    <dmTable>PURCHASEORDERS</dmTable>
+    <dmCaption>Purchasing Wizard - Subcontract</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Wizard Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8325e8fd-a492-492c-a9d4-e0894b65abe7</dmUniqueID>
+    <dmFormID>FRMPORECEIPTS</dmFormID>
+    <dmTable>PURCHASEORDERS</dmTable>
+    <dmCaption>PO Receipts</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c4ea1d2e-6e12-455b-8578-5b201150491c</dmUniqueID>
+    <dmFormID>frmProductConfiguratorWizard</dmFormID>
+    <dmTable />
+    <dmCaption>Product Configurator Wizard</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a9bffd03-149a-48c0-b2f7-7ef8755cc05e</dmUniqueID>
+    <dmFormID>frmPurgeChangeLog</dmFormID>
+    <dmTable />
+    <dmCaption>Purge Change Log</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>435a1d77-7927-48d3-807b-8f5814149021</dmUniqueID>
+    <dmFormID>frmQuoteMethodSave</dmFormID>
+    <dmTable />
+    <dmCaption>Quote Save Method</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>78b1096b-e3d5-4bc5-b6e8-67e223da4a44</dmUniqueID>
+    <dmFormID>frmSearch</dmFormID>
+    <dmTable />
+    <dmCaption>Search of %</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f6d67865-7d26-4c87-bb22-be2605b8c497</dmUniqueID>
+    <dmFormID>frmSFEClockIn</dmFormID>
+    <dmTable />
+    <dmCaption>M1 Shop Floor Entry</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e6043920-b3d3-4d96-b1e0-34af29cc8376</dmUniqueID>
+    <dmFormID>frmSFEEndIndirectJob</dmFormID>
+    <dmTable />
+    <dmCaption>SFE End Indirect Activity</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c4d3dd75-d574-4f50-9a4e-fde6e19e4e1b</dmUniqueID>
+    <dmFormID>frmSFEEndProductionJob</dmFormID>
+    <dmTable />
+    <dmCaption>SFE End Production Activity</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>783e0f70-4b1f-430c-b26f-4820a97297a4</dmUniqueID>
+    <dmFormID>frmSFEEndSetupJob</dmFormID>
+    <dmTable />
+    <dmCaption>SFE End Setup Activity</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4dcfea95-5a04-4267-8967-b0eea9262f5e</dmUniqueID>
+    <dmFormID>frmSFEStartDirectJob</dmFormID>
+    <dmTable />
+    <dmCaption>SFE Start Job</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8ba8eb12-d55b-4412-b245-4f5eef2af849</dmUniqueID>
+    <dmFormID>frmSFEStartIndirectJob</dmFormID>
+    <dmTable />
+    <dmCaption>SFE Start Indirect</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f33b45c2-23f5-43db-8b6b-ce6c686a731b</dmUniqueID>
+    <dmFormID>frmSFEViewJob</dmFormID>
+    <dmTable />
+    <dmCaption>SFE View Job</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>dcc7ec7b-d09a-45d8-875b-88d1072ac5f0</dmUniqueID>
+    <dmFormID>frmSFEWorkQueue</dmFormID>
+    <dmTable />
+    <dmCaption>SFE Work Queue</dmCaption>
+    <dmHelpLink>enteringactivity.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>5</dmType>
+    <dmFormType>2</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Shop Floor Entry Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a456a248-d8d4-4a2c-80f2-3a5fcfeb3a77</dmUniqueID>
+    <dmFormID>FRMSTARTPAGECUSTOMIZE</dmFormID>
+    <dmTable />
+    <dmCaption>Customize Start Page</dmCaption>
+    <dmHelpLink>XA_MyStartPage.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d51de202-9525-46b1-9360-762ae73b9c47</dmUniqueID>
+    <dmFormID>frmTemplateExportFields</dmFormID>
+    <dmTable />
+    <dmCaption>Export Mail Merge Fields List</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>288b2680-8124-4025-8e65-3cfb903685d6</dmUniqueID>
+    <dmFormID>frmTemplateSelect</dmFormID>
+    <dmTable />
+    <dmCaption>Select Template</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>37f0c744-1372-4903-9927-085999b119e1</dmUniqueID>
+    <dmFormID>frmValidationMsg</dmFormID>
+    <dmTable />
+    <dmCaption>Confirm Validation Messages</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4b976d76-4837-4891-8460-47a0a171b274</dmUniqueID>
+    <dmFormID>LandedCostView</dmFormID>
+    <dmTable>LandedCosts</dmTable>
+    <dmCaption>Landed Cost</dmCaption>
+    <dmHelpLink>RM_LandedCostEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4ff39621-4f1e-4975-86c8-dc7df8784ba5</dmUniqueID>
+    <dmFormID>LotNumberView</dmFormID>
+    <dmTable>LotNumbers</dmTable>
+    <dmCaption>Lot Number</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>15e4c422-55a5-4eb8-92b5-74e5475db605</dmUniqueID>
+    <dmFormID>M1.Ax.Core.Forms.Database.CompanyDetails</dmFormID>
+    <dmTable />
+    <dmCaption>Company Details</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9b56c111-a6a6-4466-8276-d46038e8e0d5</dmUniqueID>
+    <dmFormID>M1.Ax.Core.Forms.Database.GeneralSettings</dmFormID>
+    <dmTable />
+    <dmCaption>General Settings</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>604b9954-5db6-4cf5-bc13-e268069b5ba4</dmUniqueID>
+    <dmFormID>M1.Ax.Core.Forms.Database.RegionSettings</dmFormID>
+    <dmTable />
+    <dmCaption>Region Settings</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>48167692-5833-44a4-b1ce-5782e29b512b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.CrossApplication.ExpenseView</dmFormID>
+    <dmTable>EXPENSES</dmTable>
+    <dmCaption>Expense ID</dmCaption>
+    <dmHelpLink>LM_ExpenseMaint.htm</dmHelpLink>
+    <dmVID>JC07</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>76968277-60bc-4a0d-9b63-6d81a0796b67</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.CrossApplication.ReasonPlantView</dmFormID>
+    <dmTable>REASONPLANTS</dmTable>
+    <dmCaption>Reason Plants</dmCaption>
+    <dmHelpLink>XA_ReasonMaint.htm#Reason_Plants</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>dcb9ae1d-89a0-47a7-ac0e-a16d99150736</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.CrossApplication.ReasonView</dmFormID>
+    <dmTable>REASONS</dmTable>
+    <dmCaption>Reason</dmCaption>
+    <dmHelpLink>XA_ReasonMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>53e68978-ae23-463d-ae8d-8bbde8422377</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.CrossApplication.StandardMessageView</dmFormID>
+    <dmTable>STANDARDMESSAGES</dmTable>
+    <dmCaption>Standard Message</dmCaption>
+    <dmHelpLink>XA_StdMsgMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f903483a-1291-402a-b6ad-fff807b15cc2</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.ChangeRequestProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Change Request Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>77358a1d-a22b-4766-b6ee-fdbfb9dac96e</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.CreditLimitProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Credit Limit Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b9dfccc5-d281-49fe-aa0d-922a428c3d47</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FEDFedexAccountAddressInfo</dmFormID>
+    <dmTable />
+    <dmCaption>FedEx Account Address Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>15a6c02d-b57b-4488-901b-fa17d762bc9a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FEDFedexDefaultPackageInfo</dmFormID>
+    <dmTable />
+    <dmCaption>FedEx Package Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6e18a21a-3061-4d64-9f5d-c7ab33051c11</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FEDFedexDefaultRequestInfo</dmFormID>
+    <dmTable />
+    <dmCaption>FedEx Request Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>aeeacc25-d106-44ce-aff5-7949d698bbcb</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FEDFedexDefaultSpecialServicesInfo</dmFormID>
+    <dmTable />
+    <dmCaption>FedEx Special Services Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4517866b-aa6d-4fe8-961f-d1fe0ec7262e</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FEDFedexDefaultVariableHandlingCharges</dmFormID>
+    <dmTable />
+    <dmCaption>FedEx Variable Handling Charge</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4d82e528-cd47-4dc2-ad0a-c3dcd971dc2a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FEDFedexGeneralProperties</dmFormID>
+    <dmTable />
+    <dmCaption>FedEx General Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>09b24fbb-cf32-49f4-b04f-9d4fc5184b49</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINAPProperties</dmFormID>
+    <dmTable />
+    <dmCaption>AP Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>346d7241-70e9-45ee-82b1-459dbbffae49</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINARProperties</dmFormID>
+    <dmTable />
+    <dmCaption>AR Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0d55c692-02ee-4cc1-933f-b9e971d2f4f7</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINCOGSProperties</dmFormID>
+    <dmTable />
+    <dmCaption>COGS Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b3b76ee3-14e1-4f0a-a236-9f78ee00c432</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINGeneralProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Financial General Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9eb10987-a004-4ad3-ab8f-ec51aa500d7d</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINGLProperties</dmFormID>
+    <dmTable />
+    <dmCaption>GL Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1d93342e-afd1-4c0d-8c5a-bfe592c1688f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINPayPalProperties</dmFormID>
+    <dmTable />
+    <dmCaption>PayPal Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>df7ce617-5fba-4f65-927f-e3d9470f4c48</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.FINPayrollProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Payroll Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a58afeeb-88b8-4dc4-97e1-09222dd140dc</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.POSProperties</dmFormID>
+    <dmTable />
+    <dmCaption>POS Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3c547289-1ad4-443a-9fd2-017f447c9128</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDCallProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Call Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>225ce9cb-0cdd-4dab-8452-f53e8d606492</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDContactProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Contact Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>837a9e60-18e0-491e-9980-ef532223378f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDFieldServiceProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Field Service Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d64fb0c5-511a-4e5f-a878-ed56b83094c2</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDGeneralProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Production General Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>26f02145-8c18-4d97-b67b-8e84cb8fdb64</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDInventoryProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Inventory Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>89c771a7-9fe8-4a2e-9122-9bcf0eca2ef1</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDJobProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Job Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1dfd1284-4201-4cd9-a619-f40b1df56e4d</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDProjectProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Project Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ba471129-c470-4f3c-8030-6744334625d4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDPurchasingProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Purchasing Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8472d56b-24e9-412d-a865-2db4b52f16de</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDQualityProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Quality Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cf6fcfc8-64dd-4c3a-8493-a1d240581d90</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDQuoteProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Quote Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8ea2ea46-5f23-491b-8443-b49ca2f154c9</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDSalesOrderProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Sales Order Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bba3d41b-e340-40a2-85cf-cacd331ae647</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDSerialNumberProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Serial Number Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>097e5196-8d9e-4696-a658-a6ff059bf068</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDShippingProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Shipping Properties</dmCaption>
+    <dmHelpLink>sushippingconstants.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>279eba0a-2938-4f7a-9b06-0bdd23dd4ece</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.PRDTimecardProperties</dmFormID>
+    <dmTable />
+    <dmCaption>Timecard Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cf5ee499-0133-479c-bda0-965910767d44</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.SFEPasswords</dmFormID>
+    <dmTable />
+    <dmCaption>SFE Passwords</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8b583f11-cfca-4554-9094-48fa5b71006c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.ShopFloorEntryProperties</dmFormID>
+    <dmTable />
+    <dmCaption>SFE Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bf0da1dc-1923-48ec-8c7e-d349e3e5c52b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.WEBAttachmentFileUploadInfo</dmFormID>
+    <dmTable />
+    <dmCaption>Web Attachment Upload Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bf19b2bb-62a5-47a4-bbd7-5a437e461798</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.WEBCallsInfo</dmFormID>
+    <dmTable />
+    <dmCaption>Web Calls Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>864f09af-c5bb-42f6-a5cd-a22574e0ff19</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.WEBECommerceInfo</dmFormID>
+    <dmTable />
+    <dmCaption>Web ECommerce Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1b4b530e-5140-44b8-a7fe-338c41713031</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.WEBGeneral</dmFormID>
+    <dmTable />
+    <dmCaption>Web General Properties</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0eb3c5aa-af78-4c76-97a4-2a39b0c0e0da</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.WEBHTMLStrings</dmFormID>
+    <dmTable />
+    <dmCaption>Web HTML Strings</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8b894e75-7b8e-4d19-8fb5-23613ea6ef2e</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Database.Options.WEBRMARequestInfo</dmFormID>
+    <dmTable />
+    <dmCaption>Web RMQ Request Info</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>84a718f6-fbd5-4b66-b77a-b3207701f838</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AgingBucketView</dmFormID>
+    <dmTable>AGINGBUCKETS</dmTable>
+    <dmCaption>Aging Bucket</dmCaption>
+    <dmHelpLink>XA_AgingBucketMaint.htm</dmHelpLink>
+    <dmVID>AR02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0d59b936-4fd6-4f9d-aa65-bc4ac4407320</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APInvoiceMemoView</dmFormID>
+    <dmTable>APINVOICEMEMOS</dmTable>
+    <dmCaption>AP Invoice Memo</dmCaption>
+    <dmHelpLink>apentryinvoice_memo.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9207b75e-ed88-408d-9e37-13194b61a6a1</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APOpenInvoiceLoadView</dmFormID>
+    <dmTable>APINVOICES</dmTable>
+    <dmCaption>AP Open Invoice</dmCaption>
+    <dmHelpLink>XA_APOpenInvLoad.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>92451789-1a8d-4548-b5d9-1c09fe0e877d</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APOpenPaymentSessionView</dmFormID>
+    <dmTable>APPAYMENTSESSIONS</dmTable>
+    <dmCaption>Open AP Payment Session</dmCaption>
+    <dmHelpLink>XA_APUnpresPmtLoad.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>11ac0d2d-f3e1-452d-9866-e7017c3eb1d4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APPaymentSessionView</dmFormID>
+    <dmTable>APPAYMENTSESSIONS</dmTable>
+    <dmCaption>AP Payment Session</dmCaption>
+    <dmHelpLink>ap_paymentSessions.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3a07b3b7-e4f5-4cc3-a3d3-cb4940539028</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APRecurringPaymentLineView</dmFormID>
+    <dmTable>APRECURRINGPAYMENTLINES</dmTable>
+    <dmCaption>Recurring Payment Line</dmCaption>
+    <dmHelpLink>financial_rpLine.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>de83c545-4324-4351-8940-df7809b11fcd</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APRecurringPaymentView</dmFormID>
+    <dmTable>APRECURRINGPAYMENTS</dmTable>
+    <dmCaption>Recurring Payment</dmCaption>
+    <dmHelpLink>financial_rp.htm</dmHelpLink>
+    <dmVID>AP02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5fe42946-3bdb-4e9a-9985-ad4efcbd09ea</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APTaxablePaymentTotalView</dmFormID>
+    <dmTable>APTaxablePaymentTotals</dmTable>
+    <dmCaption>Taxable Payment Total</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8fe25a8f-00c7-4e89-b443-c349381f7561</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.APTaxablePaymentView</dmFormID>
+    <dmTable>APTaxablePayment</dmTable>
+    <dmCaption>Taxable Payment Reporting</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b95458ef-aa3f-4ae5-ad6c-9272c35f2383</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.Form1099MISCYearTotalView</dmFormID>
+    <dmTable>FORM1099MISCYEARTOTALS</dmTable>
+    <dmCaption>1099-MISC Year Totals</dmCaption>
+    <dmHelpLink>AP_1099_GenerateYearTotals.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1f565408-f81e-4eff-b759-47520a93a006</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.Form1099NECYearTotalView</dmFormID>
+    <dmTable>FORM1099NECYEARTOTALS</dmTable>
+    <dmCaption>1099-NEC Year Totals</dmCaption>
+    <dmHelpLink>AP_1099_GenerateYearTotals.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>357885e2-da42-45f3-be8c-ae6e9ec7a7d4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.Form1099TypeView</dmFormID>
+    <dmTable>FORM1099TYPES</dmTable>
+    <dmCaption>1099 Types Maintenance</dmCaption>
+    <dmHelpLink>AP_1099TypesMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>16ea522a-248f-4315-89d4-76e80edf4944</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AP.Form1099YearView</dmFormID>
+    <dmTable>FORM1099YEARS</dmTable>
+    <dmCaption>Generate 1099 Forms</dmCaption>
+    <dmHelpLink>AP_1099_GenerateForms.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>be3efb0d-d2f0-4756-a094-2f605107c011</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.ARInvoiceLineView</dmFormID>
+    <dmTable>ARINVOICELINES</dmTable>
+    <dmCaption>AR Invoice Line</dmCaption>
+    <dmHelpLink>AR_InvoiceLines.htm</dmHelpLink>
+    <dmVID>AR03B</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3138b3a5-6dec-46e9-af42-ae8e06531636</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.ARInvoiceMemoView</dmFormID>
+    <dmTable>ARINVOICEMEMOS</dmTable>
+    <dmCaption>AR Invoice Memo</dmCaption>
+    <dmHelpLink>AR_InvEntry_Memos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9903c797-2f77-46db-a157-28413f4c163f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.ARInvoiceView</dmFormID>
+    <dmTable>ARINVOICES</dmTable>
+    <dmCaption>AR Invoice</dmCaption>
+    <dmHelpLink>AR_InvEntry.htm</dmHelpLink>
+    <dmVID>AR03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9759a705-153f-467d-a73e-d79f4b59da96</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.AROpenInvoiceLoadView</dmFormID>
+    <dmTable>ARINVOICES</dmTable>
+    <dmCaption>AR Open Invoice</dmCaption>
+    <dmHelpLink>XA_AROpenInvLoad.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cf7c2498-fb7a-4521-a1b6-fc58a10910a5</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.AROpenPaymentHeaderView</dmFormID>
+    <dmTable>ARPAYMENTHEADERS</dmTable>
+    <dmCaption>Open AR Payment Header</dmCaption>
+    <dmHelpLink>XA_ARUnpresPmtHeaders.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>2d5e1f5c-5d3b-479a-91a2-5a43489e3613</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.AROpenPaymentSessionView</dmFormID>
+    <dmTable>ARPAYMENTSESSIONS</dmTable>
+    <dmCaption>Open AR Payment Session</dmCaption>
+    <dmHelpLink>XA_ARUnpresPmtLoad.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>90a0ead5-0595-49a3-b33e-1cdec446fc0b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.ARPaymentSessionView</dmFormID>
+    <dmTable>ARPAYMENTSESSIONS</dmTable>
+    <dmCaption>AR Payment Session</dmCaption>
+    <dmHelpLink>AR_PaymentEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a2ea74af-4ec3-4910-89a8-f6010439f51f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.ARRecurringInvoiceLineView</dmFormID>
+    <dmTable>ARRECURRINGINVOICELINES</dmTable>
+    <dmCaption>Recurring AR Invoice Line</dmCaption>
+    <dmHelpLink>AR_RecurringInvoiceLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9ffe6bd9-eede-4b21-8836-1ed5dc46daa7</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.AR.ARRecurringInvoiceView</dmFormID>
+    <dmTable>ARRECURRINGINVOICES</dmTable>
+    <dmCaption>Recurring AR Invoice</dmCaption>
+    <dmHelpLink>AR_RecurringInvoices.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9a0b6339-c305-4e13-9cb4-c3e7ab887145</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.FixedAsset.AssetAdjustmentView</dmFormID>
+    <dmTable>ASSETADJUSTMENTS</dmTable>
+    <dmCaption>Asset Adjustment</dmCaption>
+    <dmHelpLink>AssetAdjustmentEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ab84a821-51a3-47e5-ad8d-5ab96fb0f953</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.FixedAsset.AssetMemoView</dmFormID>
+    <dmTable>ASSETMEMOS</dmTable>
+    <dmCaption>Asset Memo</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5b7fa236-e4f3-46a4-9d0c-550530f98f11</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.FixedAsset.AssetTypePlantView</dmFormID>
+    <dmTable>ASSETTYPEPLANTS</dmTable>
+    <dmCaption>Asset Type Plant</dmCaption>
+    <dmHelpLink>AssetTypePlants.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>62278c2e-fb6f-4cc9-a4ec-9e09e55f0bfb</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.FixedAsset.AssetTypeView</dmFormID>
+    <dmTable>ASSETTYPES</dmTable>
+    <dmCaption>Asset Type</dmCaption>
+    <dmHelpLink>AssetTypeMaintenance.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6ef4af2a-952c-4653-87a1-694bb86b5789</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.BankAccountView</dmFormID>
+    <dmTable>BANKACCOUNTS</dmTable>
+    <dmCaption>Bank Account</dmCaption>
+    <dmHelpLink>GL_BankAccountMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3ebb5a9f-af89-4e88-bb16-bf02f3bc6eb3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLChartView</dmFormID>
+    <dmTable>GLCHARTS</dmTable>
+    <dmCaption>GL Chart</dmCaption>
+    <dmHelpLink>GL_Maint_ChartOfAccounts.htm</dmHelpLink>
+    <dmVID>GL03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a6d5dcc2-1221-4f7b-819b-08c942f5d750</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLDepartmentView</dmFormID>
+    <dmTable>GLDEPARTMENTS</dmTable>
+    <dmCaption>GL Department</dmCaption>
+    <dmHelpLink>GL_DeptMaint.htm</dmHelpLink>
+    <dmVID>GL02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>429b151d-2053-4ba5-870e-7eb824276549</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLDivisionView</dmFormID>
+    <dmTable>GLDIVISIONS</dmTable>
+    <dmCaption>GL Division</dmCaption>
+    <dmHelpLink>GL_DivMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>15668e5e-bc4f-4984-a2ea-75c2a3a2a4e5</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLFiscalYearBudgetView</dmFormID>
+    <dmTable>GLFISCALYEARBUDGETHEADERS</dmTable>
+    <dmCaption>GL Budget Header</dmCaption>
+    <dmHelpLink>GL_Maint_Budgets.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1dd5077b-bc19-4e47-99ea-b683e47da6b8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLFiscalYearView</dmFormID>
+    <dmTable>GLFISCALYEARPERIODS</dmTable>
+    <dmCaption>Fiscal Year</dmCaption>
+    <dmHelpLink>GL_FiscalYearMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>22f7bb90-6e4e-48ff-8f9a-ab878d17c749</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLJournalMemoView</dmFormID>
+    <dmTable>GLJOURNALMEMOS</dmTable>
+    <dmCaption>GL Journal Memo</dmCaption>
+    <dmHelpLink>GL_JournalMemos.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>36d7afb4-2b06-468c-8e3a-512034552bc3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLJournalView</dmFormID>
+    <dmTable>GLJOURNALS</dmTable>
+    <dmCaption>GL Journal</dmCaption>
+    <dmHelpLink>GL_JournalEntry.htm
+</dmHelpLink>
+    <dmVID>GL06</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a471f2e7-51a0-4f85-a7aa-00a0f603b66c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.GLRecurringJournalView</dmFormID>
+    <dmTable>GLRECURRINGJOURNALS</dmTable>
+    <dmCaption>Recurring Journal</dmCaption>
+    <dmHelpLink>GL_RecurringJrnlMaint.htm</dmHelpLink>
+    <dmVID>GL16</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0ad27327-8fe3-44de-8e6f-8c91b8eae94f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.GL.ProjectedPaymentView</dmFormID>
+    <dmTable>PROJECTEDPAYMENTS</dmTable>
+    <dmCaption>Projected Payment</dmCaption>
+    <dmHelpLink>GL_ProjPaymntMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>07f8d666-66f2-4221-90fb-abdb6cf9da98</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.PaymentTermView</dmFormID>
+    <dmTable>PAYMENTTERMS</dmTable>
+    <dmCaption>Payment Term</dmCaption>
+    <dmHelpLink>XA_PaymentTermsMaint.htm</dmHelpLink>
+    <dmVID>OE03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d4d92ab7-64a7-4f64-933c-59fb776f1266</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.AllowanceView</dmFormID>
+    <dmTable>ALLOWANCES</dmTable>
+    <dmCaption>Allowance</dmCaption>
+    <dmHelpLink>PA_AllowanceMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>06a0e597-5e6a-4b9b-ae44-74939e4bd353</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.AwardLineView</dmFormID>
+    <dmTable>EMPLOYEEAWARDLINES</dmTable>
+    <dmCaption>Award Classification Line</dmCaption>
+    <dmHelpLink>AwardClassificationLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>25851a0f-509d-49f5-b10a-8ba506bc68b7</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.AwardView</dmFormID>
+    <dmTable>EMPLOYEEAWARDS</dmTable>
+    <dmCaption>Employee Award Classification</dmCaption>
+    <dmHelpLink>LM_AwardClassMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c1ed31f8-cf5c-49b7-a5ac-90425ac0dcf0</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.DeductionView</dmFormID>
+    <dmTable>DEDUCTIONS</dmTable>
+    <dmCaption>Deduction</dmCaption>
+    <dmHelpLink>PA_DeductionMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>18ebacb8-5187-45d4-a629-bcd390565f29</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.Form1094YearTotalView</dmFormID>
+    <dmTable>FORM1094YEARTOTALS</dmTable>
+    <dmCaption>Form 1094 Year Totals (1095)</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>77c13c81-603a-4f7f-b1ef-6bd09383fded</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.Form1094YearView</dmFormID>
+    <dmTable>FORM1094YEARS</dmTable>
+    <dmCaption>Form 1094 Years</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>38a7147b-b510-4276-bf89-34ba42b0391b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.Form941ScheduleView</dmFormID>
+    <dmTable>FORM941SCHEDULES</dmTable>
+    <dmCaption>Form 941 Schedule</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1e3a5677-0157-4e46-bf6d-11a60dfdb64b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.Form941YearQuarterView</dmFormID>
+    <dmTable>FORM941YEARQUARTERS</dmTable>
+    <dmCaption>Form 941 Year Quarter</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>45441920-d4f5-4928-a146-57955a97b537</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.Form941YearView</dmFormID>
+    <dmTable>FORM941YEARS</dmTable>
+    <dmCaption>Generate 941 Form</dmCaption>
+    <dmHelpLink>AP_1099TypesMaintenance.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>acda7e6b-41f3-4f84-a1fe-952e25b0eeb1</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxTableRevisionView</dmFormID>
+    <dmTable>INCOMETAXTABLEREVISIONS</dmTable>
+    <dmCaption>Income Tax Table Revision</dmCaption>
+    <dmHelpLink>payroll_incomeTaxTableRevision.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ffb924e2-6770-4a51-ba36-7e2173e67937</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxTableView</dmFormID>
+    <dmTable>INCOMETAXTABLES</dmTable>
+    <dmCaption>Income Tax Table</dmCaption>
+    <dmHelpLink>payroll_incomeTaxTable.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1d16d590-fd1e-44c3-8207-ff80d36e2526</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxTypeView</dmFormID>
+    <dmTable>INCOMETAXTYPES</dmTable>
+    <dmCaption>Income Tax Type</dmCaption>
+    <dmHelpLink>payroll_incomeTaxType.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>168cff55-cb1c-4d31-8526-9b0aee7293ce</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxView</dmFormID>
+    <dmTable>INCOMETAXES</dmTable>
+    <dmCaption>Income Tax</dmCaption>
+    <dmHelpLink>payroll_incomeTax.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5199ff39-89c4-42cf-b724-f413d5dc6485</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxYearTotalAUView</dmFormID>
+    <dmTable>INCOMETAXYEARTOTALS</dmTable>
+    <dmCaption>Income Tax Year Total AU</dmCaption>
+    <dmHelpLink>payroll_taxYear.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>892844c8-ab30-4b72-a2cd-960ab29ef666</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxYearTotalCAView</dmFormID>
+    <dmTable>INCOMETAXYEARTOTALS</dmTable>
+    <dmCaption>Income Tax Year Total CA</dmCaption>
+    <dmHelpLink>payroll_taxYear.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>fcb7283a-9eb5-4e9f-801b-067ed08b8d0e</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxYearTotalUSView</dmFormID>
+    <dmTable>INCOMETAXYEARTOTALS</dmTable>
+    <dmCaption>Income Tax Year Total US</dmCaption>
+    <dmHelpLink>payroll_taxYear.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b0fdad79-b582-4374-bc02-7d1390278c2b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.IncomeTaxYearView</dmFormID>
+    <dmTable>INCOMETAXYEARS</dmTable>
+    <dmCaption>Income Tax Year Processing</dmCaption>
+    <dmHelpLink>payroll_taxYear.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>208a09c8-a496-4569-aead-d91f10f5cb5c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.LeaveAccrualView</dmFormID>
+    <dmTable>LEAVEACCRUALS</dmTable>
+    <dmCaption>Leave Accrual</dmCaption>
+    <dmHelpLink>PA_LeaveAccrualMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b040f198-c96c-4570-b7e3-e67fe122d5b6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollDefinitionView</dmFormID>
+    <dmTable>PAYROLLDEFINITIONS</dmTable>
+    <dmCaption>Payroll Definition</dmCaption>
+    <dmHelpLink>LM_PayrollDefMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d09586b0-6e74-46e7-982f-e452506dcb31</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollNZYearDeductionView</dmFormID>
+    <dmTable>PAYROLLNZYEARDEDUCTIONS</dmTable>
+    <dmCaption>Payroll NZ Deductions (IR345)</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c6f381e6-38c3-4616-b97e-c4ee1433ceee</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollNZYearScheduleLineView</dmFormID>
+    <dmTable>PAYROLLNZYEARSCHEDULELINES</dmTable>
+    <dmCaption>Payroll NZ Schedule Lines</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a248fa20-8285-4a1d-9a40-d6a6fdba3d60</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollNZYearScheduleView</dmFormID>
+    <dmTable>PAYROLLNZYEARSCHEDULES</dmTable>
+    <dmCaption>Payroll NZ Schedules (IR348)</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4f863620-a4f3-4644-a3d3-218ed124d7a4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollNZYearView</dmFormID>
+    <dmTable>PAYROLLNZYEARS</dmTable>
+    <dmCaption>Payroll NZ Years</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ea775157-7a2c-43cd-908b-e5e72159a4c3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollOpenBalanceLoadView</dmFormID>
+    <dmTable>PAYROLLSESSIONS</dmTable>
+    <dmCaption>Payroll Open Balance Load</dmCaption>
+    <dmHelpLink>payroll_balanceLoad.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7d88e6d9-5b2b-451a-818e-9f800210af6a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollRateView</dmFormID>
+    <dmTable>PAYROLLRATES</dmTable>
+    <dmCaption>Payroll Rate</dmCaption>
+    <dmHelpLink>PA_PayrollRateMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>12faaeb6-94f2-4948-bdac-af6ff0958d10</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.Payroll.PayrollSessionView</dmFormID>
+    <dmTable>PAYROLLSESSIONS</dmTable>
+    <dmCaption>Payroll Session</dmCaption>
+    <dmHelpLink>payroll_sessions.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>828172bc-96c5-43c3-a7d1-fa083686e8c2</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.TaxCodeLineView</dmFormID>
+    <dmTable>TAXCODELINES</dmTable>
+    <dmCaption>Tax Lines</dmCaption>
+    <dmHelpLink>XA_TaxLinesMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e05bbcd9-1485-48e8-9b3f-535984e16143</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Financial.TaxView</dmFormID>
+    <dmTable>TAXCODES</dmTable>
+    <dmCaption>Tax ID</dmCaption>
+    <dmHelpLink>XA_TaxMaint.htm</dmHelpLink>
+    <dmVID>OE06</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3cea7158-3eb2-48a3-9b49-211bf3321a43</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.ImplementationCheckList.ImplementationCheckListForm</dmFormID>
+    <dmTable>ImplementationCheckList</dmTable>
+    <dmCaption>Implementation CheckList</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cfb47be0-912e-444c-b658-0b3bf9f03007</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Calculators.BarCalculatorForm</dmFormID>
+    <dmTable>BARCALCULATORS</dmTable>
+    <dmCaption>Bar Calculator</dmCaption>
+    <dmHelpLink>calculator_bar.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Calculators</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>30f82746-80a8-4387-89c9-0e6f563613f9</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Calculators.LaserCalculatorForm</dmFormID>
+    <dmTable>LASERCALCULATORS</dmTable>
+    <dmCaption>Laser Calculator</dmCaption>
+    <dmHelpLink>CC_LaserCalc.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Calculators</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cab15a7c-70d7-4103-9f3d-6feccaaf1207</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Calendar.ProductionCalendarView</dmFormID>
+    <dmTable>PRODUCTIONCALENDARS</dmTable>
+    <dmCaption>Production Calendar</dmCaption>
+    <dmHelpLink>PA_ProdCalMaint.htm
+</dmHelpLink>
+    <dmVID>JC06</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>fb782400-cafc-4b3b-be58-92491a27b1e6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ChangeRequest.ChangeRequestGroupView</dmFormID>
+    <dmTable>CHANGEREQUESTGROUPS</dmTable>
+    <dmCaption>Change Request Group</dmCaption>
+    <dmHelpLink>CH_ChangeRequestGroupMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7c070286-b304-4d5a-bf89-33573bd94b16</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ChangeRequest.ChangeRequestTypeView</dmFormID>
+    <dmTable>CHANGEREQUESTTYPES</dmTable>
+    <dmCaption>Change Request Type</dmCaption>
+    <dmHelpLink>CH_ChangeRequestTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>33df7c16-f3c9-4200-b309-50c220495187</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ChangeRequest.ChangeRequestView</dmFormID>
+    <dmTable>CHANGEREQUESTS</dmTable>
+    <dmCaption>Change Request</dmCaption>
+    <dmHelpLink>bm_changeRequest.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c9e6d348-a0a7-4335-b2e3-aac77efcd0da</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.DMR.DMRClaimLineView</dmFormID>
+    <dmTable>DMRCLAIMLINES</dmTable>
+    <dmCaption>Claim Line</dmCaption>
+    <dmHelpLink>QM_DMRClaimLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>282981bf-2064-4cdb-851c-72e40c89ad4b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.DMR.DMRClaimView</dmFormID>
+    <dmTable>DMRCLAIMS</dmTable>
+    <dmCaption>DMR Claim</dmCaption>
+    <dmHelpLink>QM_DMRClaimEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1c9b98d9-3e24-43a9-bb5a-e7787b2096d8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeAllowanceView</dmFormID>
+    <dmTable>EMPLOYEEALLOWANCES</dmTable>
+    <dmCaption>Employee Allowance</dmCaption>
+    <dmHelpLink>em_allowance.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e1c2fd24-acea-4337-9f7e-287be31bc318</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeAttachmentView</dmFormID>
+    <dmTable>EMPLOYEEATTACHMENTS</dmTable>
+    <dmCaption>Employee Attachment</dmCaption>
+    <dmHelpLink>LM_EmpAttachments.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>12be6e55-725f-4231-a602-4a8675563af4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeBankAccountView</dmFormID>
+    <dmTable>EMPLOYEEBANKACCOUNTS</dmTable>
+    <dmCaption>Employee Bank Account</dmCaption>
+    <dmHelpLink>LM_EmpBankAccts.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cc9d1cba-95e5-43ce-9391-15ce8460e5fa</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeCompetencyView</dmFormID>
+    <dmTable>SKILLCOMPETENCIES</dmTable>
+    <dmCaption>Competencies</dmCaption>
+    <dmHelpLink>LM_CompetenciesMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a58ac689-3147-4a9e-8521-deefd3ea2871</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeDeductionView</dmFormID>
+    <dmTable>EMPLOYEEDEDUCTIONS</dmTable>
+    <dmCaption>Employee Deduction</dmCaption>
+    <dmHelpLink>em_deduction.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>01cde36a-be7a-416a-88c2-0808540bb9ef</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeIncomeTaxView</dmFormID>
+    <dmTable>EMPLOYEEINCOMETAXES</dmTable>
+    <dmCaption>Employee Income Tax</dmCaption>
+    <dmHelpLink>em_incomeTax.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5f146b64-6478-4092-adcf-1384a5ad4453</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeMemoView</dmFormID>
+    <dmTable>EMPLOYEEMEMOS</dmTable>
+    <dmCaption>Employee Memo</dmCaption>
+    <dmHelpLink>LM_EmpMemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>21704549-f9ee-43da-8d26-f1962a189999</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeMessageView</dmFormID>
+    <dmTable>EMPLOYEEMESSAGES</dmTable>
+    <dmCaption>Employee Message</dmCaption>
+    <dmHelpLink>LM_EmpMsg.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>90eec0a5-d79f-4a9e-82ea-9fc9b0264d76</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeePayRateView</dmFormID>
+    <dmTable>EMPLOYEEPAYRATES</dmTable>
+    <dmCaption>Employee Pay Rate</dmCaption>
+    <dmHelpLink>LM_EmpPayRates.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>08296d0d-6294-488b-a209-b85de9143868</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeSalesBudgetView</dmFormID>
+    <dmTable>EMPLOYEESALESBUDGETS</dmTable>
+    <dmCaption>Employee Sales Budgets</dmCaption>
+    <dmHelpLink>EM_EmployeeSalesBudgets.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c7a43277-f243-4aa2-a5a7-2013dd4675a8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeSkillsLinkView</dmFormID>
+    <dmTable>EMPLOYEESKILLS</dmTable>
+    <dmCaption>Employee Skills</dmCaption>
+    <dmHelpLink>LM_EmpSkills.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ba64ae1f-8263-4dcb-9574-baeb5a0ab19b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeSkillView</dmFormID>
+    <dmTable>SKILLS</dmTable>
+    <dmCaption>Skills</dmCaption>
+    <dmHelpLink>LM_SkillsMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>203b6bd1-0e15-4fd2-8de6-8b76e96f8cc2</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeTaxCreditReturnView</dmFormID>
+    <dmTable>EMPLOYEETAXCREDITRETURNS</dmTable>
+    <dmCaption>Tax Credit Returns (TD1)</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ec39ce02-55df-4608-8f4a-f973224faab8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Employee.EmployeeView</dmFormID>
+    <dmTable>EMPLOYEES</dmTable>
+    <dmCaption>Employee</dmCaption>
+    <dmHelpLink>LM_Emp_Entry.htm</dmHelpLink>
+    <dmVID>JC08</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b8aa29ea-182a-42b7-9551-8f49542abb5a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.CycleCodeView</dmFormID>
+    <dmTable>CYCLECODES</dmTable>
+    <dmCaption>Cycle Code</dmCaption>
+    <dmHelpLink>cycleCode_maintenance.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8bba67a2-e9db-4401-b20e-62cba6efe205</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.InventoryCountView</dmFormID>
+    <dmTable>INVENTORYCOUNTS</dmTable>
+    <dmCaption>Inventory Count</dmCaption>
+    <dmHelpLink>im_inventoryCount.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>690f5eaa-4461-4746-ab4e-e7c973a576db</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.LaserMaterialTypeView</dmFormID>
+    <dmTable>LASERMATERIALTYPES</dmTable>
+    <dmCaption>Laser Calculator Material Type</dmCaption>
+    <dmHelpLink>CC_LaserMatlTypeMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ca15fdf0-70d0-4508-9f8c-3066b18d5b18</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.LotNumberExplorerView</dmFormID>
+    <dmTable>LOTNUMBERS</dmTable>
+    <dmCaption>Lot Number Explorer</dmCaption>
+    <dmHelpLink>im_lot_number_explorer.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>eaf8f849-1b03-4ef9-98e5-816fe94f61dd</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartAdvisorPOView</dmFormID>
+    <dmTable>PARTS</dmTable>
+    <dmCaption>Part</dmCaption>
+    <dmHelpLink>partadvisorpurchasing.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>60f8e777-b162-4e43-a718-03cd0c330d80</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartAdvisorQuoteView</dmFormID>
+    <dmTable>PARTS</dmTable>
+    <dmCaption>Part</dmCaption>
+    <dmHelpLink>partadvisorquoting.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8dfb7571-f9b3-4320-ba5e-577e8937be22</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartAssemblyView</dmFormID>
+    <dmTable>PARTASSEMBLIES</dmTable>
+    <dmCaption>Method Assembly</dmCaption>
+    <dmHelpLink>IM_MethodAssy.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>07b07743-ebc1-4df0-b32e-b1f17c6437ac</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartClassPlantView</dmFormID>
+    <dmTable>PARTCLASSPLANTS</dmTable>
+    <dmCaption>Part Class Plants</dmCaption>
+    <dmHelpLink>IM_PartClassMaint.htm#Part_Class_Plants</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c88292d7-db92-45ad-8da7-f591df42b9f3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartClassView</dmFormID>
+    <dmTable>PARTCLASSES</dmTable>
+    <dmCaption>Part Class</dmCaption>
+    <dmHelpLink>IM_PartClassMaint.htm
+</dmHelpLink>
+    <dmVID>IC02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4165b2ce-d9f1-4774-a90f-8f8c8ed987ee</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartCrossReferenceView</dmFormID>
+    <dmTable>PARTCROSSREFERENCES</dmTable>
+    <dmCaption>Part Cross Reference</dmCaption>
+    <dmHelpLink>IM_PartXRef.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>530f77d8-b8e5-4efe-9688-f9a46eba9d82</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartGroupPlantView</dmFormID>
+    <dmTable>PARTGROUPPLANTS</dmTable>
+    <dmCaption>Part Group Plant</dmCaption>
+    <dmHelpLink>IM_PartGrpMaint.htm#Part_Group_Plants
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e56eac06-71d7-40fb-af51-815bdd4db4b3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartGroupView</dmFormID>
+    <dmTable>PARTGROUPS</dmTable>
+    <dmCaption>Part Group</dmCaption>
+    <dmHelpLink>IM_PartGrpMaint.htm
+</dmHelpLink>
+    <dmVID>OE02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7b2f5612-b249-49e8-9fbc-4d0176ff2d8f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartMaterialView</dmFormID>
+    <dmTable>PARTMATERIALS</dmTable>
+    <dmCaption>Method Material</dmCaption>
+    <dmHelpLink>IM_MethodMatls.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>be297a93-c4c4-4e56-9921-fc6f5018a506</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartMemoView</dmFormID>
+    <dmTable>PARTMEMOS</dmTable>
+    <dmCaption>Part Memo</dmCaption>
+    <dmHelpLink>IM_PartMemos.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>02bcf3a7-3445-4e57-a459-ee429ebb5250</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartOperationView</dmFormID>
+    <dmTable>PARTOPERATIONS</dmTable>
+    <dmCaption>Method Operation</dmCaption>
+    <dmHelpLink>IM_MethodOps.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>00fbfcdf-7118-469e-9162-17cc53e6b148</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartOrgReferenceView</dmFormID>
+    <dmTable>PARTORGREFERENCES</dmTable>
+    <dmCaption>Part Org Reference</dmCaption>
+    <dmHelpLink>IM_PartOrgRef.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6f669db8-47bf-40cb-ba3b-5670d50f9f67</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartPriceView</dmFormID>
+    <dmTable>PARTPRICES</dmTable>
+    <dmCaption>Part Price</dmCaption>
+    <dmHelpLink>IM_PartPrices.htm
+</dmHelpLink>
+    <dmVID>IC22</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>20cc1e66-353f-4710-95a9-24deace32601</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartRevisionAdvisorPOView</dmFormID>
+    <dmTable>PARTREVISIONS</dmTable>
+    <dmCaption>Part Revision</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>861a1868-c859-4f05-a3a7-ecd2c9606ff6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartRevisionAdvisorQuoteView</dmFormID>
+    <dmTable>PARTREVISIONS</dmTable>
+    <dmCaption>Part Revision</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c6ed8436-b007-46ba-92a9-8fcd3a0a1b87</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartRevisionView</dmFormID>
+    <dmTable>PARTREVISIONS</dmTable>
+    <dmCaption>Part Revision</dmCaption>
+    <dmHelpLink>IM_PartRevisions.htm
+</dmHelpLink>
+    <dmVID>IC03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.DocumentRegister|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c39a4e34-1de2-4f86-8e70-0d1543c8319c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.PartView</dmFormID>
+    <dmTable>PARTS</dmTable>
+    <dmCaption>Part</dmCaption>
+    <dmHelpLink>IM_PartMethodEntry.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f83613e0-5e82-4178-8645-7856f4d92c2f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.ProductCategoryLineView</dmFormID>
+    <dmTable>PRODUCTCATEGORYLINES</dmTable>
+    <dmCaption>Product Category Lines</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b46734eb-8a8a-444d-b6be-c54ccd00ce25</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.ProductCategoryView</dmFormID>
+    <dmTable>PRODUCTCATEGORIES</dmTable>
+    <dmCaption>Product Categories</dmCaption>
+    <dmHelpLink>IM_ProdCatMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d47be99e-f1c9-4ac5-980f-39e058f8f850</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Inventory.SerialNumberExplorerView</dmFormID>
+    <dmTable>SERIALNUMBERS</dmTable>
+    <dmCaption>Serial Number Explorer</dmCaption>
+    <dmHelpLink>IM_SerNo_Explorer.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a4188bc6-6d13-43e5-913d-aae75084cc91</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.JobAssemblyView</dmFormID>
+    <dmTable>JOBASSEMBLIES</dmTable>
+    <dmCaption>Job Assembly</dmCaption>
+    <dmHelpLink>jmentryassemblies.htm</dmHelpLink>
+    <dmVID>JC13H</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>185787c6-8e70-4c3f-aa83-36d24ecddb34</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.JobMaterialView</dmFormID>
+    <dmTable>JOBMATERIALS</dmTable>
+    <dmCaption>Job Material</dmCaption>
+    <dmHelpLink>jmentrymaterials.htm</dmHelpLink>
+    <dmVID>JC13K</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>00f6f55c-1947-4dc3-9f5a-6376fb4517e8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.JobMemoView</dmFormID>
+    <dmTable>JOBMEMOS</dmTable>
+    <dmCaption>Job Memo</dmCaption>
+    <dmHelpLink>jmentryjobmemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7842c198-1991-4923-aea6-fb9e35e9b6af</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.JobOperationView</dmFormID>
+    <dmTable>JOBOPERATIONS</dmTable>
+    <dmCaption>Job Operation</dmCaption>
+    <dmHelpLink>jmentryoperations.htm</dmHelpLink>
+    <dmVID>JC13L</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1bcda221-d651-4f25-946f-539354b201ca</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.JobPriorityView</dmFormID>
+    <dmTable>JOBPRIORITIES</dmTable>
+    <dmCaption>Job Priority</dmCaption>
+    <dmHelpLink>JM_JobPriorityMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>25f6bbda-ef62-4eaf-ae2a-d7880ee27a39</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.JobView</dmFormID>
+    <dmTable>JOBS</dmTable>
+    <dmCaption>Job</dmCaption>
+    <dmHelpLink>JM_JobEntry.htm
+</dmHelpLink>
+    <dmVID>JC13</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b6df6b9a-363d-47c7-adc8-64a32c695959</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.MRPLineView</dmFormID>
+    <dmTable>MRPLINES</dmTable>
+    <dmCaption>MRP Lines</dmCaption>
+    <dmHelpLink>JM_MfgReqPlanner.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c1e09a0a-c6d6-46cb-a6ab-fea7a0d1ae74</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.MRPSessionView</dmFormID>
+    <dmTable>MRPSESSIONS</dmTable>
+    <dmCaption>MRP Sessions</dmCaption>
+    <dmHelpLink>JM_MfgReqPlanner.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a7281467-e438-4059-8bf8-73368db46d98</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.ProcessView</dmFormID>
+    <dmTable>PROCESSES</dmTable>
+    <dmCaption>Process</dmCaption>
+    <dmHelpLink>XA_ProcessMaint.htm</dmHelpLink>
+    <dmVID>JC04</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>17baf5d7-b61e-46ae-895c-c2e7e1f66da6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.ProductionDepartmentView</dmFormID>
+    <dmTable>PRODUCTIONDEPARTMENTS</dmTable>
+    <dmCaption>Production Department</dmCaption>
+    <dmHelpLink>XA_ProdDeptMaint.htm</dmHelpLink>
+    <dmVID>JC02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>886485e5-0028-40db-b168-02dc4ac78f11</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.WorkCenterLinkSkillsView</dmFormID>
+    <dmTable>WorkCenterSkills</dmTable>
+    <dmCaption>Work Center Skills</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.DocumentRegister|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>2808a8c5-e861-4271-aaea-ecb731b02762</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.WorkCenterMemoView</dmFormID>
+    <dmTable>WORKCENTERMEMOS</dmTable>
+    <dmCaption>Work Center Memo</dmCaption>
+    <dmHelpLink>XA_WorkCentreMemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9d0720c1-f349-4b5f-84b6-e6351a7fea00</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Job.WorkCenterView</dmFormID>
+    <dmTable>WORKCENTERS</dmTable>
+    <dmCaption>Work Center</dmCaption>
+    <dmHelpLink>XA_WorkCentreMaint.htm</dmHelpLink>
+    <dmVID>JC03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>79b8c664-f645-4e11-ac13-96e04316e12d</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Plant.PlantDepartmentView</dmFormID>
+    <dmTable>PLANTDEPARTMENTS</dmTable>
+    <dmCaption>Plant Department</dmCaption>
+    <dmHelpLink>XA_PlantDeptMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c4e32c5f-245f-42b4-afda-87655fe04957</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Plant.PlantView</dmFormID>
+    <dmTable>PLANTS</dmTable>
+    <dmCaption>Plant</dmCaption>
+    <dmHelpLink>XA_PlantMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e392e3a5-ecd0-44b5-9ee0-6a3efb69f855</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ProductConfigurator.PCPartAssemblyView</dmFormID>
+    <dmTable>PARTASSEMBLIES</dmTable>
+    <dmCaption>Part Assembly</dmCaption>
+    <dmHelpLink>prdConfg_assemblies.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f4d257d5-9840-432d-a05d-ab97e433f478</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ProductConfigurator.PCPartMaterialView</dmFormID>
+    <dmTable>PARTMATERIALS</dmTable>
+    <dmCaption>Part Material</dmCaption>
+    <dmHelpLink>prdConfg_materials.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>187a7201-0254-453d-b82c-4174ecc11465</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ProductConfigurator.PCPartOperationView</dmFormID>
+    <dmTable>PARTOPERATIONS</dmTable>
+    <dmCaption>Part Operation</dmCaption>
+    <dmHelpLink>prdConfg_operations.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>aa3130b4-a1ec-483e-a952-5f23fa74b5d8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.ProductConfigurator.PCPartRevisionView</dmFormID>
+    <dmTable>PARTREVISIONS</dmTable>
+    <dmCaption>Part Revision</dmCaption>
+    <dmHelpLink>prdConfg_partRevision.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6e67586e-2027-43f5-826d-dc33f1690974</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Project.ProjectAreaView</dmFormID>
+    <dmTable>PROJECTAREAS</dmTable>
+    <dmCaption>Project Area</dmCaption>
+    <dmHelpLink>ProjectAreas.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>43937fb9-5727-4f00-a116-4b8fcd2cb161</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Project.ProjectContactView</dmFormID>
+    <dmTable>PROJECTCONTACTS</dmTable>
+    <dmCaption>Project Contact</dmCaption>
+    <dmHelpLink>ProjectContacts.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a7ade078-bdd1-47f9-9b1f-907c9f33b0b3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Project.ProjectTypeView</dmFormID>
+    <dmTable>PROJECTTYPES</dmTable>
+    <dmCaption>Project Type</dmCaption>
+    <dmHelpLink>PM_ProjectTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>023e0466-0b9f-4d11-b7c3-d5f4567dea66</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Project.ProjectView</dmFormID>
+    <dmTable>PROJECTS</dmTable>
+    <dmCaption>Project</dmCaption>
+    <dmHelpLink>projectEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>37ada615-fe31-4ef9-99fb-c35743fe7c96</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.PurchaseOrder.PurchaseOrderLineView</dmFormID>
+    <dmTable>PURCHASEORDERLINES</dmTable>
+    <dmCaption>Purchase Order Line</dmCaption>
+    <dmHelpLink>PM_POLines.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.DocumentRegister|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8066835c-ee57-48d7-8190-c12c51f91bb9</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.PurchaseOrder.PurchaseOrderMemoView</dmFormID>
+    <dmTable>PURCHASEORDERMEMOS</dmTable>
+    <dmCaption>Purchase Order Memo</dmCaption>
+    <dmHelpLink>PM_POMemos.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7321c823-6f6e-491b-8240-803864d311fe</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.PurchaseOrder.PurchaseOrderView</dmFormID>
+    <dmTable>PURCHASEORDERS</dmTable>
+    <dmCaption>Purchase Order</dmCaption>
+    <dmHelpLink>PM_POEntry.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8bf275e4-235d-4cb7-865d-0cb8cd3136d0</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.PurchaseOrder.PurchasePlannerLineView</dmFormID>
+    <dmTable>PURCHASEPLANNERLINES</dmTable>
+    <dmCaption>Purchase Planner Line</dmCaption>
+    <dmHelpLink>PM_PP_Lines.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0ea5e7da-ace8-4ff9-be89-81aba3d15e2c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.PurchaseOrder.PurchasePlannerSessionView</dmFormID>
+    <dmTable>PURCHASEPLANNERSESSIONS</dmTable>
+    <dmCaption>Purchase Planner</dmCaption>
+    <dmHelpLink>PM_PP_Session.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4e00da4d-8497-4ed0-85dd-312ce9a75a38</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.CorrectiveActionCategoryView</dmFormID>
+    <dmTable>CORRECTIVEACTIONCATEGORIES</dmTable>
+    <dmCaption>Corrective Action Category</dmCaption>
+    <dmHelpLink>QA_CorrectiveActionCatMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3bf93b81-0494-435c-94f6-be93aab25b53</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.CorrectiveActionCodeView</dmFormID>
+    <dmTable>CORRECTIVEACTIONCODES</dmTable>
+    <dmCaption>Corrective Action Code</dmCaption>
+    <dmHelpLink>QA_CorrectiveActionCodeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7e1d88dc-9aa0-4e04-ba27-693cba05b58b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.InspectionLineView</dmFormID>
+    <dmTable>INSPECTIONLINES</dmTable>
+    <dmCaption>Inspection Line</dmCaption>
+    <dmHelpLink>QM_InspLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>d713f048-5f00-401a-82ad-94c999526a39</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.InspectionView</dmFormID>
+    <dmTable>INSPECTIONS</dmTable>
+    <dmCaption>Inspection</dmCaption>
+    <dmHelpLink>QM_InspEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bc8f114a-0099-4849-bfd7-926b1ead88d5</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.NonConformanceCategoryView</dmFormID>
+    <dmTable>NONCONFORMANCECATEGORIES</dmTable>
+    <dmCaption>Non Conformance Category</dmCaption>
+    <dmHelpLink>QA_NonConfCatMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9a760117-2b84-450a-bf79-2ddc8faf73bd</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.NonConformanceCauseView</dmFormID>
+    <dmTable>NONCONFORMANCECAUSES</dmTable>
+    <dmCaption>Non Conformance Cause</dmCaption>
+    <dmHelpLink>QA_NonConfCauseMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5ab8f13d-ffae-4812-9ab3-eae9a52d2240</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.NonConformanceCodeView</dmFormID>
+    <dmTable>NONCONFORMANCECODES</dmTable>
+    <dmCaption>Non Conformance Code</dmCaption>
+    <dmHelpLink>QA_NonConfCodeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>25b65339-d12a-4746-81c0-e95b7f8bf0d1</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Quality.NonConformanceView</dmFormID>
+    <dmTable>NONCONFORMANCES</dmTable>
+    <dmCaption>Non Conformance</dmCaption>
+    <dmHelpLink>QM_NonConfEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1640fc6d-e1e7-4fef-b569-1d15014a7514</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Receipt.LandedCostCategoryView</dmFormID>
+    <dmTable>LANDEDCOSTCATEGORIES</dmTable>
+    <dmCaption>Landed Cost Category</dmCaption>
+    <dmHelpLink>RM_LandCostMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cb93f52c-6924-45d1-bbbe-1f980a102cf6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Receipt.ReceiptView</dmFormID>
+    <dmTable>RECEIPTS</dmTable>
+    <dmCaption>Receipt</dmCaption>
+    <dmHelpLink>RM_ReceiptEntry.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>42de1f0f-524f-43a5-ac3f-454fc57cb5a4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rfq.RFQLineView</dmFormID>
+    <dmTable>RFQLINES</dmTable>
+    <dmCaption>RFQ Line</dmCaption>
+    <dmHelpLink>rfq_entrydetails.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f26b8db9-11b4-4f5b-a2d9-b5e5e97292cc</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rfq.RFQMemoView</dmFormID>
+    <dmTable>RFQMEMOS</dmTable>
+    <dmCaption>RFQ Memo</dmCaption>
+    <dmHelpLink>rfq_entrymemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>21bd7607-0760-40f1-9bc2-3778f18b415b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rfq.RFQSupplierView</dmFormID>
+    <dmTable>RFQSUPPLIERS</dmTable>
+    <dmCaption>RFQ Supplier</dmCaption>
+    <dmHelpLink>rfq_entrysuppliers.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9befe966-cc39-480d-85ae-5fd61921ac89</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rfq.RFQView</dmFormID>
+    <dmTable>RFQS</dmTable>
+    <dmCaption>RFQ</dmCaption>
+    <dmHelpLink>rfq_entryheaders.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>861f4d51-77df-4316-bc83-07c1b7b051fe</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rma.RMAActionTypeView</dmFormID>
+    <dmTable>RMAACTIONTYPES</dmTable>
+    <dmCaption>RMA Action Type</dmCaption>
+    <dmHelpLink>RMA_ActionTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a6126d4b-d0f1-4363-afa9-5644147fd17a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rma.RMAClaimLineView</dmFormID>
+    <dmTable>RMACLAIMLINES</dmTable>
+    <dmCaption>Claim Line</dmCaption>
+    <dmHelpLink>QM_RMAClaimLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9fe04617-1037-4a35-bfdb-4916c95dfbcf</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rma.RMAClaimView</dmFormID>
+    <dmTable>RMACLAIMS</dmTable>
+    <dmCaption>RMA Claim</dmCaption>
+    <dmHelpLink>QM_RMAClaimEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f9619a7b-93ff-4f4f-8e6c-6e60e42d0d1c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Rma.RMAReceiptView</dmFormID>
+    <dmTable>RMARECEIPTS</dmTable>
+    <dmCaption>RMA Receipt</dmCaption>
+    <dmHelpLink>RM_RMAReceiptEntry.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>584b4ac0-d83e-4fb8-9c31-c5f537d6a753</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Shipment.CustomerPackageView</dmFormID>
+    <dmTable>CustomerPackages</dmTable>
+    <dmCaption>Customer Package</dmCaption>
+    <dmHelpLink>XA_CustomerPackageMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ff4ab5a8-166c-4258-a52b-40273d061474</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Shipment.ShipmentView</dmFormID>
+    <dmTable>SHIPMENTS</dmTable>
+    <dmCaption>Shipment</dmCaption>
+    <dmHelpLink>SH_ShipmentEntry.htm
+</dmHelpLink>
+    <dmVID>OE13</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>302ba755-d2fd-4c7c-9b5e-8fda310910ef</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Shipment.ShippingMethodView</dmFormID>
+    <dmTable>SHIPPINGMETHODS</dmTable>
+    <dmCaption>Shipping Method</dmCaption>
+    <dmHelpLink>XA_ShippingMethodMaint.htm</dmHelpLink>
+    <dmVID>OE04</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cbe331dc-23c3-48b4-b58f-215e0f363cad</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Shipment.ShippingPaymentTypeView</dmFormID>
+    <dmTable>SHIPPINGPAYMENTTYPES</dmTable>
+    <dmCaption>Shipping Payment Type</dmCaption>
+    <dmHelpLink>XA_ShippingPaymentTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7600eabe-710a-498d-8719-69904f5aa851</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Timecard.IndirectLaborView</dmFormID>
+    <dmTable>INDIRECTLABORCODES</dmTable>
+    <dmCaption>Indirect Labor ID</dmCaption>
+    <dmHelpLink>LM_IndLabMaint.htm</dmHelpLink>
+    <dmVID>JC05</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>2ddd6eb7-0fdc-4935-8896-14bbcada7745</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Timecard.ShiftView</dmFormID>
+    <dmTable>SHIFTS</dmTable>
+    <dmCaption>Shift</dmCaption>
+    <dmHelpLink>LM_ShiftMaint.htm</dmHelpLink>
+    <dmVID>DC02</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>2dad4aa5-b2ab-460d-abac-930a91236b4b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Timecard.TimecardLineView</dmFormID>
+    <dmTable>TIMECARDLINES</dmTable>
+    <dmCaption>Timecard Line</dmCaption>
+    <dmHelpLink>LM_Timecard_Lines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3878ce6f-e536-4701-be09-33a9a4eb5555</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Timecard.TimecardView</dmFormID>
+    <dmTable>TIMECARDS</dmTable>
+    <dmCaption>Timecard</dmCaption>
+    <dmHelpLink>LM_TimecardEntry.htm</dmHelpLink>
+    <dmVID>JC18</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>87f40c05-d77e-4ea5-8e35-c62b150bd9de</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Production.Warehouse.WarehouseView</dmFormID>
+    <dmTable>WAREHOUSES</dmTable>
+    <dmCaption>Warehouse</dmCaption>
+    <dmHelpLink>IM_WhseMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>786191d8-b217-4129-be44-c8021bdadfb4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallChangeRequestLinkView</dmFormID>
+    <dmTable>CALLCHANGEREQUESTLINKS</dmTable>
+    <dmCaption>Call/Change Request Link</dmCaption>
+    <dmHelpLink>KB_CallCRLinks.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>94bfeeba-374e-413c-9144-6613cae70551</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallKnowledgeBasePageLinkView</dmFormID>
+    <dmTable>CALLKNOWLEDGEBASEPAGELINKS</dmTable>
+    <dmCaption>Call/KnowledgeBase Page Link</dmCaption>
+    <dmHelpLink>KB_CallKBLinks.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f853034d-b6fa-4b5e-97ab-fffb119e5193</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallLineView</dmFormID>
+    <dmTable>CALLLINES</dmTable>
+    <dmCaption>Call Line</dmCaption>
+    <dmHelpLink>KB_CallLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ab76cf06-73cb-4c44-96d4-c0cc0a3771de</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallMemoView</dmFormID>
+    <dmTable>CALLMEMOS</dmTable>
+    <dmCaption>Call Memo</dmCaption>
+    <dmHelpLink>KB_CallMemo.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cd74ff67-8be4-4d2b-a2c7-8dde5e0c8659</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallQueueForm</dmFormID>
+    <dmTable>CALLS</dmTable>
+    <dmCaption>% Call(s) - Call Queue</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup>Miscellaneous Forms</dmDesGroup>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4394eac9-3b21-4fe4-a4a1-bcf3add8faa1</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallTypeView</dmFormID>
+    <dmTable>CALLTYPES</dmTable>
+    <dmCaption>Call Type</dmCaption>
+    <dmHelpLink>KB_CallTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>fa1924a1-eec1-4c51-adbe-98006e79e533</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.CallView</dmFormID>
+    <dmTable>CALLS</dmTable>
+    <dmCaption>Call</dmCaption>
+    <dmHelpLink>KB_CallEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0f126041-4fe3-48c2-9205-b737466cd8e5</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.KnowledgeBasePageView</dmFormID>
+    <dmTable>KNOWLEDGEBASEPAGES</dmTable>
+    <dmCaption>KnowledgeBase Page</dmCaption>
+    <dmHelpLink>KB_KBPageEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f3def4dd-e8d9-4955-8b86-d2cb07c9cfc5</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.PriorityView</dmFormID>
+    <dmTable>PRIORITIES</dmTable>
+    <dmCaption>Priority</dmCaption>
+    <dmHelpLink>KB_PriorityMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>42da759a-72ba-45b6-8387-eeb3db736f52</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.ServiceContractLineView</dmFormID>
+    <dmTable>SERVICECONTRACTLINES</dmTable>
+    <dmCaption>Service Contract Line</dmCaption>
+    <dmHelpLink>KB_SrvcContLine.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>74946907-1eb1-4459-8720-761450782dce</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.ServiceContractMemoView</dmFormID>
+    <dmTable>SERVICECONTRACTMEMOS</dmTable>
+    <dmCaption>Service Contract Memo</dmCaption>
+    <dmHelpLink>KB_SrvcContMemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>db65f760-f22a-45ed-a4e8-61944e244a03</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.ServiceContractOwnerView</dmFormID>
+    <dmTable>SERVICECONTRACTOWNERS</dmTable>
+    <dmCaption>Service Contract Owner</dmCaption>
+    <dmHelpLink>KB_SrvcContOwners.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>950c55fb-9a23-4028-87da-8f695352d8cf</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.ServiceContractTypeView</dmFormID>
+    <dmTable>SERVICECONTRACTTYPES</dmTable>
+    <dmCaption>Service Contract Type</dmCaption>
+    <dmHelpLink>KB_ServiceContractTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5c950a62-bbb1-43d8-8610-0a5f74627404</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Call.ServiceContractView</dmFormID>
+    <dmTable>SERVICECONTRACTS</dmTable>
+    <dmCaption>Service Contract</dmCaption>
+    <dmHelpLink>KB_SrvcContEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>66093d49-7626-4de5-a149-a16ba4107559</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.AttachmentMemoView</dmFormID>
+    <dmTable>ATTACHMENTMEMOS</dmTable>
+    <dmCaption>Attachment Memos</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9a252929-5efe-483a-89a5-312e6e36782a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.AttachmentTypeView</dmFormID>
+    <dmTable>ATTACHMENTTYPES</dmTable>
+    <dmCaption>Attachment Type</dmCaption>
+    <dmHelpLink>CM_AttachmentTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0a6d2bd6-90c6-4c6a-bc2b-cd57876f6985</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.AttachmentView</dmFormID>
+    <dmTable>ATTACHMENTS</dmTable>
+    <dmCaption>Attachment</dmCaption>
+    <dmHelpLink>CM_Attachment_Entry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e67e8c20-039c-4567-b372-617693b230b5</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.ContactGroupView</dmFormID>
+    <dmTable>ORGANIZATIONCONTACTS</dmTable>
+    <dmCaption>Contact Group</dmCaption>
+    <dmHelpLink>CM_ContactGrpMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>16c2db9d-b7c9-409f-b098-fcf189aced9a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.ContactMethodView</dmFormID>
+    <dmTable>CONTACTMETHODS</dmTable>
+    <dmCaption>Contact Method</dmCaption>
+    <dmHelpLink>KB_ContactMethodMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>70440409-9290-4ff0-87dc-ead3cf2efc3d</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.ContactTitleView</dmFormID>
+    <dmTable>CONTACTTITLES</dmTable>
+    <dmCaption>Contact Title</dmCaption>
+    <dmHelpLink>CM_ContactTitleMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a70f6508-5214-4a70-9170-f0f3d62baede</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.CustomerGroupView</dmFormID>
+    <dmTable>CUSTOMERGROUPS</dmTable>
+    <dmCaption>Customer Group</dmCaption>
+    <dmHelpLink>CM_CustomerGRpMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>2eebc07b-0c36-42e2-930d-3d272d7f8c5b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.IndustryTypeView</dmFormID>
+    <dmTable>INDUSTRYTYPES</dmTable>
+    <dmCaption>Industry Type</dmCaption>
+    <dmHelpLink>CM_IndustryTypeMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>86dcea4e-8d39-42fb-8f5e-3214ce314825</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.OrganizationContactView</dmFormID>
+    <dmTable>ORGANIZATIONCONTACTS</dmTable>
+    <dmCaption>Contact</dmCaption>
+    <dmHelpLink>CM_ContactEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0480b5c1-7bb7-4eb0-b9ee-825099baf54f</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.OrganizationLocationView</dmFormID>
+    <dmTable>ORGANIZATIONLOCATIONS</dmTable>
+    <dmCaption>Location</dmCaption>
+    <dmHelpLink>CM_OrgEntry_Locations.htm</dmHelpLink>
+    <dmVID>OE07A</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>957b0938-26c5-405a-88d0-5e86a74ac950</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.OrganizationMemoView</dmFormID>
+    <dmTable>ORGANIZATIONMEMOS</dmTable>
+    <dmCaption>Memo</dmCaption>
+    <dmHelpLink>CM_OrgEntry_Memo.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5393c2ce-f751-4567-8ca6-360ce0aa73bb</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.OrganizationPartInfoForm</dmFormID>
+    <dmTable />
+    <dmCaption>Price and Availability</dmCaption>
+    <dmHelpLink>cm_entryPriceAvailability.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>2</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>93bce5b3-d52b-4402-a7d1-3e7bf4e5a9c6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.OrganizationView</dmFormID>
+    <dmTable>ORGANIZATIONS</dmTable>
+    <dmCaption>Organization</dmCaption>
+    <dmHelpLink>CM_OrgEntry.htm
+</dmHelpLink>
+    <dmVID>OE07</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6102e9a2-5b70-4fc9-8a45-afd4da65cf4a</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Contact.SupplierRatingView</dmFormID>
+    <dmTable>SUPPLIERRATINGS</dmTable>
+    <dmCaption>Supplier Rating</dmCaption>
+    <dmHelpLink>CM_SupplierRatingMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>55e745dc-d2f9-4808-a0a7-4c5514bdc78b</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.FollowUp.FollowUpView</dmFormID>
+    <dmTable>FOLLOWUPS</dmTable>
+    <dmCaption>Follow-up</dmCaption>
+    <dmHelpLink>CM_FollowupEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1247b2f1-00b9-4755-8a45-9448b6db52bc</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Lead.LeadCompetitorView</dmFormID>
+    <dmTable>LEADCOMPETITORS</dmTable>
+    <dmCaption>Lead Competitor</dmCaption>
+    <dmHelpLink>LO_LeadCompetitors.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>071874a1-ad2c-4fbf-a03a-777e91f25571</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Lead.LeadLineView</dmFormID>
+    <dmTable>LEADLINES</dmTable>
+    <dmCaption>Lead Line</dmCaption>
+    <dmHelpLink>LO_LeadLines.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>49289911-67d0-4282-a075-ea74216e39e6</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Lead.LeadMemoView</dmFormID>
+    <dmTable>LEADMEMOS</dmTable>
+    <dmCaption>Lead Memo</dmCaption>
+    <dmHelpLink>LO_LeadMemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0d0cb9cd-897b-46cd-8630-10300916d908</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Lead.LeadView</dmFormID>
+    <dmTable>LEADS</dmTable>
+    <dmCaption>Lead</dmCaption>
+    <dmHelpLink>LO_LeadEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>4a4a0002-ce90-4088-bc3d-f9db83f6ade8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Lead.MarketingProgramView</dmFormID>
+    <dmTable>MARKETINGPROGRAMS</dmTable>
+    <dmCaption>Marketing Program</dmCaption>
+    <dmHelpLink>LO_MarketingProgramMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>f886b7e8-3268-4ba3-8aa0-c51b05c6b930</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Lead.MilestoneView</dmFormID>
+    <dmTable>MILESTONES</dmTable>
+    <dmCaption>Milestone</dmCaption>
+    <dmHelpLink>LO_MilestoneMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>efa9571c-aabb-4ab3-86f5-6ceee152c553</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.POS.PointOfSaleTerminalView</dmFormID>
+    <dmTable>POINTOFSALETERMINALS</dmTable>
+    <dmCaption>Point of Sale Terminal</dmCaption>
+    <dmHelpLink>su_posTetminal.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>022adb7b-9d1b-460f-a739-e618e32e7424</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.POS.Retail.PaymentMethodView</dmFormID>
+    <dmTable>PAYMENTMETHODS</dmTable>
+    <dmCaption>Payment Method</dmCaption>
+    <dmHelpLink>POSRetail-Configuration.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5e8c3a8d-1c0e-47b0-b091-c0330cb873cb</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.POS.Retail.POSSessionView</dmFormID>
+    <dmTable>POSSESSIONS</dmTable>
+    <dmCaption>Point of Sale Session</dmCaption>
+    <dmHelpLink>POSRetail-ExploringPOS.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a6c9c6f4-782e-4603-a7fd-7b08f1a221a9</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.POS.Retail.POSTransactionView</dmFormID>
+    <dmTable>POSTRANSACTIONS</dmTable>
+    <dmCaption>Point of Sale Transaction</dmCaption>
+    <dmHelpLink>POSRetail-ExploringPOS.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>827e1584-e77b-492c-8f9f-409692e504b0</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Quote.QuoteAssemblyView</dmFormID>
+    <dmTable>QUOTEASSEMBLIES</dmTable>
+    <dmCaption>Quote Assembly</dmCaption>
+    <dmHelpLink>QM_QuoteAssemblies.htm</dmHelpLink>
+    <dmVID>EQ03E</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cec7c323-4e09-448f-b53c-7a890d6c7483</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Quote.QuoteLineView</dmFormID>
+    <dmTable>QUOTELINES</dmTable>
+    <dmCaption>Quote Line</dmCaption>
+    <dmHelpLink>QM_QuoteLines.htm</dmHelpLink>
+    <dmVID>EQ03A</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0e018fdf-00ac-48c2-8c94-390f56c292f8</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Quote.QuoteMaterialView</dmFormID>
+    <dmTable>QUOTEMATERIALS</dmTable>
+    <dmCaption>Quote Material</dmCaption>
+    <dmHelpLink>QM_QuoteMaterials.htm</dmHelpLink>
+    <dmVID>EQ03F</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>90edb5ee-9bb1-41c6-af5a-fecb03f5d038</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Quote.QuoteMemoView</dmFormID>
+    <dmTable>QUOTEMEMOS</dmTable>
+    <dmCaption>Quote Memo</dmCaption>
+    <dmHelpLink>QM_QuoteMemos.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3d755df3-6a2c-4e70-be7f-a080cde433a1</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Quote.QuoteOperationView</dmFormID>
+    <dmTable>QUOTEOPERATIONS</dmTable>
+    <dmCaption>Quote Operation</dmCaption>
+    <dmHelpLink>QM_QuoteOperations.htm</dmHelpLink>
+    <dmVID>EQ03H</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8fb9623d-5a78-49f3-9b4c-e599e991cdba</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.Quote.QuoteView</dmFormID>
+    <dmTable>QUOTES</dmTable>
+    <dmCaption>Quote</dmCaption>
+    <dmHelpLink>QM_QuoteEntry.htm</dmHelpLink>
+    <dmVID>EQ03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>af2ae9b1-fff5-45f5-8cbb-e9ea1e9d8cae</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.SalesOrder.SalesOrderDeliveryView</dmFormID>
+    <dmTable>SALESORDERDELIVERIES</dmTable>
+    <dmCaption>Sales Order Delivery</dmCaption>
+    <dmHelpLink>OM_SODeliveries.htm</dmHelpLink>
+    <dmVID>OE10C</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ba51d48f-5a4a-4a64-ad92-d51fe900fade</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.SalesOrder.SalesOrderLineView</dmFormID>
+    <dmTable>SALESORDERLINES</dmTable>
+    <dmCaption>Sales Order Line</dmCaption>
+    <dmHelpLink>OM_SOLines.htm</dmHelpLink>
+    <dmVID>OE10B</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.DocumentRegister|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7df89c03-fa90-4891-94d8-fba80510a79d</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.SalesOrder.SalesOrderLinkView</dmFormID>
+    <dmTable>SALESORDERJOBLINKS</dmTable>
+    <dmCaption>Sales Order Line/Job Link</dmCaption>
+    <dmHelpLink>OM_JobLinks.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c84d8cc2-e9b8-4f86-87a7-fa6972309091</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.SalesOrder.SalesOrderMemoView</dmFormID>
+    <dmTable>SALESORDERMEMOS</dmTable>
+    <dmCaption>Sales Order Memo</dmCaption>
+    <dmHelpLink>OM_SOMemo.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>8d3ba747-a4e2-4ede-a532-7846e5963ba3</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.SalesOrder.SalesOrderPickListSessionView</dmFormID>
+    <dmTable>SALESORDERPICKLISTSESSIONS</dmTable>
+    <dmCaption>Pick List Session</dmCaption>
+    <dmHelpLink>PickListSession.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e31ab071-53cc-4a9c-b269-37c20734d019</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Sales.SalesOrder.SalesOrderView</dmFormID>
+    <dmTable>SALESORDERS</dmTable>
+    <dmCaption>Sales Order</dmCaption>
+    <dmHelpLink>OM_SOEntry.htm</dmHelpLink>
+    <dmVID>OE10</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Financial|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>85ede5f2-b8ab-4e15-90f6-e1d946b50d1c</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Schedule.Job.ScenarioView</dmFormID>
+    <dmTable>JOBSCENARIOS</dmTable>
+    <dmCaption>Scenario</dmCaption>
+    <dmHelpLink>JM_ScenarioMaint.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e3fb0a20-1cd5-4a63-a3a4-299e9d3477b4</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.Schedule.Job.ScheduleJobForm</dmFormID>
+    <dmTable>JOBS</dmTable>
+    <dmCaption>Schedule Job</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>47121c06-71a8-4393-bac8-a198535b744e</dmUniqueID>
+    <dmFormID>M1.Ax.Erp.Forms.WorkFlow.ViewWorkFlow</dmFormID>
+    <dmTable>WorkFlows</dmTable>
+    <dmCaption>Work Flows</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a0ee9a2f-8442-4d63-b4e0-3c44acbf960d</dmUniqueID>
+    <dmFormID>M1.Forms.Database.NextIDSearchForm</dmFormID>
+    <dmTable>NEXTIDS</dmTable>
+    <dmCaption>Set Next ID</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>4</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7454afb0-c90c-4ce7-ae78-ddf2b017dffc</dmUniqueID>
+    <dmFormID>M1ENTRYGRIDVIEW</dmFormID>
+    <dmTable />
+    <dmCaption />
+    <dmHelpLink>giscreenssearch.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>0</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3a754b31-5281-4b4d-897d-0d6cf8c4c0c6</dmUniqueID>
+    <dmFormID>MaterialIssueView</dmFormID>
+    <dmTable>MaterialIssues</dmTable>
+    <dmCaption>Material Issue</dmCaption>
+    <dmHelpLink>IM_Matl_Issue_Entry.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c3740bf6-4537-45cc-b63e-7600850c7714</dmUniqueID>
+    <dmFormID>MfgReceiptView</dmFormID>
+    <dmTable>MfgReceipts</dmTable>
+    <dmCaption>Mfg/Misc Receipt</dmCaption>
+    <dmHelpLink>IM_MfgReceipt.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>bca8e9e9-e6ce-42c7-8527-97d36d9f797f</dmUniqueID>
+    <dmFormID>QuantityAdjustmentView</dmFormID>
+    <dmTable>QuantityAdjustments</dmTable>
+    <dmCaption>Quantity Adjustment</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cfd30ee6-b359-48aa-b6c4-b8f0df06f887</dmUniqueID>
+    <dmFormID>StateUITaxYearQuarterTotalView</dmFormID>
+    <dmTable>StateUITaxYearQuarterTotals</dmTable>
+    <dmCaption>State UITax Year Quarter Total</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>54b657d5-744f-4ef0-b852-0e41014d6157</dmUniqueID>
+    <dmFormID>StateUITaxYearQuarterView</dmFormID>
+    <dmTable>StateUITaxYearQuarters</dmTable>
+    <dmCaption>State UITax Year Quarter</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3c0b9218-d930-4119-94b6-9dea18fe950f</dmUniqueID>
+    <dmFormID>StateUITaxYearView</dmFormID>
+    <dmTable>StateUITaxYears</dmTable>
+    <dmCaption>State UITax Year</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>9ee20d88-b9d1-4e98-9eb0-1e052724e939</dmUniqueID>
+    <dmFormID>STPLineView</dmFormID>
+    <dmTable>STPLines</dmTable>
+    <dmCaption>STP Line</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>7c2a3388-a2c6-4f04-9d9a-7e64299fba3b</dmUniqueID>
+    <dmFormID>STPSessionView</dmFormID>
+    <dmTable>STPSessions</dmTable>
+    <dmCaption>STP Session</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3a9b7746-ee01-4270-8dad-eb57a87f9cc0</dmUniqueID>
+    <dmFormID>SuperannuationFundView</dmFormID>
+    <dmTable>SuperannuationFunds</dmTable>
+    <dmCaption>Superannuation Fund</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>ea537c91-06ae-47b7-b469-cb9c342be7a4</dmUniqueID>
+    <dmFormID>ToolCategoryView</dmFormID>
+    <dmTable>ToolCategories</dmTable>
+    <dmCaption>Tool Category</dmCaption>
+    <dmHelpLink>XT_ToolCatMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>453e5b9a-6abe-450b-bcd4-bfa4ba759d9f</dmUniqueID>
+    <dmFormID>ToolMemoView</dmFormID>
+    <dmTable>ToolMemos</dmTable>
+    <dmCaption>Tool Memo</dmCaption>
+    <dmHelpLink>XT_ToolMemos.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6b1d5aa0-803a-46e8-b2f3-975daf4ac95a</dmUniqueID>
+    <dmFormID>ToolMovementView</dmFormID>
+    <dmTable>ToolMovements</dmTable>
+    <dmCaption>Tool Movement</dmCaption>
+    <dmHelpLink>XT_ToolMovements.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0ea005b1-e8ff-40e8-84d3-dba072be0ca2</dmUniqueID>
+    <dmFormID>ToolView</dmFormID>
+    <dmTable>Tools</dmTable>
+    <dmCaption>Tool</dmCaption>
+    <dmHelpLink>XT_ToolMaint.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.DocumentRegister|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>42edcf8b-2b23-4bf9-932f-20c14fa43716</dmUniqueID>
+    <dmFormID>ViewAPInvoice</dmFormID>
+    <dmTable>APINVOICES</dmTable>
+    <dmCaption>AP Invoice</dmCaption>
+    <dmHelpLink>apentryinvoice.htm</dmHelpLink>
+    <dmVID>AP03</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>980d73ea-1fe3-4926-87f8-dad65bc93364</dmUniqueID>
+    <dmFormID>ViewAPInvoiceLine</dmFormID>
+    <dmTable>APINVOICELINES</dmTable>
+    <dmCaption>AP Invoice Line</dmCaption>
+    <dmHelpLink>apentryinvoicedetail.htm</dmHelpLink>
+    <dmVID>AP03B</dmVID>
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b4fd35ea-79d1-45b3-ae10-00715c2c61d2</dmUniqueID>
+    <dmFormID>ViewAPOpenPaymentHeader</dmFormID>
+    <dmTable>APPAYMENTHEADERS</dmTable>
+    <dmCaption>Open AP Payment Header</dmCaption>
+    <dmHelpLink>XA_APUnpresPmtHeaders.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>6a26fc03-8e80-4706-b692-8f6bbb161cf8</dmUniqueID>
+    <dmFormID>ViewAPPaymentHeader</dmFormID>
+    <dmTable>APPAYMENTHEADERS</dmTable>
+    <dmCaption>Payment</dmCaption>
+    <dmHelpLink>AP_paymentEntry1.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>0071a73d-0b2a-42c5-b970-9f0b2ea9d18a</dmUniqueID>
+    <dmFormID>ViewARPaymentHeader</dmFormID>
+    <dmTable>ARPAYMENTHEADERS</dmTable>
+    <dmCaption>Payment</dmCaption>
+    <dmHelpLink>AR_PaymentHeaders.htm
+</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>230f984f-6fa9-4fdb-bae7-d92da27fe00f</dmUniqueID>
+    <dmFormID>ViewAsset</dmFormID>
+    <dmTable>ASSETS</dmTable>
+    <dmCaption>Fixed Asset</dmCaption>
+    <dmHelpLink>FixedAssetEntry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>a70ca183-25ef-4ada-bd02-90e7ef4c6b47</dmUniqueID>
+    <dmFormID>ViewAssetLowValuePool</dmFormID>
+    <dmTable>ASSETLOWVALUEPOOL</dmTable>
+    <dmCaption>Low Value Asset Pool</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5a4be8de-2b08-493f-9140-d4ce8ea06529</dmUniqueID>
+    <dmFormID>ViewBankStatement</dmFormID>
+    <dmTable>BANKSTATEMENTS</dmTable>
+    <dmCaption>Bank Rec Statement</dmCaption>
+    <dmHelpLink>glbankreconciliation.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>1d082127-5c77-4549-9625-49a24d208fa4</dmUniqueID>
+    <dmFormID>ViewGLAccount</dmFormID>
+    <dmTable>GLACCOUNTS</dmTable>
+    <dmCaption>GL Account</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>cf66cd94-ea68-400d-a879-2e7b4324af24</dmUniqueID>
+    <dmFormID>ViewGLCategory</dmFormID>
+    <dmTable>GLCATEGORIES</dmTable>
+    <dmCaption>GL Category Maintenance</dmCaption>
+    <dmHelpLink>GL_Maint_Category.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>de5060b6-a2d8-49db-817e-5f3f715cd9e0</dmUniqueID>
+    <dmFormID>ViewGLUnpresentedPayment</dmFormID>
+    <dmTable>BANKENTRIES</dmTable>
+    <dmCaption>Bank Rec Entry</dmCaption>
+    <dmHelpLink>glunpresentedchequeload.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>080816aa-574a-43db-b4dd-8acd83504c95</dmUniqueID>
+    <dmFormID>ViewIncomeTaxYearTotal</dmFormID>
+    <dmTable>INCOMETAXYEARTOTALS</dmTable>
+    <dmCaption>Income Tax Year Total</dmCaption>
+    <dmHelpLink>payroll_taxYear.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>69a43869-d826-44d7-80e1-3fbc2be182ef</dmUniqueID>
+    <dmFormID>ViewJobGantt</dmFormID>
+    <dmTable>JOBS</dmTable>
+    <dmCaption>Job</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>c5b274b0-b630-4c62-a04e-9cf74efa7a7c</dmUniqueID>
+    <dmFormID>ViewPartForecast</dmFormID>
+    <dmTable>PARTFORECASTS</dmTable>
+    <dmCaption>Part Forecasts</dmCaption>
+    <dmHelpLink>PartForecasts.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>e9cf7411-ece3-4fea-bd33-80a23f5dfd17</dmUniqueID>
+    <dmFormID>ViewPayrollHeader</dmFormID>
+    <dmTable>PAYROLLHEADERS</dmTable>
+    <dmCaption>Payroll Header</dmCaption>
+    <dmHelpLink>payroll_BalanceLoadHeader.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>90201cf4-9a57-4e87-8327-31957b979c33</dmUniqueID>
+    <dmFormID>ViewProductionCalendarWC</dmFormID>
+    <dmTable>PRODUCTIONCALENDARWORKCENTERS</dmTable>
+    <dmCaption>Calendar Work Center</dmCaption>
+    <dmHelpLink>WorkCentreCalendar.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>b6a9d7cf-a8f4-486c-8a4c-ad4a549c930a</dmUniqueID>
+    <dmFormID>ViewWorkCenterGantt</dmFormID>
+    <dmTable>WORKCENTERS</dmTable>
+    <dmCaption>Work Center</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>1</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>95789766-d4a9-444e-a46e-081e7824495f</dmUniqueID>
+    <dmFormID>WarehouseReceiptView</dmFormID>
+    <dmTable>WarehouseReceipts</dmTable>
+    <dmCaption>Warehouse Receipt</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>5cf7caff-b861-432f-a3f2-9016c64bd9d8</dmUniqueID>
+    <dmFormID>WarehouseRequisitionView</dmFormID>
+    <dmTable>WarehouseRequisitions</dmTable>
+    <dmCaption>Warehouse Requisition</dmCaption>
+    <dmHelpLink />
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>3cbbedbe-a553-472f-9c68-361371479da7</dmUniqueID>
+    <dmFormID>WarehouseTransferView</dmFormID>
+    <dmTable>WarehouseTransfers</dmTable>
+    <dmCaption>Warehouse Transfer</dmCaption>
+    <dmHelpLink>wm_entry.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>true</dmAllInDD>
+    <dmDesGroup />
+    <dmAssemblies>M1.Forms.Controls.dll:M1.Forms.Controls|M1.Ax.Erp.Forms.dll:M1.Ax.Erp.Forms.Sales.Contact|</dmAssemblies>
+    <dmAppExtensionID>M1ERP</dmAppExtensionID>
+  </DDForms>
+</NewDataSet>

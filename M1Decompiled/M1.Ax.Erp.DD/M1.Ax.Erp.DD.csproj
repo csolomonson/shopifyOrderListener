@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>M1.Ax.Erp.DD</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>15.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="M1.Ax.Erp.DD.DDCode.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDExplorer.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDFieldExtensions.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDFieldExtensionTypes.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDFields.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDForms.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDGridDetails.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDGrids.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDObjectDetails.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDObjects.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDOpenWiths.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDRelations.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDScripts.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDSeries.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDTables.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDUsers.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDVisualizers.xml" />
+    <None Remove="M1.Ax.Erp.DD.WebBarcodes.xml" />
+    <None Remove="M1.Ax.Erp.DD.WebControls.xml" />
+    <None Remove="M1.Ax.Erp.DD.WebLists.xml" />
+    <None Remove="M1.Ax.Erp.DD.WebOptions.xml" />
+    <None Remove="M1.Ax.Erp.DD.WebScreens.xml" />
+    <None Remove="M1.Ax.Erp.DD.WebServerFunctions.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDSolutions.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDSolutionDetails.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDCustomModules.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDFieldGroups.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDModules.xml" />
+    <None Remove="M1.Ax.Erp.DD.DDFormDetails.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDCode.xml" LogicalName="M1.Ax.Erp.DD.DDCode.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDExplorer.xml" LogicalName="M1.Ax.Erp.DD.DDExplorer.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDFieldExtensions.xml" LogicalName="M1.Ax.Erp.DD.DDFieldExtensions.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDFieldExtensionTypes.xml" LogicalName="M1.Ax.Erp.DD.DDFieldExtensionTypes.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDFields.xml" LogicalName="M1.Ax.Erp.DD.DDFields.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDForms.xml" LogicalName="M1.Ax.Erp.DD.DDForms.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDGridDetails.xml" LogicalName="M1.Ax.Erp.DD.DDGridDetails.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDGrids.xml" LogicalName="M1.Ax.Erp.DD.DDGrids.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDObjectDetails.xml" LogicalName="M1.Ax.Erp.DD.DDObjectDetails.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDObjects.xml" LogicalName="M1.Ax.Erp.DD.DDObjects.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDOpenWiths.xml" LogicalName="M1.Ax.Erp.DD.DDOpenWiths.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDRelations.xml" LogicalName="M1.Ax.Erp.DD.DDRelations.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDScripts.xml" LogicalName="M1.Ax.Erp.DD.DDScripts.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDSeries.xml" LogicalName="M1.Ax.Erp.DD.DDSeries.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDTables.xml" LogicalName="M1.Ax.Erp.DD.DDTables.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDUsers.xml" LogicalName="M1.Ax.Erp.DD.DDUsers.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDVisualizers.xml" LogicalName="M1.Ax.Erp.DD.DDVisualizers.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.WebBarcodes.xml" LogicalName="M1.Ax.Erp.DD.WebBarcodes.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.WebControls.xml" LogicalName="M1.Ax.Erp.DD.WebControls.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.WebLists.xml" LogicalName="M1.Ax.Erp.DD.WebLists.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.WebOptions.xml" LogicalName="M1.Ax.Erp.DD.WebOptions.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.WebScreens.xml" LogicalName="M1.Ax.Erp.DD.WebScreens.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.WebServerFunctions.xml" LogicalName="M1.Ax.Erp.DD.WebServerFunctions.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDSolutions.xml" LogicalName="M1.Ax.Erp.DD.DDSolutions.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDSolutionDetails.xml" LogicalName="M1.Ax.Erp.DD.DDSolutionDetails.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDCustomModules.xml" LogicalName="M1.Ax.Erp.DD.DDCustomModules.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDFieldGroups.xml" LogicalName="M1.Ax.Erp.DD.DDFieldGroups.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDModules.xml" LogicalName="M1.Ax.Erp.DD.DDModules.xml" />
+    <EmbeddedResource Include="M1.Ax.Erp.DD.DDFormDetails.xml" LogicalName="M1.Ax.Erp.DD.DDFormDetails.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="M1.Core">
+      <HintPath>..\..\..\M1\Tools\Assemblies\M1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="M1.Ax.Erp">
+      <HintPath>..\..\..\M1\Tools\Assemblies\M1.Ax.Erp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="M1.Extensions">
+      <HintPath>..\..\..\M1\Tools\Assemblies\M1.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,746 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebScreens" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="WebScreens">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="wsScreenID" type="xs:string" minOccurs="0" />
+                <xs:element name="wsModule" type="xs:string" minOccurs="0" />
+                <xs:element name="wsScreenName" type="xs:string" minOccurs="0" />
+                <xs:element name="wsSequence" type="xs:int" minOccurs="0" />
+                <xs:element name="wsFieldList" type="xs:string" minOccurs="0" />
+                <xs:element name="wsOnDataLoad" type="xs:string" minOccurs="0" />
+                <xs:element name="wsCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="wsFieldClause" type="xs:string" minOccurs="0" />
+                <xs:element name="wsFromClause" type="xs:string" minOccurs="0" />
+                <xs:element name="wsWhereClause" type="xs:string" minOccurs="0" />
+                <xs:element name="wsGroupByClause" type="xs:string" minOccurs="0" />
+                <xs:element name="wsOrderByClause" type="xs:string" minOccurs="0" />
+                <xs:element name="wsParameterList" type="xs:string" minOccurs="0" />
+                <xs:element name="wsAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <WebScreens>
+    <wsScreenID>addScrap</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Add Scrap</wsScreenName>
+    <wsSequence>250</wsSequence>
+    <wsFieldList>lmlTimecardID, lmlTimecardType, lmlJobID, lmlWorkcenterID, lmlProcessID, lmlEmployeeID, lmlShiftID, lmlWorkType, lmlScrapQuantity, lmlScrapReasonID, lmlCompletionType, lmlExpenseID, lmlRoundedStartTime, lmlRoundedEndTime, lmlActualStartTime, lmlActualEndTime, lmlSource, lmlJobAssemblyID, lmlJobOperationID, lmlCreatedBy, lmlCreatedDate</wsFieldList>
+    <wsOnDataLoad>this.fields.lmlActive = 0;
+
+this.fields.lmlRoundedStartTime =  m1.currentTime();
+this.fields.lmlRoundedEndTime =  m1.currentTime();
+this.fields.lmlActualStartTime = m1.currentTime();
+this.fields.lmlActualEndTime = m1.currentTime();
+
+this.fields.lmlCreatedDate = m1.currentTime();</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>lmlTimecardID, lmlTimecardType, lmlJobID, lmlWorkcenterID, lmlProcessID, lmlEmployeeID, lmlShiftID,
+lmlWorkType, lmlScrapQuantity lmlScrapReasonID, lmlCompletionType, lmlExpenseID,
+lmlRoundedStartTime, lmlRoundedEndTime, lmlActualStartTime, lmlActualEndTime, lmlSource,
+lmlJobAssemblyID, lmlJobOperationID, lmlCreatedBy, lmlCreatedDate</wsFieldClause>
+    <wsFromClause>TimecardLines</wsFromClause>
+    <wsWhereClause>lmlTimecardID = @p1 and
+lmlTimecardLineID = @p2</wsWhereClause>
+    <wsParameterList>timecard, line</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>adjustBinQuantity</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Adjust Bin Quantity</wsScreenName>
+    <wsSequence>540</wsSequence>
+    <wsFieldList>imrPartID, imrPartRevisionID, imbWarehouseID, imbPartBinID, imrShortDescription, imbQuantityOnHand</wsFieldList>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imrPartID, imrPartRevisionID, imbWarehouseID, imbPartBinID, imrShortDescription, imbQuantityOnHand</wsFieldClause>
+    <wsFromClause>PartBins Left Outer Join 
+PartRevisions on 
+	IMBPARTID = IMRPARTID and 
+	IMBPARTREVISIONID = IMRPARTREVISIONID</wsFromClause>
+    <wsWhereClause>imbPartID = @p1 and 
+imbPartRevisionID = @p2 and 
+imbWarehouseID = @p3 and 
+imbPartBinID = @p4</wsWhereClause>
+    <wsParameterList>part, revision, warehouse, bin</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>binTransfer</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Bin Transfer</wsScreenName>
+    <wsSequence>550</wsSequence>
+    <wsFieldList>imrPartID, imrPartRevisionID, imbWarehouseID, imbPartBinID, imrShortDescription, imbQuantityOnHand, impTrackLotNumbers, impTrackSerialNumbers</wsFieldList>
+    <wsOnDataLoad>if (this.fields.impTrackLotNumbers == '1')
+{
+	this.lotNumber.show();
+	this.selectLotNumber.show();
+}
+else
+{
+	this.lotNumber.hide();
+	this.selectLotNumber.hide();
+}
+
+if (this.fields.impTrackSerialNumbers == '1')
+{
+	this.serialNumber.show();
+	this.selectSerialNumber.show();
+}
+else
+{
+	this.serialNumber.hide();
+	this.selectSerialNumber.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imrPartID, imrPartRevisionID, imbWarehouseID, imbPartBinID, imrShortDescription, imbQuantityOnHand, impTrackLotNumbers, impTrackSerialNumbers</wsFieldClause>
+    <wsFromClause>PartBins Left Outer Join 
+PartRevisions on 
+	IMBPARTID = IMRPARTID and 
+	IMBPARTREVISIONID = IMRPARTREVISIONID left outer join
+Parts on 
+	IMRPARTID = IMPPARTID</wsFromClause>
+    <wsWhereClause>imbPartID = @p1 and 
+imbPartRevisionID = @p2 and 
+imbWarehouseID = @p3 and 
+imbPartBinID = @p4</wsWhereClause>
+    <wsParameterList>part, revision, warehouse, bin</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>createInspection</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Inspection</wsScreenName>
+    <wsSequence>240</wsSequence>
+    <wsFieldList>qanQualityRegisterID, qanOpenedByEmployeeID, qanOpenedDate, qanInspectionNotesText, qanSource, qanQualityRegisterType, qanCustomerOrganizationID, qanPartID, qanPartRevisionID, qanPartShortDescription, qanRegisterQuantity, qanJobID, qanJobAssemblyID, qanJobOperationID</wsFieldList>
+    <wsOnDataLoad>if(this.fields.qanQualityRegisterID == null || this.fields.qanQualityRegisterID == '')
+{
+	this.fields.qanOpenedByEmployeeID = m1.employee;
+	this.fields.qanOpenedDate = m1.currentTime();
+
+	this.fields.qanSource = 3;			// Shop Floor Entry
+	this.fields.qanQualityRegisterType = 3;		// Job
+	this.createInspection.show();
+}
+else
+{
+	this.createInspection.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>qanQualityRegisterID, qanOpenedByEmployeeID, qanOpenedDate, qanInspectionNotesText, qanSource, qanQualityRegisterType,
+isnull(qanCustomerOrganizationID, jmpCustomerOrganizationID) as qanCustomerOrganizationID,
+isnull(qanPartID, jmaPartID) as qanPartID,
+isnull(qanPartRevisionID, jmaPartRevisionID) as qanPartRevisionID,
+isnull(qanPartShortDescription, jmaPartShortDescription) as qanPartShortDescription,
+isnull(qanRegisterQuantity, jmoOperationQuantity) as qanRegisterQuantity,
+isnull(qanJobID, jmoJobID) as qanJobID, 
+isnull(qanJobAssemblyID, jmoJobAssemblyID) as qanJobAssemblyID,
+isnull(qanJobOperationID, jmoJobOperationID) as qanJobOperationID</wsFieldClause>
+    <wsFromClause>JobOperations left outer join 
+Jobs on jmoJobID = jmpJobID left outer join 
+JobAssemblies on JMOJOBID = JMAJOBID and JMOJOBASSEMBLYID = JMAJOBASSEMBLYID left outer join 
+QualityRegisters on 
+	jmoJobID = qanJobID and 
+	jmoJobAssemblyID = qanJobAssemblyID and 
+	jmoJobOperationID = qanJobOperationID</wsFromClause>
+    <wsWhereClause>jmoJobID = @p1 and
+jmoJobAssemblyID = @p2 and
+jmoJobOperationID = @p3</wsWhereClause>
+    <wsParameterList>job, assembly, operation</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>employee</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Employee</wsScreenName>
+    <wsSequence>30</wsSequence>
+    <wsFieldList>lmeEmployeeID,lmeEmployeeName,lmeDefaultWorkCenterID,lmeHomeProductionDepartmentID,lmeDefaultShiftID,lmeHomeProductionDepartmentID,lmeDefaultWorkCenterID, lmpRoundedStartTime</wsFieldList>
+    <wsOnDataLoad>if(m1.employee != this.fields.lmeEmployeeID)
+{
+	m1.job = null;
+	m1.jobAssembly = null;
+	m1.jobOperation= null;
+
+	m1.setStoredValue('job', m1.job);
+	m1.setStoredValue('jobAssembly', m1.jobAssembly);
+	m1.setStoredValue('jobOperation', m1.jobOperation);
+}
+
+m1.employee = this.fields.lmeEmployeeID;
+m1.setStoredValue('employee', m1.employee);
+
+m1.employeeName = this.fields.lmeEmployeeName;
+m1.setStoredValue('employeeName', m1.employeeName);
+
+if(this.fields.lmpRoundedStartTime == null)
+{
+	this.clockOut.hide();
+	this.clockIn.show();
+	this.status.setValue("Out");
+}
+else
+{
+	this.clockOut.show();
+	this.clockIn.hide();
+	this.status.setValue("In");
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>lmeEmployeeID, lmeEmployeeName, lmeDefaultWorkCenterID, lmeHomeProductionDepartmentID, lmeDefaultShiftID, 
+lmpTimecardID, lmpRoundedStartTime</wsFieldClause>
+    <wsFromClause>employees left outer join 
+timecards on 
+	lmeEmployeeID = lmpEmployeeID and 
+	lmpActive &lt;&gt; 0</wsFromClause>
+    <wsWhereClause>lmeEmployeeID = @p1</wsWhereClause>
+    <wsParameterList>employee</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>endIndirect</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>End Indirect</wsScreenName>
+    <wsSequence>120</wsSequence>
+    <wsFieldList>lmiIndirectLaborID, lmiDescription, lmlTimecardID, lmlTimecardLineID, lmlLaborDescriptionText</wsFieldList>
+    <wsOnDataLoad>this.employeeName.setValue(m1.employeeName);</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>lmiIndirectLaborID, lmiDescription, lmlTimecardID, lmlTimecardLineID, lmlLaborDescriptionText</wsFieldClause>
+    <wsFromClause>TimecardLines  left outer join
+IndirectLaborCodes on
+	lmiIndirectLaborID = lmlIndirectLaborID</wsFromClause>
+    <wsWhereClause>lmlTimeCardID = @p1 and
+lmlTimecardLineID = @p2</wsWhereClause>
+    <wsParameterList>timecard, line</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>endProduction</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>End Production</wsScreenName>
+    <wsSequence>230</wsSequence>
+    <wsFieldList>lmlTimecardID, lmlTimecardLineID, lmlJobID, lmlJobAssemblyID, lmlJobOperationID, lmlCompletionType, lmlGoodQuantity, lmlScrapReasonID,lmlScrapQuantity, lmlReworkReasonID, lmlReworkQuantity, lmlLaborDescriptionText, jmoOperationQuantity, jmoQuantityComplete, jmoProcessShortDescription, jmoProcessLongDescriptionText, jmaPartShortDescription, xawDescription</wsFieldList>
+    <wsOnDataLoad>this.completionType.setValue("2");
+this.goodQuantity.setValue(this.fields.jmoOperationQuantity - this.fields.jmoQuantityComplete);
+
+this.scrapQuantity.setValue(0);
+this.scrapReason.hide();
+
+this.reworkQuantity.setValue(0);
+this.reworkReason.hide();
+
+this.employeeName.setValue(m1.employeeName);</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>lmlTimecardID, lmlTimecardLineID, 
+lmlJobID, lmlJobAssemblyID, lmlJobOperationID, 
+lmlCompletionType, lmlGoodQuantity, 
+lmlScrapReasonID, lmlScrapQuantity, 
+lmlReworkReasonID, lmlReworkQuantity, 
+lmlLaborDescriptionText,
+jmoOperationQuantity, jmoQuantityComplete,
+jmoProcessShortDescription, jmoProcessLongDescriptionText,
+jmaPartShortDescription, 
+xawDescription</wsFieldClause>
+    <wsFromClause>TimecardLines left outer join
+JobOperations on 
+	jmoJobID = lmlJobID and 
+	jmoJobAssemblyID = lmlJobAssemblyID and 
+	jmoJobOperationID = lmlJobOperationID left outer join 
+WorkCenters on 
+	jmoWorkCenterID = xawWorkCenterID left outer join 
+JobAssemblies on 
+	jmoJobID = jmaJobID and 
+	jmoJobAssemblyID = jmaJobAssemblyID</wsFromClause>
+    <wsWhereClause>lmlTimecardID = @p1 and 
+lmlTimecardLineID = @p2</wsWhereClause>
+    <wsParameterList>timecard, line</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>endSetup</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>End Setup</wsScreenName>
+    <wsSequence>220</wsSequence>
+    <wsFieldList>lmlJobID, lmlJobAssemblyID, lmlJobOperationID, lmlTimecardID, lmlTimecardLineID, jmoProcessShortDescription, jmoProcessLongDescriptionText, jmaPartShortDescription, xawDescription, lmlCompletionType, lmlSetupPercentCompleted, lmlLaborDescriptionText</wsFieldList>
+    <wsOnDataLoad>this.setupPercent.setValue(100);
+
+this.employeeName.setValue(m1.employeeName);</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>lmlJobID, lmlJobAssemblyID, 
+lmlJobOperationID, lmlTimecardID, lmlTimecardLineID, 
+jmoProcessShortDescription, jmoProcessLongDescriptionText,
+jmaPartShortDescription, 
+xawDescription,
+lmlCompletionType, lmlSetupPercentCompleted, lmlLaborDescriptionText</wsFieldClause>
+    <wsFromClause>TimecardLines left outer join
+JobOperations on 
+	jmoJobID = lmlJobID and 
+	jmoJobAssemblyID = lmlJobAssemblyID and 
+	jmoJobOperationID = lmlJobOperationID left outer join 
+WorkCenters on 
+	jmoWorkCenterID = xawWorkCenterID left outer join 
+JobAssemblies on 
+	jmoJobID = jmaJobID and 
+	jmoJobAssemblyID = jmaJobAssemblyID</wsFromClause>
+    <wsWhereClause>lmlTimecardID = @p1 and 
+lmlTimecardLineID = @p2</wsWhereClause>
+    <wsParameterList>timecard, line</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>indirect</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Indirect</wsScreenName>
+    <wsSequence>110</wsSequence>
+    <wsFieldList>lmiIndirectLaborID, lmiDescription, lmlTimecardID, lmlTimecardLineID</wsFieldList>
+    <wsOnDataLoad>if ( this.fields.lmlTimecardID == null )
+{
+	this.status.setValue("Inactive");
+	this.startIndirect.show();
+	this.endIndirect.hide();
+}
+else
+{
+	this.status.setValue("Active");
+	this.startIndirect.hide();
+	this.endIndirect.show();
+}
+
+this.employeeName.setValue(m1.employeeName);</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>lmiIndirectLaborID, lmiDescription, lmlTimecardID, lmlTimecardLineID</wsFieldClause>
+    <wsFromClause>IndirectLaborCodes left outer join
+TimecardLines on 
+	lmiIndirectLaborID = lmlIndirectLaborID and
+	lmlEmployeeID = @p2 and 
+	lmlActive = 1</wsFromClause>
+    <wsWhereClause>lmiIndirectLaborID = @p1</wsWhereClause>
+    <wsParameterList>indirect, employee</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>inventoryCount</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Inventory Count</wsScreenName>
+    <wsSequence>420</wsSequence>
+    <wsFieldList>imnInventoryCountID, imdDescription, imnGeneratedDate, imnStatus</wsFieldList>
+    <wsOnDataLoad>if(m1.mode == "count" &amp;&amp; m1.countMode.count == this.fields.imnInventoryCountID) {
+	this.countLines.show();
+	this.startCounting.hide();
+	this.stopCounting.show();
+}
+else {
+	this.countLines.hide();
+	this.startCounting.show();
+	this.stopCounting.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imnInventoryCountID, imdDescription, imnGeneratedDate, imnStatus</wsFieldClause>
+    <wsFromClause>InventoryCounts Left Outer Join 
+CycleCodes on IMNCYCLECODEID = IMDCYCLECODEID</wsFromClause>
+    <wsWhereClause>imnInventoryCountID = @p1</wsWhereClause>
+    <wsParameterList>inventoryCount</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>inventoryCountLine</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Inventory Count Line</wsScreenName>
+    <wsSequence>440</wsSequence>
+    <wsFieldList>imqInventoryCountID, imqInventoryCountLineID, imqPartWarehouseLocationID, imqPartBinID, imqPartRevisionID, imrShortDescription, imqFinalCount, imqCountedBy, imqCountedDate</wsFieldList>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imqInventoryCountID, imqInventoryCountLineID, imqPartWarehouseLocationID, imqPartBinID, imqPartRevisionID, imrShortDescription, 
+imqFinalCount, imqCountedBy, imqCountedDate</wsFieldClause>
+    <wsFromClause>InventoryCountLines Left Outer Join 
+PartRevisions on 
+	IMQPARTID = IMRPARTID and 
+	IMQPARTREVISIONID = IMRPARTREVISIONID</wsFromClause>
+    <wsWhereClause>imqInventoryCountID = @p1 and imqInventoryCountLineID = @p2</wsWhereClause>
+    <wsParameterList>inventoryCount, line</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>job</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Job</wsScreenName>
+    <wsSequence>320</wsSequence>
+    <wsFieldList>jmpJobID, cmoName, jmpPartShortDescription, jmpProductionQuantity</wsFieldList>
+    <wsOnDataLoad>if(m1.mode == "job" &amp;&amp; m1.jobMode.job == this.fields.jmpJobID &amp;&amp; m1.jobMode.assembly == null){
+	this.jobMaterials.show();
+	this.startIssue.hide();
+	this.stopIssue.show();
+}
+else{
+	this.jobMaterials.hide();
+	this.startIssue.show();
+	this.stopIssue.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>jmpJobID, cmoName, jmpPartShortDescription, jmpProductionQuantity</wsFieldClause>
+    <wsFromClause>Jobs Left Outer Join Organizations on JMPCUSTOMERORGANIZATIONID = CMOORGANIZATIONID</wsFromClause>
+    <wsWhereClause>jmpJobID = @p1</wsWhereClause>
+    <wsParameterList>job</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>jobAssembly</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Job Assembly</wsScreenName>
+    <wsSequence>330</wsSequence>
+    <wsFieldList>jmaJobID, jmaJobAssemblyID, cmoName, jmaPartShortDescription, jmpPartShortDescription, jmaProductionQuantity, jmaParentAssemblyID</wsFieldList>
+    <wsOnDataLoad>if(m1.mode == "job" &amp;&amp; m1.jobMode.job == this.fields.jmaJobID &amp;&amp; m1.jobMode.assembly == this.fields.jmaJobAssemblyID){
+	this.assemblyMaterials.show();
+	this.startIssue.hide();
+	this.stopIssue.show();
+}
+else{
+	this.assemblyMaterials.hide();
+	this.startIssue.show();
+	this.stopIssue.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>jmaJobID, jmaJobAssemblyID, cmoName, jmaPartShortDescription, jmpPartShortDescription, jmaProductionQuantity, jmaParentAssemblyID</wsFieldClause>
+    <wsFromClause>JobAssemblies Left Outer Join 
+Jobs on 
+	JMAJOBID = JMPJOBID Left Outer Join 
+Organizations on 
+	JMPCUSTOMERORGANIZATIONID = CMOORGANIZATIONID</wsFromClause>
+    <wsWhereClause>jmaJobID = @p1 and jmaJobAssemblyID = @p2</wsWhereClause>
+    <wsParameterList>job, assembly</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>jobMaterial</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Job Material</wsScreenName>
+    <wsSequence>350</wsSequence>
+    <wsFieldList>jmmPartShortDescription, jmaPartShortDescription, jmpPartShortDescription, jmmJobID, jmmJobAssemblyID, jmmJobMaterialID, jmmPartID, jmmPartRevisionID, jmmPartWarehouseLocationID, jmmPartBinID, jmmEstimatedQuantity, jmmQuantityReceived, impShortDescription, impTrackSerialNumbers, impTrackLotNumbers, cmoName</wsFieldList>
+    <wsOnDataLoad>quantityToIssue = this.fields.jmmEstimatedQuantity - this.fields.jmmQuantityReceived;
+
+if(quantityToIssue &lt; 0)
+	quantityToIssue = 0;
+
+this.quantityToIssue.setValue(quantityToIssue);
+
+if (this.fields.impTrackLotNumbers == '1')
+{
+	this.lotNumber.show();
+	this.selectLotNumber.show();
+}
+else
+{
+	this.lotNumber.hide();
+	this.selectLotNumber.hide();
+}
+
+if (this.fields.impTrackSerialNumbers == '1')
+{
+	this.serialNumber.show();
+	this.selectSerialNumber.show();
+}
+else
+{
+	this.serialNumber.hide();
+	this.selectSerialNumber.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>jmmJobID, jmmJobAssemblyID, jmmJobMaterialID, 
+jmmPartShortDescription, jmaPartShortDescription, jmpPartShortDescription, 
+jmmPartID, jmmPartRevisionID, 
+jmmPartWarehouseLocationID, jmmPartBinID, 
+jmmEstimatedQuantity, jmmQuantityReceived, 
+impShortDescription, impTrackSerialNumbers, impTrackLotNumbers, 
+cmoName</wsFieldClause>
+    <wsFromClause>JobMaterials Left Outer Join 
+JobAssemblies on JMMJOBID = JMAJOBID and JMMJOBASSEMBLYID = JMAJOBASSEMBLYID Left Outer Join
+Jobs on JMMJOBID = JMPJOBID Left Outer Join
+Parts on JMMPARTID = IMPPARTID Left Outer Join
+Organizations on JMPCUSTOMERORGANIZATIONID = CMOORGANIZATIONID</wsFromClause>
+    <wsWhereClause>jmmJobID = @p1 and
+jmmJobAssemblyID = @p2 and
+jmmJobMaterialID = @p3</wsWhereClause>
+    <wsParameterList>job, assembly, material</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>jobMaterial</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Material</wsScreenName>
+    <wsSequence>320</wsSequence>
+    <wsFieldList>jmmJobID, jmmJobAssemblyID, jmmJobMaterialID, jmmPartID, jmmPartRevisionID, jmmPartWarehouseLocationID, jmmPartBinID, jmmEstimatedQuantity, jmmQuantityReceived, impShortDescription, impTrackSerialNumbers, impTrackLotNumbers, jmaPartShortDescription</wsFieldList>
+    <wsOnDataLoad>this.quantityToIssue.setValue(this.fields.jmmEstimatedQuantity - this.fields.jmmQuantityReceived);
+
+if (this.fields.impTrackLotNumbers == '1')
+{
+	this.lotNumber.show();
+	this.selectLotNumber.show();
+}
+else
+{
+	this.lotNumber.hide();
+	this.selectLotNumber.hide()
+}
+
+if (this.fields.impTrackSerialNumbers == '1')
+{
+	this.serialNumber.show();
+	this.selectSerialNumber.show();
+}
+else
+{
+	this.serialNumber.hide();
+	this.selectSerialNumber.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>jmmJobID, jmmJobAssemblyID, jmmJobMaterialID, 
+jmmPartID, jmmPartRevisionID, 
+jmmPartWarehouseLocationID, jmmPartBinID, 
+jmmEstimatedQuantity, jmmQuantityReceived, 
+impShortDescription, impTrackSerialNumbers, impTrackLotNumbers,
+jmaPartShortDescription</wsFieldClause>
+    <wsFromClause>JobMaterials left outer join
+JobAssemblies on 
+	JMMJOBID = JMAJOBID and 
+	JMMJOBASSEMBLYID = JMAJOBASSEMBLYID Left Outer Join 
+Parts on
+	jmmPartID = impPartID</wsFromClause>
+    <wsWhereClause>jmmJobID =@p1 and
+jmmJobAssemblyID = @p2 and
+jmmJobMaterialID = @p3</wsWhereClause>
+    <wsParameterList>job, assembly, material</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>jobOperation</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Job</wsScreenName>
+    <wsSequence>210</wsSequence>
+    <wsFieldList>jmoJobID, jmoJobAssemblyID, jmoJobOperationID, xawDescription, jmoProcessShortDescription, jmoProcessLongDescriptionText, lmlTimecardID, lmlTimecardLineID, lmlTimecardType, lmlWorkType, lmlRoundedStartTime, jmaPartShortDescription</wsFieldList>
+    <wsOnDataLoad>if ( this.fields.lmlRoundedStartTime == null )
+{
+	this.endJob.hide();
+	this.startProduction.show();
+	this.startSetup.show();
+	this.addScrap.hide();
+	this.createInspection.hide();
+}
+else
+{
+	this.endJob.show();
+	this.startProduction.hide();
+	this.startSetup.hide();
+	this.addScrap.show();
+	this.createInspection.show();
+}
+
+if (this.fields.lmlWorkType == "1")
+{
+	this.status.setValue("Setup");
+}
+else if (this.fields.lmlWorkType == "2")
+{
+	this.status.setValue("Production");
+}
+else
+{
+	this.status.setValue("Inactive");
+}
+
+m1.job = this.fields.jmoJobID;
+m1.jobAssembly = this.fields.jmoJobAssemblyID;
+m1.jobOperation = this.fields.jmoJobOperationID;
+
+m1.setStoredValue('job', m1.job);
+m1.setStoredValue('jobAssembly', m1.jobAssembly);
+m1.setStoredValue('jobOperation', m1.jobOperation);
+
+this.employeeName.setValue(m1.employeeName);</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>jmoJobID, jmoJobAssemblyID, jmoJobOperationID,
+xawDescription, 
+jmoProcessShortDescription, jmoProcessLongDescriptionText, 
+jmaPartShortDescription,
+lmlTimecardID, lmlTimecardLineID, lmlTimecardType, lmlWorkType, lmlRoundedStartTime</wsFieldClause>
+    <wsFromClause>JobOperations left outer join 
+WorkCenters on 
+	jmoWorkCenterID = xawWorkCenterID left outer join 
+JobAssemblies on 
+	jmoJobID = jmaJobID and 
+	jmoJobAssemblyID = jmaJobAssemblyID left outer join
+TimecardLines on 
+	jmoJobID = lmlJobID and 
+	jmoJobAssemblyID = lmlJobAssemblyID and 
+	jmoJobOperationID = lmlJobOperationID and 
+	lmlActive = 1 and lmlEmployeeID = @p4</wsFromClause>
+    <wsWhereClause>jmoJobID = @p1 and 
+jmoJobAssemblyID = @p2 and 
+jmoJobOperationID = @p3</wsWhereClause>
+    <wsParameterList>job, assembly, operation, employee</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>part</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Part</wsScreenName>
+    <wsSequence>520</wsSequence>
+    <wsFieldList>imrPartID, imrPartRevisionID, imrShortDescription, imrQuantityOnHand</wsFieldList>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imrPartID, imrPartRevisionID, imrShortDescription, imrQuantityOnHand</wsFieldClause>
+    <wsFromClause>PartRevisions</wsFromClause>
+    <wsWhereClause>imrPartID = @p1 and
+imrPartRevisionID = @p2</wsWhereClause>
+    <wsParameterList>part, revision</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>part</wsScreenID>
+    <wsModule>SFE</wsModule>
+    <wsScreenName>Part</wsScreenName>
+    <wsSequence>310</wsSequence>
+    <wsFieldList>imrPartID, imrPartRevisionID, jmmEstimatedQuantity, jmmQuantityReceived, impShortDescription, impTrackLotNumbers, impTrackSerialNumbers, jmmPartWarehouseLocationID, jmmPartBinID,  jobMaterialCount, jmmJobID, jmmJobAssemblyID, jmmJobMaterialID</wsFieldList>
+    <wsOnDataLoad>this.quantityToIssue.setValue(this.fields.jmmEstimatedQuantity - this.fields.jmmQuantityReceived);
+
+if(this.fields.jobMaterialCount == 1)
+{
+	this.warehouse.show();
+	this.bin.show();
+	this.quantityToIssue.show();	
+	this.issueMaterial.show();
+
+	if(this.fields.impTrackLotNumbers != 0)
+	{
+		this.lotNumber.show();
+		this.selectLotNumber.show();
+	}
+	else
+	{
+		this.lotNumber.hide();
+		this.selectLotNumber.hide();
+	}
+
+	if(this.fields.impTrackSerialNumbers != 0)
+	{
+		this.serialNumber.show();
+		this.selectSerialNumber.show();
+	}
+	else
+	{
+		this.serialNumber.hide();
+		this.selectSerialNumber.hide();
+	}
+}
+else
+{
+	this.quantityToIssue.hide();
+	this.issueMaterial.hide();
+	this.lotNumber.hide();
+	this.serialNumber.hide();
+	this.selectLotNumber.hide();
+	this.selectSerialNumber.hide();
+	this.warehouse.hide();
+	this.bin.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imrPartID, imrPartRevisionID, imrShortDescription,
+jmmEstimatedQuantity, jmmQuantityReceived, isnull(jobMaterialCount, 0) as jobMaterialCount,
+jmmPartWarehouseLocationID, jmmPartBinID,
+impShortDescription, impTrackLotNumbers, impTrackSerialNumbers, 
+jmmJobID, jmmJobAssemblyID, jmmJobMaterialID</wsFieldClause>
+    <wsFromClause>PartRevisions Left Outer Join
+Parts on 
+	IMRPARTID = IMPPARTID left outer join 
+(
+	Select 
+		jmmPartID, jmmPartRevisionID, 
+		sum(jmmEstimatedQuantity) as jmmEstimatedQuantity, 
+		sum(jmmQuantityReceived) as jmmQuantityReceived,
+		max(jmmJobID) as jmmJobID, 
+		max(jmmJobAssemblyID) as jmmJobAssemblyID, 
+		max(jmmJobMaterialID) as jmmJobMaterialID,
+		max(jmmPartWarehouseLocationID) as jmmPartWarehouseLocationID,
+		max(jmmPartBinID) as jmmPartBinID,
+		count(*) as jobMaterialCount 
+	From 
+		TimecardLines Left Outer Join 
+		JobMaterials on 
+			lmlJobID = jmmJobID
+	where 
+		lmlEmployeeID = @p3 and 
+		lmlActive &lt;&gt; 0
+	Group By
+		jmmPartID, jmmPartRevisionID
+) as JobMaterials on
+	JMMPARTID = IMRPARTID and 
+	JMMPARTREVISIONID = IMRPARTREVISIONID</wsFromClause>
+    <wsWhereClause>imrPartID = @p1 and 
+imrPartRevisionID = @p2</wsWhereClause>
+    <wsParameterList>part, revision, employee</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>partBin</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Part Bin</wsScreenName>
+    <wsSequence>530</wsSequence>
+    <wsFieldList>imrPartID, imrPartRevisionID, imbWarehouseID, imbPartBinID, imrShortDescription, imbQuantityOnHand</wsFieldList>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>imrPartID, imrPartRevisionID, imbWarehouseID, imbPartBinID, imrShortDescription, imbQuantityOnHand</wsFieldClause>
+    <wsFromClause>PartBins Left Outer Join 
+PartRevisions on 
+	IMBPARTID = IMRPARTID and 
+	IMBPARTREVISIONID = IMRPARTREVISIONID</wsFromClause>
+    <wsWhereClause>imbPartID = @p1 and 
+imbPartRevisionID = @p2 and 
+imbWarehouseID = @p3 and 
+imbPartBinID = @p4</wsWhereClause>
+    <wsParameterList>part, revision, warehouse, bin</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>pickList</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Pick List</wsScreenName>
+    <wsSequence>220</wsSequence>
+    <wsFieldList>omsPickListSessionID, omsSessionDate, omsStatus</wsFieldList>
+    <wsOnDataLoad>if( m1.mode == "pickList" &amp;&amp; m1.pickListMode.pickList == this.fields.omsPickListSessionID) {
+	this.openPickListLines.show();
+	this.startPicking.hide();
+	this.stopPicking.show();
+}
+else {
+	this.openPickListLines.hide();
+	this.startPicking.show();
+	this.stopPicking.hide();
+}</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>omsPickListSessionID, omsSessionDate, omsStatus</wsFieldClause>
+    <wsFromClause>SalesOrderPickListSessions</wsFromClause>
+    <wsWhereClause>omsPickListSessionID = @p1</wsWhereClause>
+    <wsParameterList>pickList</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+  <WebScreens>
+    <wsScreenID>pickListLine</wsScreenID>
+    <wsModule>INV</wsModule>
+    <wsScreenName>Pick List Line</wsScreenName>
+    <wsSequence>240</wsSequence>
+    <wsFieldList>omyPickListSessionID, omyPickListLineID, cmlName, omySalesOrderID, omyDeliveryDate, imrShortDescription, omyPartRevisionID, omyOpenQuantity, omyPickQuantity, omyPickDate, omyPartWareHouseLocationID, omyPartBinID,</wsFieldList>
+    <wsOnDataLoad>this.qtyPicked.setValue(this.fields.omyOpenQuantity);</wsOnDataLoad>
+    <wsCustom>false</wsCustom>
+    <wsFieldClause>omyPickListSessionID, omyPickListLineID, cmlName, omySalesOrderID, omyDeliveryDate, imrShortDescription, omyPartRevisionID, omyOpenQuantity, omyPickQuantity,
+omyPickDate, omyPartWareHouseLocationID, omyPartBinID</wsFieldClause>
+    <wsFromClause>SalesOrderPickListLines Left Outer Join
+PartRevisions on omyPartID = imrPartID and omyPartRevisionID = imrPartRevisionID Left Outer Join
+SalesOrders on OMYSALESORDERID = OMPSALESORDERID Left Outer Join
+OrganizationLocations on OMPSHIPORGANIZATIONID = CMLORGANIZATIONID and OMPSHIPLOCATIONID = CMLLOCATIONID</wsFromClause>
+    <wsWhereClause>omyPickListSessionID = @p1 and
+omyPickListLineID = @p2</wsWhereClause>
+    <wsParameterList>pickList, line</wsParameterList>
+    <wsAppExtensionID>M1ERP</wsAppExtensionID>
+  </WebScreens>
+</NewDataSet>

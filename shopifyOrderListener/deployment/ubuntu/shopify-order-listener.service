@@ -1,0 +1,38 @@
+[Unit]
+Description=Shopify Sales Order Queue
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=sales-order-listener
+Group=sales-order-listener
+WorkingDirectory=/opt/shopify-order-listener/current/shopifyOrderListener
+EnvironmentFile=/etc/shopify-order-listener/runtime.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/shopify-order-listener/current/.venv/bin/python -m uvicorn api:app --host 127.0.0.1 --port 8010 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGINT
+UMask=0077
+
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectClock=true
+ProtectControlGroups=true
+ProtectHome=true
+ProtectHostname=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectSystem=strict
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+RestrictRealtime=true
+LockPersonality=true
+CapabilityBoundingSet=
+
+[Install]
+WantedBy=multi-user.target
