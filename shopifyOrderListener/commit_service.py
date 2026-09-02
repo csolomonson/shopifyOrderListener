@@ -296,7 +296,7 @@ class CommitService:
             organization_id = str(organization.get("cmoOrganizationID") or "").strip()
             if not organization_id:
                 continue
-            resolution = CustomerMatcher(self.m1).resolution(order, organization_id=organization_id)
+            resolution = CustomerMatcher(self.m1, self.store).resolution(order, organization_id=organization_id)
             selection = resolution.get("selection") or {}
             identifiers = (
                 selection.get("location_id"), selection.get("contact_id"),
@@ -320,7 +320,7 @@ class CommitService:
         if not organization_id:
             raise CommitError("Select or create a customer organization before committing")
         if organization_id != "__NEW__":
-            validation = CustomerMatcher(self.m1).validate_selection(
+            validation = CustomerMatcher(self.m1, self.store).validate_selection(
                 order, organization_id, location_id, contact_id, billing_location_id, billing_contact_id
             )
             if not validation["safe"] and not order.get("address_override"):

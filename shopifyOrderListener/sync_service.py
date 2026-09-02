@@ -22,7 +22,7 @@ class SyncService:
         self.store = store
         self.shopify = shopify or ShopifyClient()
         self.m1 = m1 or M1Client()
-        self.matcher = matcher or CustomerMatcher(self.m1)
+        self.matcher = matcher or CustomerMatcher(self.m1, store)
         self.commits = commits or CommitService(store, self.m1)
 
     def run(self, *, full: bool = False) -> dict[str, Any]:

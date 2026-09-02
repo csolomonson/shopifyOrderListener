@@ -53,6 +53,30 @@ class CustomerMatchingTests(unittest.TestCase):
         self.assertTrue(report["fields"]["email"]["matched"])
         self.assertTrue(report["fields"]["address"]["matched"])
 
+    def test_sql_directory_source_avoids_public_api_directory_reads(self):
+        fake_m1 = FakeM1()
+        rows = {
+            "Organizations": [fake_m1.details["organization"]],
+            "OrganizationLocations": fake_m1.details["locations"],
+            "OrganizationContacts": fake_m1.details["contacts"],
+        }
+
+        class ApiMustNotReadDirectory(FakeM1):
+            def get_all(self, resource):
+                raise AssertionError(f"Public API directory read attempted for {resource}")
+
+        class SqlDirectory:
+            engine = object()
+
+            def m1_customer_directory(self):
+                return rows
+
+        recommendation = CustomerMatcher(
+            ApiMustNotReadDirectory(), SqlDirectory()
+        ).resolution(normalize_shopify_order(sample_node()))
+
+        self.assertEqual("C100", recommendation["selection"]["organization_id"])
+
     def test_no_match_report_names_every_checked_shopify_field(self):
         node = sample_node()
         node["email"], node["phone"] = "nobody@elsewhere.invalid", "555-9999"

@@ -6,7 +6,9 @@ a React review interface, automated M1 customer matching, and an explicit
 human-confirmed boundary for M1 writes.
 
 Production data is stored in the `SalesOrders` schema of the `M1_ME` database.
-ERP records are read and written exclusively through the M1 Public API.
+Customer matching reads organizations, locations, and contacts through the
+existing costing SQL connection when those tables are readable. All ERP writes
+and all other ERP operations remain behind the M1 Public API.
 
 ## Key behavior
 
@@ -110,6 +112,8 @@ before enabling M1 writes.
   variables.
 - Do not commit `dev-env.ps1`, API keys, client secrets, or database passwords.
 - Keep `M1_WRITES_ENABLED=false` until the target M1 environment is validated.
-- Grant the runtime SQL principal access only to `M1_ME.SalesOrders`.
+- Grant SQL write access only to `M1_ME.SalesOrders`. Optional read-only access
+  to `dbo.Organizations`, `dbo.OrganizationLocations`, and
+  `dbo.OrganizationContacts` accelerates customer matching.
 - Treat Shopify content as untrusted input and review every staged order before
   submission to M1.

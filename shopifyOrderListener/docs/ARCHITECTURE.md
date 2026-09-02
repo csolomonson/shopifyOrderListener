@@ -6,24 +6,29 @@ Shopify Admin GraphQL (outbound poll)
                  v
        M1_ME.SalesOrders schema
        snapshots, matches, audit
-                 |
+                 |              M1 customer tables
+                 |              read-only lookup
           human review/confirm
                  |
                  v
-          M1 Public API only
+        M1 Public API writes only
 ```
 
-The application never reads or writes ERP tables directly. Its SQL login is for
-the app-owned `SalesOrders` schema only. Customer searches, preflight duplicate
-checks, and every ERP mutation use the M1 Public API.
+The app writes only to its `SalesOrders` schema through SQL. Customer-directory
+matching may directly `SELECT` the narrow organization, location, and contact
+fields through the Product Cost Calculator's existing connection. The directory
+snapshot is cached for five minutes, and the Public API is the automatic fallback
+if those optional table reads are unavailable. Duplicate-order checks, ID
+allocation, preflight validation outside the customer directory, and every ERP
+mutation use the M1 Public API.
 
 ## Customer matching
 
 Candidates are explainable and ranked. Organization, location, and contact data
-is paged from the M1 Public API and compared independently by company, customer
-or contact name, email, and phone. Fuzzy name/company matches are labeled as
-such; a match on only one field remains visible instead of disappearing behind a
-single strict search predicate.
+is read from SQL when available, with a paged M1 Public API fallback, and compared
+independently by company, customer or contact name, email, and phone. Fuzzy
+name/company matches are labeled as such; a match on only one field remains
+visible instead of disappearing behind a single strict search predicate.
 
 Opening an order produces one operational recommendation instead of exposing the
 underlying M1 tables. The app first reuses the exact organization recovered from

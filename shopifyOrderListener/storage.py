@@ -277,6 +277,37 @@ class SqlServerStore:
             row = connection.execute(text("SELECT CASE WHEN SCHEMA_ID(N'SalesOrders') IS NULL THEN 0 ELSE 1 END")).scalar_one()
             return bool(row)
 
+    def m1_customer_directory(self) -> dict[str, list[dict[str, Any]]]:
+        """Read the narrow M1 customer directory used for matching.
+
+        This connection is also used by the costing calculator.  The method is
+        deliberately SELECT-only; all M1 mutations remain in ``M1Client``.
+        """
+        queries = {
+            "Organizations": """
+                SELECT cmoOrganizationID,cmoName,cmoAddressLine1,cmoAddressLine2,
+                  cmoCity,cmoState,cmoPostCode,cmoCountry,cmoCountryCode,
+                  cmoPhoneNumber,cmoEMailAddress AS cmoEmailAddress
+                FROM dbo.Organizations
+            """,
+            "OrganizationLocations": """
+                SELECT cmlOrganizationID,cmlLocationID,cmlName,cmlAddressLine1,
+                  cmlAddressLine2,cmlCity,cmlState,cmlPostCode,cmlCountry,
+                  cmlCountryCode,cmlPhoneNumber,cmlEMailAddress AS cmlEmailAddress
+                FROM dbo.OrganizationLocations
+            """,
+            "OrganizationContacts": """
+                SELECT cmcOrganizationID,cmcLocationID,cmcContactID,cmcName,
+                  cmcPhoneNumber,cmcEMailAddress AS cmcEmailAddress,cmcInactive
+                FROM dbo.OrganizationContacts
+            """,
+        }
+        with self.engine.connect() as connection:
+            return {
+                resource: [dict(row) for row in connection.execute(text(statement)).mappings()]
+                for resource, statement in queries.items()
+            }
+
     @staticmethod
     def _decode(row: Any, *, include_preview: bool = True) -> dict[str, Any]:
         """``include_preview`` is off for list payloads: the stored resource plan

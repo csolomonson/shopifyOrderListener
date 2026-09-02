@@ -83,6 +83,10 @@ app.mount(f"{BASE_PATH}/static", StaticFiles(directory=STATIC_DIR), name="sales-
 PUBLIC_PATHS = {f"{BASE_PATH}/api/health", f"{BASE_PATH}/shopify"}
 
 
+def _customer_matcher() -> CustomerMatcher:
+    return CustomerMatcher(directory_source=get_store())
+
+
 @app.middleware("http")
 async def authentication_and_headers(request: Request, call_next):
     path = request.url.path
@@ -183,7 +187,7 @@ def customer_candidates(order_id: str, query: str = ""):
     if not row:
         raise HTTPException(status_code=404, detail="Order not found")
     try:
-        return CustomerMatcher().search(row, query, include_fuzzy=not bool(query.strip()))
+        return _customer_matcher().search(row, query, include_fuzzy=not bool(query.strip()))
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"M1 customer search failed: {exc}") from exc
 
@@ -201,7 +205,7 @@ def customer_resolution(order_id: str, organization_id: str = ""):
     else:
         returning_match = store.find_shopify_customer_match(row.get("shopify_customer_id"))
     try:
-        return CustomerMatcher().resolution(row, returning_match, organization_id)
+        return _customer_matcher().resolution(row, returning_match, organization_id)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"M1 customer recommendation failed: {exc}") from exc
 
@@ -212,7 +216,7 @@ def select_customer(order_id: str, selection: MatchRequest, request: Request):
     row = store.get_order(order_id)
     if not row: raise HTTPException(status_code=404, detail="Order not found")
     try:
-        matcher = CustomerMatcher()
+        matcher = _customer_matcher()
         validation = matcher.validate_selection(row, selection.organization_id, selection.location_id, selection.contact_id,
                                                 selection.billing_location_id, selection.billing_contact_id)
         row = store.set_match(order_id, selection.organization_id, selection.location_id, selection.contact_id, not validation["safe"],
@@ -229,7 +233,7 @@ def select_customer(order_id: str, selection: MatchRequest, request: Request):
 
 @app.get(f"{BASE_PATH}/api/m1/organizations/{{organization_id}}")
 def m1_organization(organization_id: str):
-    result = CustomerMatcher().organization(organization_id)
+    result = _customer_matcher().organization(organization_id)
     if not result: raise HTTPException(status_code=404, detail="M1 organization not found")
     return result
 

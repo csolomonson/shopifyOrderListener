@@ -83,6 +83,13 @@ The installer performs the following operations:
 
 M1 writes remain disabled unless `--enable-m1-writes` is supplied.
 
+Customer matching automatically uses read-only access to
+`dbo.Organizations`, `dbo.OrganizationLocations`, and
+`dbo.OrganizationContacts` when the inherited costing SQL principal already has
+it. This avoids a large paginated M1 API directory download. No additional
+permission is required for correctness: if these reads are unavailable, the app
+falls back to the M1 Public API. SQL is never used for an ERP write.
+
 ### 3. Complete the database bootstrap if required
 
 The production runtime login is expected to be unable to create schemas or

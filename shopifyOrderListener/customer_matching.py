@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+import logging
 import threading
 import time
 from collections import defaultdict
@@ -9,6 +10,9 @@ from difflib import SequenceMatcher
 from typing import Any
 
 from integrations.m1 import M1Client
+
+
+logger = logging.getLogger(__name__)
 
 
 def _text(value: Any) -> str:
@@ -58,23 +62,37 @@ class _Directory:
     source_key: tuple[Any, ...] | None = None
 
     @classmethod
-    def load(cls, m1: M1Client, max_age: int = 300) -> dict[str, dict[str, Any]]:
+    def load(cls, m1: M1Client, directory_source: Any = None, max_age: int = 300) -> dict[str, dict[str, Any]]:
         with cls.lock:
-            source_key = (getattr(m1, "base_url", None), getattr(m1, "api_id", None))
+            sql_reader = getattr(directory_source, "m1_customer_directory", None)
+            source_key = ("sql", id(getattr(directory_source, "engine", directory_source))) if sql_reader else (
+                getattr(m1, "base_url", None), getattr(m1, "api_id", None)
+            )
             if not any(source_key):
                 source_key = (id(m1),)
             if cls.source_key == source_key and cls.data and time.monotonic() - cls.loaded_at < max_age:
                 return cls.data
+            rowsets = None
+            if sql_reader:
+                try:
+                    rowsets = sql_reader()
+                except Exception:
+                    # Direct SQL is an optional read optimization. A missing
+                    # table grant must not disable customer matching entirely.
+                    logger.exception("Direct SQL customer-directory read failed; using the M1 Public API")
+                    source_key = (getattr(m1, "base_url", None), getattr(m1, "api_id", None))
+            def rows(resource: str) -> list[dict[str, Any]]:
+                return rowsets[resource] if rowsets is not None else m1.get_all(resource)
             data: dict[str, dict[str, Any]] = {}
-            for row in m1.get_all("Organizations"):
+            for row in rows("Organizations"):
                 oid = str(row.get("cmoOrganizationID") or "").strip()
                 if oid:
                     data[oid] = {"organization": row, "locations": [], "contacts": []}
-            for row in m1.get_all("OrganizationLocations"):
+            for row in rows("OrganizationLocations"):
                 oid = str(row.get("cmlOrganizationID") or "").strip()
                 if oid in data:
                     data[oid]["locations"].append(row)
-            for row in m1.get_all("OrganizationContacts"):
+            for row in rows("OrganizationContacts"):
                 oid = str(row.get("cmcOrganizationID") or "").strip()
                 if oid in data:
                     data[oid]["contacts"].append(row)
@@ -104,15 +122,16 @@ def _shape(details: dict[str, Any]) -> dict[str, Any]:
 
 
 class CustomerMatcher:
-    def __init__(self, m1: M1Client | None = None):
+    def __init__(self, m1: M1Client | None = None, directory_source: Any = None):
         self.m1 = m1 or M1Client()
+        self.directory_source = directory_source
 
     def organization(self, organization_id: str) -> dict[str, Any] | None:
         organization_id = organization_id.strip()
         # The synchronization pass loads the M1 customer directory once. Reuse
         # that snapshot for direct organization recommendations instead of
         # issuing three API calls per backlogged order.
-        details = _Directory.load(self.m1).get(organization_id) if hasattr(self.m1, "get_all") else None
+        details = _Directory.load(self.m1, self.directory_source).get(organization_id) if hasattr(self.m1, "get_all") else None
         if details is None:
             details = self.m1.organization_details(organization_id)
         return _shape(details) if details else None
@@ -123,7 +142,7 @@ class CustomerMatcher:
         names = {_text(value) for value in (order.get("customer_name"), (order.get("shipping_address") or {}).get("name"), (order.get("billing_address") or {}).get("name")) if value}
         companies = {_text(value) for value in ((order.get("shipping_address") or {}).get("company"), (order.get("billing_address") or {}).get("company")) if value}
         query_norm, results = _text(query), []
-        directory = _Directory.load(self.m1)
+        directory = _Directory.load(self.m1, self.directory_source)
         if not include_fuzzy and not query_norm:
             candidate_ids: set[str] = set()
             for value in emails: candidate_ids.update(_Directory.indexes["email"].get(value, set()))
