@@ -1,0 +1,96 @@
+using M1.Core;
+
+namespace M1.Ax.Erp.DD;
+
+[DBConversion("8.10.050", "Convert LotNumberTransactions to support unicode", "2013-10-17")]
+public class v810RebuildLotNumberTransactions
+{
+	public v810RebuildLotNumberTransactions(DBConversionParms parms)
+	{
+		parms.Dmo.RebuildTable(null, parms.User, parms.DataDictionary, parms.DatabaseName, "LotNumberTransactions", new DmoField[44]
+		{
+			new DmoField("abtPartID", "nvarchar", 30, 0, nullable: false),
+			new DmoField("abtPartRevisionID", "nvarchar", 15, 0, nullable: false),
+			new DmoField("abtPartWarehouseLocationID", "nvarchar", 5, 0, nullable: false),
+			new DmoField("abtPartBinID", "nvarchar", 15, 0, nullable: false),
+			new DmoField("abtLotNumberID", "nvarchar", 30, 0, nullable: false),
+			new DmoField("abtLotNumberTransactionID", "int", 4, 0, nullable: false),
+			new DmoField("abtTransactionType", "tinyint", 2, 0, nullable: false),
+			new DmoField("abtTransactionDate", "datetime", 14, 0, nullable: true),
+			new DmoField("abtQuantity", "numeric", 15, 5, nullable: false),
+			new DmoField("abtJobID", "nvarchar", 20, 0, nullable: false),
+			new DmoField("abtJobAssemblyID", "int", 5, 0, nullable: false),
+			new DmoField("abtJobMaterialID", "int", 5, 0, nullable: false),
+			new DmoField("abtPartTransactionID", "int", 9, 0, nullable: false),
+			new DmoField("abtReceiptID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtReceiptLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtShipmentID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtShipmentLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtInventoryCountID", "int", 9, 0, nullable: false),
+			new DmoField("abtInventoryCountLineID", "int", 7, 0, nullable: false),
+			new DmoField("abtNegativeTransaction", "bit", 1, 0, nullable: false),
+			new DmoField("abtInProgress", "bit", 1, 0, nullable: false),
+			new DmoField("abtDMRShipmentID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtDMRShipmentLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtRMAReceiptID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtRMAReceiptLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtWarehouseTransferID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtWarehouseTransferLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtWarehouseReceiptID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtWarehouseReceiptLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtNonInventoryTransaction", "bit", 1, 0, nullable: false),
+			new DmoField("abtInspectionID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtInspectionLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtInspect", "bit", 1, 0, nullable: false),
+			new DmoField("abtPOSTransactionID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtQualityRegisterID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtPOSTransactionLineID", "smallint", 4, 0, nullable: false),
+			new DmoField("abtQuantityToInspect", "numeric", 15, 5, nullable: false),
+			new DmoField("abtLandedCostID", "nvarchar", 10, 0, nullable: false),
+			new DmoField("abtCreatedBy", "nvarchar", 20, 0, nullable: false),
+			new DmoField("abtCreatedDate", "datetime", 14, 0, nullable: true),
+			new DmoField("abtUniqueID", "uniqueidentifier", 16, 0, nullable: false),
+			new DmoField("abtTableName", "nvarchar", 30, 0, nullable: false),
+			new DmoField("abtTableUniqueID", "uniqueidentifier", 16, 0, nullable: false),
+			new DmoField("abtStatus", "tinyint", 2, 0, nullable: false)
+		}, new DmoIndex[36]
+		{
+			new DmoIndex("ABTPARTID,ABTPARTREVISIONID,ABTPARTWAREHOUSELOCATIONID,ABTPARTBINID,ABTLOTNUMBERID,ABTLOTNUMBERTRANSACTIONID", unique: true),
+			new DmoIndex("ABTUNIQUEID", unique: true),
+			new DmoIndex("abtPartID", unique: false),
+			new DmoIndex("abtPartRevisionID", unique: false),
+			new DmoIndex("abtPartWarehouseLocationID", unique: false),
+			new DmoIndex("abtPartBinID", unique: false),
+			new DmoIndex("abtLotNumberID", unique: false),
+			new DmoIndex("abtLotNumberTransactionID", unique: false),
+			new DmoIndex("abtTransactionType", unique: false),
+			new DmoIndex("abtJobID", unique: false),
+			new DmoIndex("abtJobAssemblyID", unique: false),
+			new DmoIndex("abtJobMaterialID", unique: false),
+			new DmoIndex("abtPartTransactionID", unique: false),
+			new DmoIndex("abtReceiptID", unique: false),
+			new DmoIndex("abtReceiptLineID", unique: false),
+			new DmoIndex("abtShipmentID", unique: false),
+			new DmoIndex("abtShipmentLineID", unique: false),
+			new DmoIndex("abtInventoryCountID", unique: false),
+			new DmoIndex("abtInventoryCountLineID", unique: false),
+			new DmoIndex("abtDMRShipmentID", unique: false),
+			new DmoIndex("abtDMRShipmentLineID", unique: false),
+			new DmoIndex("abtRMAReceiptID", unique: false),
+			new DmoIndex("abtRMAReceiptLineID", unique: false),
+			new DmoIndex("abtWarehouseTransferID", unique: false),
+			new DmoIndex("abtWarehouseTransferLineID", unique: false),
+			new DmoIndex("abtWarehouseReceiptID", unique: false),
+			new DmoIndex("abtWarehouseReceiptLineID", unique: false),
+			new DmoIndex("abtInspectionID", unique: false),
+			new DmoIndex("abtInspectionLineID", unique: false),
+			new DmoIndex("abtPOSTransactionID", unique: false),
+			new DmoIndex("abtQualityRegisterID", unique: false),
+			new DmoIndex("abtPOSTransactionLineID", unique: false),
+			new DmoIndex("abtLandedCostID", unique: false),
+			new DmoIndex("abtTableName", unique: false),
+			new DmoIndex("abtTableUniqueID", unique: false),
+			new DmoIndex("abtStatus", unique: false)
+		}, mergeCustomFields: true, disableTriggers: true);
+	}
+}

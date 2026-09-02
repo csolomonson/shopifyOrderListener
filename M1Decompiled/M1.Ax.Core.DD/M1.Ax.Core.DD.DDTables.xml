@@ -1,0 +1,417 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDTables" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDTables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dtUniqueID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="dtTable" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDefaultObjectId" type="xs:string" minOccurs="0" />
+                <xs:element name="dtGridID" type="xs:string" minOccurs="0" />
+                <xs:element name="dtKeyFields" type="xs:string" minOccurs="0" />
+                <xs:element name="dtLastKeyCanBeEmpty" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtOverrideDelete" type="xs:string" minOccurs="0" />
+                <xs:element name="dtOverrideDeleteEnabledExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtEmptyKeyCanBeEdited" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtKeysAtThisLevel" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dtEnterInSequenceField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtKeyGroup" type="xs:string" minOccurs="0" />
+                <xs:element name="dtAddFld1" type="xs:string" minOccurs="0" />
+                <xs:element name="dtAddFld2" type="xs:string" minOccurs="0" />
+                <xs:element name="dtAddFld3" type="xs:string" minOccurs="0" />
+                <xs:element name="dtColorExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtNumericOnly" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dtAutoIncrement" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtIncrementAmount" type="xs:short" minOccurs="0" />
+                <xs:element name="dtInitialValue" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="dtPrefix" type="xs:string" minOccurs="0" />
+                <xs:element name="dtPrefixUser" type="xs:string" minOccurs="0" />
+                <xs:element name="dtReadonlyExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDisableAddNewExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDisableDeleteExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDisableChangeIDExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtFieldToCheckOnUpdate" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtVTbl" type="xs:string" minOccurs="0" />
+                <xs:element name="dtV3Tb" type="xs:string" minOccurs="0" />
+                <xs:element name="dtUTbl" type="xs:string" minOccurs="0" />
+                <xs:element name="dtVRel" type="xs:string" minOccurs="0" />
+                <xs:element name="dtGridEdit" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtChangeDetailIdsFilter" type="xs:string" minOccurs="0" />
+                <xs:element name="dtForeignKeyDeleteFilter" type="xs:string" minOccurs="0" />
+                <xs:element name="dtChangeID" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtSaveAs" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtModule" type="xs:string" minOccurs="0" />
+                <xs:element name="dtMailMerge" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtMap" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtImport" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtShowMemos" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtMemoDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="dtSQLView" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dtViewDef" type="xs:string" minOccurs="0" />
+                <xs:element name="dtViewSeq" type="xs:short" minOccurs="0" />
+                <xs:element name="dtContactField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtPromptOnAddField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtQuickSearchOption" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dtQuickSearchFields" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDocumentPlantIdField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtDocumentDateField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCurrencyModeLocationField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCurrencyRateIdField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCurrencyCustomRateField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCurrencyExchangeRateField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtCurrencyUpdateType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dtClosedField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedValue" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedDateField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedExtraSetExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedIncludeOptionText" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedIncludeOptionSqlExpr" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedCutoffDateField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedRoleCheck" type="xs:string" minOccurs="0" />
+                <xs:element name="dtClosedHelpLink" type="xs:string" minOccurs="0" />
+                <xs:element name="dtPurgeCutoffDateField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtPurgeHelpLink" type="xs:string" minOccurs="0" />
+                <xs:element name="dtParentTable" type="xs:string" minOccurs="0" />
+                <xs:element name="dtUniqueField" type="xs:string" minOccurs="0" />
+                <xs:element name="dtAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDTables>
+    <dtUniqueID>81da462e-4490-4ad4-98ae-18ea24e833dd</dtUniqueID>
+    <dtTable>CurrencyRateLines</dtTable>
+    <dtDisplayName>CurrencyRateLines</dtDisplayName>
+    <dtDefaultObjectId>CURRENCY</dtDefaultObjectId>
+    <dtGridID>M1CURRENCYRATELINESALL</dtGridID>
+    <dtKeyFields>MCLCURRENCYRATEID,MCLCURRENCYRATELINEID</dtKeyFields>
+    <dtLastKeyCanBeEmpty>false</dtLastKeyCanBeEmpty>
+    <dtOverrideDelete />
+    <dtEmptyKeyCanBeEdited>false</dtEmptyKeyCanBeEdited>
+    <dtKeysAtThisLevel>0</dtKeysAtThisLevel>
+    <dtEnterInSequenceField />
+    <dtKeyGroup />
+    <dtAddFld1>MCLEFFECTIVEDATE</dtAddFld1>
+    <dtAddFld2>MCLEXCHANGERATE</dtAddFld2>
+    <dtAddFld3>MCLREFERENCE</dtAddFld3>
+    <dtNumericOnly>0</dtNumericOnly>
+    <dtAutoIncrement>true</dtAutoIncrement>
+    <dtIncrementAmount>1</dtIncrementAmount>
+    <dtInitialValue />
+    <dtCaption>Currency Rate Lines</dtCaption>
+    <dtPrefix>mcl</dtPrefix>
+    <dtPrefixUser>umcl</dtPrefixUser>
+    <dtDisableAddNewExpression>Trim(Fields("mclCurrencyRateID").RelatedTableGetAdoRecord("mcpCurrencyRateID").Fields("mcpCurrencyRateID").Value)  = Trim(App.HomeCurrencyID)</dtDisableAddNewExpression>
+    <dtFieldToCheckOnUpdate />
+    <dtCustom>false</dtCustom>
+    <dtVTbl />
+    <dtV3Tb />
+    <dtUTbl />
+    <dtVRel />
+    <dtGridEdit>true</dtGridEdit>
+    <dtChangeDetailIdsFilter />
+    <dtForeignKeyDeleteFilter />
+    <dtChangeID>true</dtChangeID>
+    <dtSaveAs>true</dtSaveAs>
+    <dtModule>MC</dtModule>
+    <dtMailMerge>false</dtMailMerge>
+    <dtMap>false</dtMap>
+    <dtImport>true</dtImport>
+    <dtShowMemos>false</dtShowMemos>
+    <dtMemoDescription />
+    <dtSQLView>false</dtSQLView>
+    <dtViewSeq>0</dtViewSeq>
+    <dtContactField />
+    <dtPromptOnAddField />
+    <dtQuickSearchOption>0</dtQuickSearchOption>
+    <dtDocumentPlantIdField />
+    <dtDocumentDateField />
+    <dtCurrencyModeLocationField />
+    <dtCurrencyRateIdField />
+    <dtCurrencyCustomRateField />
+    <dtCurrencyExchangeRateField />
+    <dtCurrencyUpdateType>0</dtCurrencyUpdateType>
+    <dtClosedField />
+    <dtClosedValue />
+    <dtClosedDateField />
+    <dtClosedIncludeOptionText />
+    <dtClosedCutoffDateField />
+    <dtClosedRoleCheck />
+    <dtClosedHelpLink />
+    <dtPurgeCutoffDateField />
+    <dtPurgeHelpLink />
+    <dtParentTable>CURRENCYRATES</dtParentTable>
+    <dtUniqueField>MCLUNIQUEID</dtUniqueField>
+    <dtAppExtensionID>M1CORE</dtAppExtensionID>
+  </DDTables>
+  <DDTables>
+    <dtUniqueID>93664cb1-6d77-43ed-a9f3-858328262352</dtUniqueID>
+    <dtTable>DatasetProperties</dtTable>
+    <dtDisplayName>DatasetProperties</dtDisplayName>
+    <dtDefaultObjectId />
+    <dtGridID>M1DATASETPROPERTIESALL</dtGridID>
+    <dtKeyFields />
+    <dtLastKeyCanBeEmpty>false</dtLastKeyCanBeEmpty>
+    <dtOverrideDelete />
+    <dtEmptyKeyCanBeEdited>false</dtEmptyKeyCanBeEdited>
+    <dtKeysAtThisLevel>0</dtKeysAtThisLevel>
+    <dtEnterInSequenceField />
+    <dtKeyGroup />
+    <dtAddFld1 />
+    <dtAddFld2 />
+    <dtAddFld3 />
+    <dtNumericOnly>0</dtNumericOnly>
+    <dtAutoIncrement>false</dtAutoIncrement>
+    <dtIncrementAmount>0</dtIncrementAmount>
+    <dtInitialValue />
+    <dtCaption>Dataset Properties</dtCaption>
+    <dtPrefix>xad</dtPrefix>
+    <dtPrefixUser>uxad</dtPrefixUser>
+    <dtFieldToCheckOnUpdate />
+    <dtCustom>false</dtCustom>
+    <dtVTbl>DSINFO</dtVTbl>
+    <dtV3Tb />
+    <dtUTbl />
+    <dtVRel />
+    <dtGridEdit>false</dtGridEdit>
+    <dtChangeDetailIdsFilter />
+    <dtForeignKeyDeleteFilter />
+    <dtChangeID>false</dtChangeID>
+    <dtSaveAs>false</dtSaveAs>
+    <dtModule />
+    <dtMailMerge>false</dtMailMerge>
+    <dtMap>false</dtMap>
+    <dtImport>false</dtImport>
+    <dtShowMemos>false</dtShowMemos>
+    <dtMemoDescription />
+    <dtSQLView>false</dtSQLView>
+    <dtViewSeq>0</dtViewSeq>
+    <dtContactField />
+    <dtPromptOnAddField />
+    <dtQuickSearchOption>0</dtQuickSearchOption>
+    <dtDocumentPlantIdField />
+    <dtDocumentDateField />
+    <dtCurrencyModeLocationField />
+    <dtCurrencyRateIdField />
+    <dtCurrencyCustomRateField />
+    <dtCurrencyExchangeRateField />
+    <dtCurrencyUpdateType>0</dtCurrencyUpdateType>
+    <dtClosedField />
+    <dtClosedValue />
+    <dtClosedDateField />
+    <dtClosedIncludeOptionText />
+    <dtClosedCutoffDateField />
+    <dtClosedRoleCheck />
+    <dtClosedHelpLink />
+    <dtPurgeCutoffDateField />
+    <dtPurgeHelpLink />
+    <dtParentTable />
+    <dtUniqueField>XADUNIQUEID</dtUniqueField>
+    <dtAppExtensionID>M1CORE</dtAppExtensionID>
+  </DDTables>
+  <DDTables>
+    <dtUniqueID>32647f16-ff22-49f8-9315-d764d06c8a3b</dtUniqueID>
+    <dtTable>NextIDs</dtTable>
+    <dtDisplayName>NextIDs</dtDisplayName>
+    <dtDefaultObjectId />
+    <dtGridID />
+    <dtKeyFields>XANTABLE</dtKeyFields>
+    <dtLastKeyCanBeEmpty>false</dtLastKeyCanBeEmpty>
+    <dtOverrideDelete />
+    <dtEmptyKeyCanBeEdited>false</dtEmptyKeyCanBeEdited>
+    <dtKeysAtThisLevel>0</dtKeysAtThisLevel>
+    <dtEnterInSequenceField />
+    <dtKeyGroup />
+    <dtAddFld1 />
+    <dtAddFld2 />
+    <dtAddFld3 />
+    <dtNumericOnly>0</dtNumericOnly>
+    <dtAutoIncrement>false</dtAutoIncrement>
+    <dtIncrementAmount>0</dtIncrementAmount>
+    <dtInitialValue />
+    <dtCaption>Next ID Definitions</dtCaption>
+    <dtPrefix>xan</dtPrefix>
+    <dtPrefixUser />
+    <dtFieldToCheckOnUpdate />
+    <dtCustom>false</dtCustom>
+    <dtVTbl />
+    <dtV3Tb />
+    <dtUTbl />
+    <dtVRel />
+    <dtGridEdit>false</dtGridEdit>
+    <dtChangeDetailIdsFilter />
+    <dtForeignKeyDeleteFilter />
+    <dtChangeID>false</dtChangeID>
+    <dtSaveAs>false</dtSaveAs>
+    <dtModule />
+    <dtMailMerge>false</dtMailMerge>
+    <dtMap>false</dtMap>
+    <dtImport>false</dtImport>
+    <dtShowMemos>false</dtShowMemos>
+    <dtMemoDescription />
+    <dtSQLView>false</dtSQLView>
+    <dtViewSeq>0</dtViewSeq>
+    <dtContactField />
+    <dtPromptOnAddField />
+    <dtQuickSearchOption>0</dtQuickSearchOption>
+    <dtDocumentPlantIdField />
+    <dtDocumentDateField />
+    <dtCurrencyModeLocationField />
+    <dtCurrencyRateIdField />
+    <dtCurrencyCustomRateField />
+    <dtCurrencyExchangeRateField />
+    <dtCurrencyUpdateType>0</dtCurrencyUpdateType>
+    <dtClosedField />
+    <dtClosedValue />
+    <dtClosedDateField />
+    <dtClosedIncludeOptionText />
+    <dtClosedCutoffDateField />
+    <dtClosedRoleCheck />
+    <dtClosedHelpLink />
+    <dtPurgeCutoffDateField />
+    <dtPurgeHelpLink />
+    <dtParentTable />
+    <dtUniqueField>XANUNIQUEID</dtUniqueField>
+    <dtAppExtensionID>M1CORE</dtAppExtensionID>
+  </DDTables>
+  <DDTables>
+    <dtUniqueID>4d35c969-2a42-442f-96fd-e38dfb2a6196</dtUniqueID>
+    <dtTable>ChangeLog</dtTable>
+    <dtDisplayName>ChangeLog</dtDisplayName>
+    <dtDefaultObjectId />
+    <dtGridID />
+    <dtKeyFields>XAGCHANGELOGID</dtKeyFields>
+    <dtLastKeyCanBeEmpty>false</dtLastKeyCanBeEmpty>
+    <dtOverrideDelete />
+    <dtEmptyKeyCanBeEdited>false</dtEmptyKeyCanBeEdited>
+    <dtKeysAtThisLevel>0</dtKeysAtThisLevel>
+    <dtEnterInSequenceField />
+    <dtKeyGroup />
+    <dtAddFld1 />
+    <dtAddFld2 />
+    <dtAddFld3 />
+    <dtNumericOnly>0</dtNumericOnly>
+    <dtAutoIncrement>false</dtAutoIncrement>
+    <dtIncrementAmount>0</dtIncrementAmount>
+    <dtInitialValue />
+    <dtCaption>Change Log</dtCaption>
+    <dtPrefix>xag</dtPrefix>
+    <dtPrefixUser />
+    <dtFieldToCheckOnUpdate />
+    <dtCustom>false</dtCustom>
+    <dtVTbl />
+    <dtV3Tb />
+    <dtUTbl />
+    <dtVRel />
+    <dtGridEdit>false</dtGridEdit>
+    <dtChangeDetailIdsFilter />
+    <dtForeignKeyDeleteFilter />
+    <dtChangeID>false</dtChangeID>
+    <dtSaveAs>false</dtSaveAs>
+    <dtModule>XA</dtModule>
+    <dtMailMerge>false</dtMailMerge>
+    <dtMap>false</dtMap>
+    <dtImport>false</dtImport>
+    <dtShowMemos>false</dtShowMemos>
+    <dtMemoDescription />
+    <dtSQLView>false</dtSQLView>
+    <dtViewSeq>0</dtViewSeq>
+    <dtContactField />
+    <dtPromptOnAddField />
+    <dtQuickSearchOption>1</dtQuickSearchOption>
+    <dtDocumentPlantIdField />
+    <dtDocumentDateField />
+    <dtCurrencyModeLocationField />
+    <dtCurrencyRateIdField />
+    <dtCurrencyCustomRateField />
+    <dtCurrencyExchangeRateField />
+    <dtCurrencyUpdateType>0</dtCurrencyUpdateType>
+    <dtClosedField />
+    <dtClosedValue />
+    <dtClosedDateField />
+    <dtClosedIncludeOptionText />
+    <dtClosedCutoffDateField />
+    <dtClosedRoleCheck />
+    <dtClosedHelpLink />
+    <dtPurgeCutoffDateField />
+    <dtPurgeHelpLink />
+    <dtParentTable />
+    <dtUniqueField />
+    <dtAppExtensionID>M1CORE</dtAppExtensionID>
+  </DDTables>
+  <DDTables>
+    <dtUniqueID>e5a25e11-5d45-47c3-b062-f75a1d18c2c5</dtUniqueID>
+    <dtTable>CurrencyRates</dtTable>
+    <dtDisplayName>CurrencyRates</dtDisplayName>
+    <dtDefaultObjectId>CURRENCY</dtDefaultObjectId>
+    <dtGridID>M1CURRENCYRATESALL</dtGridID>
+    <dtKeyFields>MCPCURRENCYRATEID</dtKeyFields>
+    <dtLastKeyCanBeEmpty>false</dtLastKeyCanBeEmpty>
+    <dtOverrideDelete />
+    <dtEmptyKeyCanBeEdited>false</dtEmptyKeyCanBeEdited>
+    <dtKeysAtThisLevel>0</dtKeysAtThisLevel>
+    <dtEnterInSequenceField />
+    <dtKeyGroup>CURRENCYID</dtKeyGroup>
+    <dtAddFld1>MCPDESCRIPTION</dtAddFld1>
+    <dtAddFld2>MCPSYMBOL</dtAddFld2>
+    <dtAddFld3 />
+    <dtNumericOnly>0</dtNumericOnly>
+    <dtAutoIncrement>false</dtAutoIncrement>
+    <dtIncrementAmount>0</dtIncrementAmount>
+    <dtInitialValue />
+    <dtCaption>Currency Rates</dtCaption>
+    <dtPrefix>mcp</dtPrefix>
+    <dtPrefixUser>umcp</dtPrefixUser>
+    <dtDisableDeleteExpression>Trim(Fields("mcpCurrencyRateID").Value) = Trim(App.HomeCurrencyID)</dtDisableDeleteExpression>
+    <dtFieldToCheckOnUpdate />
+    <dtCustom>false</dtCustom>
+    <dtVTbl>CMCUR</dtVTbl>
+    <dtV3Tb />
+    <dtUTbl />
+    <dtVRel />
+    <dtGridEdit>true</dtGridEdit>
+    <dtChangeDetailIdsFilter />
+    <dtForeignKeyDeleteFilter />
+    <dtChangeID>true</dtChangeID>
+    <dtSaveAs>true</dtSaveAs>
+    <dtModule>MC</dtModule>
+    <dtMailMerge>false</dtMailMerge>
+    <dtMap>false</dtMap>
+    <dtImport>true</dtImport>
+    <dtShowMemos>false</dtShowMemos>
+    <dtMemoDescription />
+    <dtSQLView>false</dtSQLView>
+    <dtViewSeq>0</dtViewSeq>
+    <dtContactField />
+    <dtPromptOnAddField />
+    <dtQuickSearchOption>0</dtQuickSearchOption>
+    <dtDocumentPlantIdField />
+    <dtDocumentDateField />
+    <dtCurrencyModeLocationField />
+    <dtCurrencyRateIdField />
+    <dtCurrencyCustomRateField />
+    <dtCurrencyExchangeRateField />
+    <dtCurrencyUpdateType>0</dtCurrencyUpdateType>
+    <dtClosedField />
+    <dtClosedValue />
+    <dtClosedDateField />
+    <dtClosedIncludeOptionText />
+    <dtClosedCutoffDateField />
+    <dtClosedRoleCheck />
+    <dtClosedHelpLink />
+    <dtPurgeCutoffDateField />
+    <dtPurgeHelpLink />
+    <dtParentTable />
+    <dtUniqueField>MCPUNIQUEID</dtUniqueField>
+    <dtAppExtensionID>M1CORE</dtAppExtensionID>
+  </DDTables>
+</NewDataSet>

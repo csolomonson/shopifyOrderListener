@@ -1,0 +1,28 @@
+{
+  auto_https disable_redirects
+  default_sni {$APP_HOSTNAME}
+  servers :443 {
+    protocols h1 h2
+  }
+}
+
+https://{$APP_HOSTNAME}, https://{$APP_IP_ADDRESS} {
+  tls internal
+  encode zstd gzip
+
+  # The sales-order service owns its path and receives the prefix unchanged.
+  # This reuses Caddy's existing internal certificate and private CA state.
+  handle /sales-orders* {
+    reverse_proxy 127.0.0.1:8010
+  }
+
+  # Existing costing calculator.
+  handle {
+    reverse_proxy 127.0.0.1:8000
+  }
+
+  header {
+    Strict-Transport-Security "max-age=31536000"
+    -Server
+  }
+}

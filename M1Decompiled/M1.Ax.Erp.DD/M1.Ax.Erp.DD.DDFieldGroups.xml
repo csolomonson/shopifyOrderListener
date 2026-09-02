@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDFieldGroups" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDFieldGroups">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ddgFieldGroupID" type="xs:string" minOccurs="0" />
+                <xs:element name="ddgCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="ddgDefaultControl" type="xs:string" minOccurs="0" />
+                <xs:element name="ddgValidFieldTypes" type="xs:string" minOccurs="0" />
+                <xs:element name="ddgTextFormatter" type="xs:string" minOccurs="0" />
+                <xs:element name="ddgUniqueID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="ddgCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ddgAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDFieldGroups>
+    <ddgFieldGroupID>BUYQTY</ddgFieldGroupID>
+    <ddgCaption>Buy Quantity Decimals</ddgCaption>
+    <ddgValidFieldTypes>numeric</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.BuyQuantityTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>edc515cc-429e-4181-9fd9-4e6540a51106</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>DCTIME</ddgFieldGroupID>
+    <ddgCaption>DC Time Format</ddgCaption>
+    <ddgValidFieldTypes>datetime</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.DCTimeTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>57138d60-5b87-4a44-8acf-58e4b19a24d5</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>DOCUMENTS</ddgFieldGroupID>
+    <ddgCaption>Document Manager</ddgCaption>
+    <ddgDefaultControl>M1.Ax.Erp.Forms.DocumentRegister.M1DocMgr</ddgDefaultControl>
+    <ddgValidFieldTypes>text,varchar(max),nvarchar(max)</ddgValidFieldTypes>
+    <ddgUniqueID>56565d31-7f92-4b9c-a5e9-5063d2a9b660</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>GLACCT</ddgFieldGroupID>
+    <ddgCaption>GL Account</ddgCaption>
+    <ddgValidFieldTypes>char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Financial.GLAccountTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>4722c5f0-7572-4968-a9d5-8fa004f4cadd</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>GLACCTDESC</ddgFieldGroupID>
+    <ddgCaption>GL Account Description</ddgCaption>
+    <ddgValidFieldTypes>char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Financial.GLAccountDescriptionTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>4a39232c-b823-4377-b050-d278a820ba4d</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>INVQTY</ddgFieldGroupID>
+    <ddgCaption>Inventory Quantity Decimals</ddgCaption>
+    <ddgValidFieldTypes>numeric</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.InventoryQuantityTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>c602bebc-3462-4ec8-9c1b-8e430daa36f8</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>JOBMATID</ddgFieldGroupID>
+    <ddgCaption>Job Material ID</ddgCaption>
+    <ddgValidFieldTypes>int,numeric,char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.Inventory.JobMaterialIDFormatter</ddgTextFormatter>
+    <ddgUniqueID>8a72bf80-e023-432b-b696-1938544e46a6</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>KITPART</ddgFieldGroupID>
+    <ddgCaption>Kit Part</ddgCaption>
+    <ddgValidFieldTypes>bit</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.Inventory.KitPartTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>ced48ab1-bca3-4d4f-af18-ca3cb1f187d2</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>ORGPARTID</ddgFieldGroupID>
+    <ddgCaption>Org Part ID</ddgCaption>
+    <ddgValidFieldTypes>char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.Inventory.OrgPartTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>7605683b-6f90-47bb-b30b-05977cf2fc96</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>PARTID</ddgFieldGroupID>
+    <ddgCaption>Part ID</ddgCaption>
+    <ddgValidFieldTypes>char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.Inventory.PartIDTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>30ad594d-cb22-49d2-9871-3355e6b64af7</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>PARTREVID</ddgFieldGroupID>
+    <ddgCaption>Part Revision</ddgCaption>
+    <ddgValidFieldTypes>char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.Inventory.PartRevisionIDTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>8a72bf80-e033-432b-b696-1938544e46a6</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>PARTWHID</ddgFieldGroupID>
+    <ddgCaption>Part Warehouse</ddgCaption>
+    <ddgValidFieldTypes>char,varchar,nchar,nvarchar</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.Inventory.PartWarehouseIDTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>c4622f24-1771-43eb-8e6b-64fb151273fa</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>SELLQTY</ddgFieldGroupID>
+    <ddgCaption>Sell Quantity Decimals</ddgCaption>
+    <ddgValidFieldTypes>numeric</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.SellQuantityTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>ef67e01e-50a7-4e68-b15a-73442a09ce9c</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+  <DDFieldGroups>
+    <ddgFieldGroupID>TIME</ddgFieldGroupID>
+    <ddgCaption>Time Format</ddgCaption>
+    <ddgValidFieldTypes>numeric</ddgValidFieldTypes>
+    <ddgTextFormatter>M1.Ax.Erp.Forms.Production.TimeTextFormatter</ddgTextFormatter>
+    <ddgUniqueID>e279c3bf-5786-4c82-a988-e823793990c4</ddgUniqueID>
+    <ddgCustom>false</ddgCustom>
+    <ddgAppExtensionID>M1ERP</ddgAppExtensionID>
+  </DDFieldGroups>
+</NewDataSet>

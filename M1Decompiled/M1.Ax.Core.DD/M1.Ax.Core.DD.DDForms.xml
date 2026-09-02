@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDForms" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDForms">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dmUniqueID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="dmFormID" type="xs:string" minOccurs="0" />
+                <xs:element name="dmTable" type="xs:string" minOccurs="0" />
+                <xs:element name="dmCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="dmHelpLink" type="xs:string" minOccurs="0" />
+                <xs:element name="dmVID" type="xs:string" minOccurs="0" />
+                <xs:element name="dmCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dmType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dmFormType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dmAllInDD" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dmDesGroup" type="xs:string" minOccurs="0" />
+                <xs:element name="dmAssemblies" type="xs:string" minOccurs="0" />
+                <xs:element name="dmAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDForms>
+    <dmUniqueID>e5c282ae-787d-4d3b-a147-da698bb96490</dmUniqueID>
+    <dmFormID>M1.Ax.Core.Forms.MultiCurrency.CurrencyLineView</dmFormID>
+    <dmTable>CURRENCYRATELINES</dmTable>
+    <dmCaption>Currency Line</dmCaption>
+    <dmHelpLink>MC_Multicurrency.htm#Currency_Rate_Lines</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1CORE</dmAppExtensionID>
+  </DDForms>
+  <DDForms>
+    <dmUniqueID>902c42b9-4956-4ad6-aad5-7a69a6a984c5</dmUniqueID>
+    <dmFormID>M1.Ax.Core.Forms.MultiCurrency.CurrencyView</dmFormID>
+    <dmTable>CURRENCYRATES</dmTable>
+    <dmCaption>Currency</dmCaption>
+    <dmHelpLink>MC_Multicurrency.htm</dmHelpLink>
+    <dmVID />
+    <dmCustom>false</dmCustom>
+    <dmType>1</dmType>
+    <dmFormType>3</dmFormType>
+    <dmAllInDD>false</dmAllInDD>
+    <dmDesGroup />
+    <dmAppExtensionID>M1CORE</dmAppExtensionID>
+  </DDForms>
+</NewDataSet>

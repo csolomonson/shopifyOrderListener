@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDCustomModules" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDCustomModules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dcCustomID" type="xs:short" minOccurs="0" />
+                <xs:element name="dcCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="dcAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDCustomModules>
+    <dcCustomID>1</dcCustomID>
+    <dcCaption>Laser Calculator</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>2</dcCustomID>
+    <dcCaption>Bar Calculator</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>3</dcCustomID>
+    <dcCaption>Sheet Calculator</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>4</dcCustomID>
+    <dcCaption>Punch Calculator</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>5</dcCustomID>
+    <dcCaption>Avalara Integration</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>6</dcCustomID>
+    <dcCaption>M1 CRM Basic</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>7</dcCustomID>
+    <dcCaption>M1 Inventory Control</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>8</dcCustomID>
+    <dcCaption>M1 Mobile Production</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>9</dcCustomID>
+    <dcCaption>CadLink Integration</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>10</dcCustomID>
+    <dcCaption>EasyOrder Integration</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>11</dcCustomID>
+    <dcCaption>M1 CRM Advanced</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>12</dcCustomID>
+    <dcCaption>EDI Integration</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>13</dcCustomID>
+    <dcCaption>Financial Integration</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>14</dcCustomID>
+    <dcCaption>Shop Floor Entry (Web)</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>15</dcCustomID>
+    <dcCaption>NestLink Integration</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+  <DDCustomModules>
+    <dcCustomID>16</dcCustomID>
+    <dcCaption>M1 Public API</dcCaption>
+    <dcAppExtensionID>M1ERP</dcAppExtensionID>
+  </DDCustomModules>
+</NewDataSet>

@@ -1,0 +1,10 @@
+.embedded-shell { display: grid; gap: 14px; margin: 0 auto; max-width: 1100px; padding: 16px; }
+.health-grid { display: grid; gap: 10px; grid-template-columns: repeat(3,1fr); }
+.health-card { border: 1px solid var(--line); border-radius: 8px; display: grid; gap: 10px; padding: 12px; }
+.health-card > div { align-items: center; display: flex; gap: 8px; }
+.health-card p { color: var(--muted); font-size: 12px; margin: 0; }
+.health-dot { background: var(--green); border-radius: 50%; display: inline-block; height: 8px; width: 8px; }
+.health-dot.amber { background: var(--amber); }
+.health-dot.red { background: var(--red); }
+.settings-grid { display: grid; gap: 11px; grid-template-columns: repeat(3,1fr); }
+@media (max-width: 760px) { .health-grid, .settings-grid { grid-template-columns: 1fr; } .app-header { align-items: start; flex-direction: column; } }

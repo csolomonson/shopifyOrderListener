@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WebOptions" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="WebOptions">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="woOptionID" type="xs:string" minOccurs="0" />
+                <xs:element name="woModule" type="xs:string" minOccurs="0" />
+                <xs:element name="woOptionName" type="xs:string" minOccurs="0" />
+                <xs:element name="woSequence" type="xs:int" minOccurs="0" />
+                <xs:element name="woOptionDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="woType" type="xs:string" minOccurs="0" />
+                <xs:element name="woValue" type="xs:string" minOccurs="0" />
+                <xs:element name="woValueList" type="xs:string" minOccurs="0" />
+                <xs:element name="woEditOnWeb" type="xs:boolean" minOccurs="0" />
+                <xs:element name="woCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="woAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <WebOptions>
+    <woOptionID>filterEmpByDept</woOptionID>
+    <woModule>SFE</woModule>
+    <woOptionName>Filter Employees By This Department</woOptionName>
+    <woSequence>10</woSequence>
+    <woOptionDescription>If a value is entered the employee list will always be filtered by the department listed.</woOptionDescription>
+    <woType>C</woType>
+    <woValue />
+    <woEditOnWeb>true</woEditOnWeb>
+    <woCustom>false</woCustom>
+    <woAppExtensionID>M1ERP</woAppExtensionID>
+  </WebOptions>
+  <WebOptions>
+    <woOptionID>filterEmpByWc</woOptionID>
+    <woModule>SFE</woModule>
+    <woOptionName>Filter Employees by This Workcenter</woOptionName>
+    <woSequence>20</woSequence>
+    <woOptionDescription>The employee list will be filtered by the selected workcenter.</woOptionDescription>
+    <woType>C</woType>
+    <woValue />
+    <woEditOnWeb>true</woEditOnWeb>
+    <woCustom>false</woCustom>
+    <woAppExtensionID>M1ERP</woAppExtensionID>
+  </WebOptions>
+  <WebOptions>
+    <woOptionID>filterMaterialByAssembly</woOptionID>
+    <woModule>SFE</woModule>
+    <woOptionName>Filter Material By Assembly</woOptionName>
+    <woSequence>50</woSequence>
+    <woOptionDescription>If this is checked employees will only see materials for assemblies they are clocked in to.</woOptionDescription>
+    <woType>Y</woType>
+    <woValue>True</woValue>
+    <woEditOnWeb>true</woEditOnWeb>
+    <woCustom>false</woCustom>
+    <woAppExtensionID>M1ERP</woAppExtensionID>
+  </WebOptions>
+  <WebOptions>
+    <woOptionID>filterMaterialByOperation</woOptionID>
+    <woModule>SFE</woModule>
+    <woOptionName>Filter Material By Related Operation</woOptionName>
+    <woSequence>60</woSequence>
+    <woOptionDescription>If this is checked employees will only see materials where the 'related operation' field matches operations they are running.</woOptionDescription>
+    <woType>Y</woType>
+    <woValue>False</woValue>
+    <woEditOnWeb>true</woEditOnWeb>
+    <woCustom>false</woCustom>
+    <woAppExtensionID>M1ERP</woAppExtensionID>
+  </WebOptions>
+  <WebOptions>
+    <woOptionID>filterQueueDepartment</woOptionID>
+    <woModule>SFE</woModule>
+    <woOptionName>Filter Work Queue by Department</woOptionName>
+    <woSequence>30</woSequence>
+    <woOptionDescription>If this is checked the work queue will be filtered to only show job operations for the current employee's department.</woOptionDescription>
+    <woType>Y</woType>
+    <woValue>False</woValue>
+    <woEditOnWeb>true</woEditOnWeb>
+    <woCustom>false</woCustom>
+    <woAppExtensionID>M1ERP</woAppExtensionID>
+  </WebOptions>
+  <WebOptions>
+    <woOptionID>filterQueueEmpWc</woOptionID>
+    <woModule>SFE</woModule>
+    <woOptionName>Filter Work Queue by Workcenter</woOptionName>
+    <woSequence>40</woSequence>
+    <woOptionDescription>If this is checked the work queue will be filtered to only show job operations for the current employee's default workcenter.</woOptionDescription>
+    <woType>Y</woType>
+    <woValue>True</woValue>
+    <woEditOnWeb>true</woEditOnWeb>
+    <woCustom>false</woCustom>
+    <woAppExtensionID>M1ERP</woAppExtensionID>
+  </WebOptions>
+</NewDataSet>

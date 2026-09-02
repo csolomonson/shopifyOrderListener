@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+runtime_file="/etc/shopify-order-listener/runtime.env"
+application_root="/opt/shopify-order-listener/current/shopifyOrderListener"
+python="/opt/shopify-order-listener/current/.venv/bin/python"
+lock_file="/var/lib/shopify-order-listener/sync.lock"
+
+[[ -r "$runtime_file" ]] || {
+    printf 'Cannot read %s\n' "$runtime_file" >&2
+    exit 1
+}
+
+cd "$application_root"
+set -a
+# shellcheck disable=SC1090
+source "$runtime_file"
+set +a
+
+# Cron can start a new process before the prior run has completed. Skip that
+# occurrence instead of allowing two scheduled reconciliation processes to
+# modify the staging queue concurrently.
+exec 9>"$lock_file"
+if ! flock --nonblock 9; then
+    printf 'A Shopify order synchronization is already running; skipping.\n' >&2
+    exit 0
+fi
+
+exec "$python" -m sync_orders "$@"

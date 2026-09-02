@@ -1,0 +1,4122 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DDFields" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DDFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dfUniqueID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="dfTable" type="xs:string" minOccurs="0" />
+                <xs:element name="dfField" type="xs:string" minOccurs="0" />
+                <xs:element name="dfDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="dfSequence" type="xs:short" minOccurs="0" />
+                <xs:element name="dfCaption" type="xs:string" minOccurs="0" />
+                <xs:element name="dfCaptionExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfDBType" type="xs:string" minOccurs="0" />
+                <xs:element name="dfLength" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dfDecimals" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dfAllowNulls" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfLower" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfIndexed" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfCalculationExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRequiredExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfOLType" type="xs:string" minOccurs="0" />
+                <xs:element name="dfOLRelFld" type="xs:string" minOccurs="0" />
+                <xs:element name="dfFormat" type="xs:string" minOccurs="0" />
+                <xs:element name="dfDefaultExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfDPrv" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfSaveAsExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfForeignKeyRequiredExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfReadonlyExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfModule" type="xs:string" minOccurs="0" />
+                <xs:element name="dfVisibleExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfBoundParentField" type="xs:string" minOccurs="0" />
+                <xs:element name="dfBoundParentFieldType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dfBoundParentFieldProxy" type="xs:string" minOccurs="0" />
+                <xs:element name="dfBoundParentFieldExpression" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRelationType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dfRelatedTable" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRelatedFields" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRequiredForeignRelation" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfFFil" type="xs:string" minOccurs="0" />
+                <xs:element name="dfCurrencyType" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="dfCurrencyRelatedField" type="xs:string" minOccurs="0" />
+                <xs:element name="dfCurrencyUpdateRelatedField" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfValueList" type="xs:string" minOccurs="0" />
+                <xs:element name="dfShowAsDropdown" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfRelatedTableSearchGridId" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRelatedTableReturnField" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRelatedTableDescriptionField" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRelatedTableOrderByField" type="xs:string" minOccurs="0" />
+                <xs:element name="dfRelatedTableFilter" type="xs:string" minOccurs="0" />
+                <xs:element name="dfHide" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfHelp" type="xs:string" minOccurs="0" />
+                <xs:element name="dfGroup" type="xs:string" minOccurs="0" />
+                <xs:element name="dfGroupParameters" type="xs:string" minOccurs="0" />
+                <xs:element name="dfComments" type="xs:string" minOccurs="0" />
+                <xs:element name="dfStatus" type="xs:string" minOccurs="0" />
+                <xs:element name="dfCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="dfConv" type="xs:string" minOccurs="0" />
+                <xs:element name="dfVFld" type="xs:string" minOccurs="0" />
+                <xs:element name="dfv3fd" type="xs:string" minOccurs="0" />
+                <xs:element name="dfAppExtensionID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DDFields>
+    <dfUniqueID>081f3227-796f-40b9-b778-00522df8d77f</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadFederalID</dfField>
+    <dfDisplayName>xadFederalID</dfDisplayName>
+    <dfSequence>48</dfSequence>
+    <dfCaption>FedID</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBFDID</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>a6f14132-26f9-4d41-9ee4-02711b531dcc</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadBackupCheck</dfField>
+    <dfDisplayName>xadBackupCheck</dfDisplayName>
+    <dfSequence>72</dfSequence>
+    <dfCaption>Verify for Failed Backup?</dfCaption>
+    <dfDBType>bit</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>6e0b58a1-ced7-4532-b347-0d3bc1f9755d</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagTableNewValues</dfField>
+    <dfDisplayName>xagTableNewValues</dfDisplayName>
+    <dfSequence>7</dfSequence>
+    <dfCaption>New Values</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>ef720c21-9e9b-4fd5-a5fa-0e7f1934bd69</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagTableName</dfField>
+    <dfDisplayName>xagTableName</dfDisplayName>
+    <dfSequence>3</dfSequence>
+    <dfCaption>Table Name</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>30</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1CHANGELOGTABLENAME</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>XAGTABLENAME</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>a31d3525-c3f6-4ecd-bd84-152a28b0dcab</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanIncrementAmount</dfField>
+    <dfDisplayName>xanIncrementAmount</dfDisplayName>
+    <dfSequence>4</dfSequence>
+    <dfCaption>Increment Amount</dfCaption>
+    <dfDBType>smallint</dfDBType>
+    <dfLength>3</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>e300e663-5c03-41fe-ae96-1a777b2b7bd7</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclEffectiveDate</dfField>
+    <dfDisplayName>mclEffectiveDate</dfDisplayName>
+    <dfSequence>3</dfSequence>
+    <dfCaption>Effective Date</dfCaption>
+    <dfDBType>date</dfDBType>
+    <dfLength>14</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>CREDTE</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>2224577e-fc63-4da2-a2e1-1c3ae3cd4652</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadColor</dfField>
+    <dfDisplayName>xadColor</dfDisplayName>
+    <dfSequence>6</dfSequence>
+    <dfCaption>Dataset BackColor</dfCaption>
+    <dfDBType>int</dfDBType>
+    <dfLength>8</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>8421504</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>110fcf6f-024f-4f2a-b436-1c847850534c</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadMaxGridRow</dfField>
+    <dfDisplayName>xadMaxGridRow</dfDisplayName>
+    <dfSequence>79</dfSequence>
+    <dfCaption>Maximum No. of rows to load in grids</dfCaption>
+    <dfDBType>int</dfDBType>
+    <dfLength>7</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>100000</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>82c218f5-114c-4f72-b512-24e03ee2d07f</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanCreatedBy</dfField>
+    <dfDisplayName>xanCreatedBy</dfDisplayName>
+    <dfSequence>98</dfSequence>
+    <dfCaption>Created By</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>App.UserID</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>USERID</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>c49213f5-2ecf-4a03-8771-29f19acdc1c3</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadPhoneNumber</dfField>
+    <dfDisplayName>xadPhoneNumber</dfDisplayName>
+    <dfSequence>43</dfSequence>
+    <dfCaption>Phone No.</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBPHON</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>4f813db8-747b-4817-8edc-2b8cac72c126</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclCurrencyRateID</dfField>
+    <dfDisplayName>mclCurrencyRateID</dfDisplayName>
+    <dfSequence>1</dfSequence>
+    <dfCaption>Currency ID</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>5</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>CurrencyRates</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1CURRENCYRATESALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>MCIDCONV</dfConv>
+    <dfVFld>CRCID</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>f5a7abba-aeaf-4c74-ac61-2cb59b410f2a</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadForeColor</dfField>
+    <dfDisplayName>xadForeColor</dfDisplayName>
+    <dfSequence>7</dfSequence>
+    <dfCaption>Dataset ForeColor</dfCaption>
+    <dfDBType>int</dfDBType>
+    <dfLength>8</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>47beb24c-3955-4d81-989c-2d4b949708af</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCity</dfField>
+    <dfDisplayName>xadCity</dfDisplayName>
+    <dfSequence>12</dfSequence>
+    <dfCaption>City</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>30</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>CITY</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>89b515fe-f957-40f6-ac8a-36cf907aea86</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpARGLAccountID</dfField>
+    <dfDisplayName>mcpARGLAccountID</dfDisplayName>
+    <dfSequence>5</dfSequence>
+    <dfCaption>Foreign AR Account</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>11</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>(App.SecurityInfo.IsModulePurchased("MC") = True) And (Trim(Fields("mcpCurrencyRateID").Value) &lt;&gt; Trim(App.HomeCurrencyID)) And (Trim(App.HomeCurrencyID) &lt;&gt; "")</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat>NNN-NNNNN-NNN</dfFormat>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>GLAccounts</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>true</dfRequiredForeignRelation>
+    <dfFFil>GLAINACTIVE = 0</dfFFil>
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1LOOKUPGLACCOUNTSCURASSETS</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>GLAGLACCOUNTID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>GLACCT</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>GLACCT</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>d34b1187-26d3-45bb-9392-36fea0326fb2</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclReference</dfField>
+    <dfDisplayName>mclReference</dfDisplayName>
+    <dfSequence>5</dfSequence>
+    <dfCaption>Reference</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>CRREF</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8cb53c83-ca52-4b15-9237-3db540001c1e</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCountry</dfField>
+    <dfDisplayName>xadCountry</dfDisplayName>
+    <dfSequence>15</dfSequence>
+    <dfCaption>Country</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBCOUN</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>1873d81f-9f32-4669-a487-41b633c4975e</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanLogChanges</dfField>
+    <dfDisplayName>xanLogChanges</dfDisplayName>
+    <dfSequence>6</dfSequence>
+    <dfCaption>Log Changes</dfCaption>
+    <dfDBType>tinyint</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>0,None
+1,Record Level
+2,Field Level</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>85565e7e-4f8e-4ee5-88a3-42ffbd89e091</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadMailProvider</dfField>
+    <dfDisplayName>xadMailProvider</dfDisplayName>
+    <dfSequence>46</dfSequence>
+    <dfCaption>Mail Provider</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>15</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>"EXCHANGE"</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>"EXCHANGE",Exchange 2013-2016
+"EXCHANGE2019",Exchange 2019
+"SMTP",Smtp
+"GMAIL",Gmail
+"MAPI",Mapi
+"OFFICE365",Office365</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfHelp />
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>23f3bc3a-0136-4904-8b74-44c35fc4212e</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadUpgradeVersions</dfField>
+    <dfDisplayName>xadUpgradeVersions</dfDisplayName>
+    <dfSequence>3</dfSequence>
+    <dfCaption>Upgrade Versions</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8b4e2a30-5d0e-4da7-bbec-45117f055253</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadAddressLine1</dfField>
+    <dfDisplayName>xadAddressLine1</dfDisplayName>
+    <dfSequence>9</dfSequence>
+    <dfCaption>Address</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>ADDRESS</dfConv>
+    <dfVFld>DBADD1</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>ecd26ef8-0839-4155-b828-45ad1d9d173f</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclCurrencyRateLineID</dfField>
+    <dfDisplayName>mclCurrencyRateLineID</dfDisplayName>
+    <dfSequence>2</dfSequence>
+    <dfCaption>Line</dfCaption>
+    <dfDBType>int</dfDBType>
+    <dfLength>7</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>CurrencyRateLines</dfRelatedTable>
+    <dfRelatedFields>MCLCURRENCYRATEID</dfRelatedFields>
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1CURRENCYRATELINESALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>mclCurrencyRateLineID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>2c6ea9e2-f7f8-459f-9932-46799efadaf3</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpAPGLAccountID</dfField>
+    <dfDisplayName>mcpAPGLAccountID</dfDisplayName>
+    <dfSequence>6</dfSequence>
+    <dfCaption>Foreign AP Account</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>11</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>(App.SecurityInfo.IsModulePurchased("MC") = True) And (Trim(Fields("mcpCurrencyRateID").Value) &lt;&gt; Trim(App.HomeCurrencyID)) And (Trim(App.HomeCurrencyID) &lt;&gt; "")</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat>NNN-NNNNN-NNN</dfFormat>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>GLAccounts</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>true</dfRequiredForeignRelation>
+    <dfFFil>GLAINACTIVE = 0</dfFFil>
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1LOOKUPGLACCOUNTSCURLIAB</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>GLAGLACCOUNTID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>GLACCT</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>GLACCT</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>94fd0e1b-f4b2-45aa-8343-4ae4b0b24d8d</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanTable</dfField>
+    <dfDisplayName>xanTable</dfDisplayName>
+    <dfSequence>1</dfSequence>
+    <dfCaption>Table</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>30</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>e1572b29-8323-4a2a-b47d-4c56b16ac2ae</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanAutoIncrement</dfField>
+    <dfDisplayName>xanAutoIncrement</dfDisplayName>
+    <dfSequence>3</dfSequence>
+    <dfCaption>Auto Increment</dfCaption>
+    <dfDBType>tinyint</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>0,Use System Default
+1,Do not auto-increment
+2,Auto-increment</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8025ecb9-e696-4a10-a97b-4fd43537a73d</dfUniqueID>
+    <dfTable>FinancialProperties</dfTable>
+    <dfField>xafUS1094FileLocation</dfField>
+    <dfDisplayName>xafUS1094FileLocation</dfDisplayName>
+    <dfSequence>148</dfSequence>
+    <dfCaption>US 1094C File Location</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>250</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfVisibleExpression>App.DSRegion = "US"</dfVisibleExpression>
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>558d3277-f1ee-4cbd-bae0-50968739cb9d</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclCreatedBy</dfField>
+    <dfDisplayName>mclCreatedBy</dfDisplayName>
+    <dfSequence>98</dfSequence>
+    <dfCaption>Created By</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>App.UserID</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>USERID</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>b06072b1-6600-4f10-b430-5242761d6179</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadMailServer</dfField>
+    <dfDisplayName>xadMailServer</dfDisplayName>
+    <dfSequence>47</dfSequence>
+    <dfCaption>Mail Server</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>100</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>69aae675-3923-40f6-b498-54f419aef062</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagChangeType</dfField>
+    <dfDisplayName>xagChangeType</dfDisplayName>
+    <dfSequence>2</dfSequence>
+    <dfCaption>Change Type</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>"I",Insert
+"U",Update
+"D",Delete</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>d5ede83e-0bef-459f-b38b-55bd6fa2eee1</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadEditInExplorers</dfField>
+    <dfDisplayName>xadEditInExplorers</dfDisplayName>
+    <dfSequence>52</dfSequence>
+    <dfCaption>Allow Editing in Explorers?</dfCaption>
+    <dfDBType>bit</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>3846ab22-25d6-421c-9cd0-5942ed4620be</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanCreatedDate</dfField>
+    <dfDisplayName>xanCreatedDate</dfDisplayName>
+    <dfSequence>99</dfSequence>
+    <dfCaption>Created Date</dfCaption>
+    <dfDBType>datetime</dfDBType>
+    <dfLength>14</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>Now()</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>bdf9f360-d5d3-4a29-a5d5-5a143a468d84</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagRowVersion</dfField>
+    <dfDisplayName>xagRowVersion</dfDisplayName>
+    <dfSequence>500</dfSequence>
+    <dfCaption>Internal Row Version</dfCaption>
+    <dfDBType>timestamp</dfDBType>
+    <dfLength>0</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfVisibleExpression>False</dfVisibleExpression>
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>5b4d95d5-94d3-41f9-8112-5af762b8416f</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpCurrencyRateID</dfField>
+    <dfDisplayName>mcpCurrencyRateID</dfDisplayName>
+    <dfSequence>1</dfSequence>
+    <dfCaption>Currency ID</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>5</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>CurrencyRates</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1CURRENCYRATESALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>MCIDCONV</dfConv>
+    <dfVFld>CMCID</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>60bab8e4-ae69-4b2a-a840-632b5b0b9a22</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadTimeZone</dfField>
+    <dfDisplayName>xadTimeZone</dfDisplayName>
+    <dfSequence>110</dfSequence>
+    <dfCaption>Time Zone</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>100</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>CR</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>DST-12:00:00, (UTC-12:00)Dateline Standard Time
+		U-11:00:00, (UTC-11:00) UTC-11
+		AST-10:00:00, (UTC-10:00) Aleutian Standard Time
+		HST-10:00:00, (UTC-10:00) Hawaiian Standard Time
+		MST-09:30:00, (UTC-09:30) Marquesas Standard Time
+		AST-09:00:00, (UTC-09:00) Alaskan Standard Time
+		U-09:00:00, (UTC-09:00) UTC-09
+		PST(Mexico)-08:00:00, (UTC-08:00) Pacific Standard Time (Mexico)
+		U-08:00:00, (UTC-08:00) UTC-08
+		PST-08:00:00, (UTC-08:00) Pacific Standard Time
+		UMST-07:00:00, (UTC-07:00) US Mountain Standard Time
+		MST(Mexico)-07:00:00, (UTC-07:00) Mountain Standard Time (Mexico)
+		MST-07:00:00, (UTC-07:00) Mountain Standard Time
+		CAST-06:00:00, (UTC-06:00) Central America Standard Time
+		CST-06:00:00, (UTC-06:00) Central Standard Time
+		EIST-06:00:00, (UTC-06:00) Easter Island Standard Time
+		CST(Mexico)-06:00:00, (UTC-06:00) Central Standard Time (Mexico)
+		CCST-06:00:00, (UTC-06:00) Canada Central Standard Time
+		SPST-05:00:00, (UTC-05:00) SA Pacific Standard Time
+		EST(Mexico)-05:00:00, (UTC-05:00) Eastern Standard Time (Mexico)
+		EST-05:00:00, (UTC-05:00) Eastern Standard Time
+		HST-05:00:00, (UTC-05:00) Haiti Standard Time
+		CST-05:00:00, (UTC-05:00) Cuba Standard Time
+		UEST-05:00:00, (UTC-05:00) US Eastern Standard Time
+		TaCST-05:00:00, (UTC-05:00) Turks and Caicos Standard Time
+		PST-04:00:00, (UTC-04:00) Paraguay Standard Time
+		AST-04:00:00, (UTC-04:00) Atlantic Standard Time
+		VST-04:00:00, (UTC-04:00) Venezuela Standard Time
+		CBST-04:00:00, (UTC-04:00) Central Brazilian Standard Time
+		SWST-04:00:00, (UTC-04:00) SA Western Standard Time
+		PSST-04:00:00, (UTC-04:00) Pacific SA Standard Time
+		NST-03:30:00, (UTC-03:30) Newfoundland Standard Time
+		TST-03:00:00, (UTC-03:00) Tocantins Standard Time
+		ESAST-03:00:00, (UTC-03:00) E. South America Standard Time
+		SEST-03:00:00, (UTC-03:00) SA Eastern Standard Time
+		AST-03:00:00, (UTC-03:00) Argentina Standard Time
+		GST-03:00:00, (UTC-03:00) Greenland Standard Time
+		MST-03:00:00, (UTC-03:00) Montevideo Standard Time
+		MST-03:00:00, (UTC-03:00) Magallanes Standard Time
+		SPST-03:00:00, (UTC-03:00) Saint Pierre Standard Time
+		BST-03:00:00, (UTC-03:00) Bahia Standard Time
+		U-02:00:00, (UTC-02:00) UTC-02
+		MST-02:00:00, (UTC-02:00) Mid-Atlantic Standard Time
+		AST-01:00:00, (UTC-01:00) Azores Standard Time
+		CVST-01:00:00, (UTC-01:00) Cabo Verde Standard Time
+		CUT00:00:00, (UTC-01:00) Coordinated Universal Time
+		GST00:00:00, (UTC-01:00) GMT Standard Time
+		GST00:00:00, (UTC-01:00) Greenwich Standard Time
+		STST00:00:00, (UTC-01:00) Sao Tome Standard Time
+		MST00:00:00, (UTC-01:00) Morocco Standard Time
+		WEST01:00:00, (UTC+01:00) W. Europe Standard Time
+		CEST01:00:00, (UTC+01:00) Central Europe Standard Time
+		RST01:00:00, (UTC+01:00) Romance Standard Time
+		CEST01:00:00, (UTC+01:00) Central European Standard Time
+		WCAST01:00:00, (UTC+01:00) W. Central Africa Standard Time
+		JST02:00:00, (UTC+02:00) Jordan Standard Time
+		GST02:00:00, (UTC+02:00) GTB Standard Time
+		MEST02:00:00, (UTC+02:00) Middle East Standard Time
+		EST02:00:00, (UTC+02:00) Egypt Standard Time
+		EEST02:00:00, (UTC+02:00) E. Europe Standard Time
+		SST02:00:00, (UTC+02:00) Syria Standard Time
+		WBGST02:00:00, (UTC+02:00) West Bank Gaza Standard Time
+		SAST02:00:00, (UTC+02:00) South Africa Standard Time
+		FST02:00:00, (UTC+02:00) FLE Standard Time
+		JST02:00:00, (UTC+02:00) Jerusalem Standard Time
+		RT1ST02:00:00, (UTC+02:00) Russia TZ 1 Standard Time
+		SST02:00:00, (UTC+02:00) Sudan Standard Time
+		LST02:00:00, (UTC+02:00) Libya Standard Time
+		NST02:00:00, (UTC+02:00) Namibia Standard Time
+		AST03:00:00, (UTC+03:00) Arabic Standard Time
+		TST03:00:00, (UTC+03:00) Turkey Standard Time
+		AST03:00:00, (UTC+03:00) Arab Standard Time
+		BST03:00:00, (UTC+03:00) Belarus Standard Time
+		RT2ST03:00:00, (UTC+03:00) Russia TZ 2 Standard Time
+		EAST03:00:00, (UTC+03:00) E. Africa Standard Time
+		IST03:30:00, (UTC+03:30) Iran Standard Time
+		AST04:00:00, (UTC+04:00) Arabian Standard Time
+		AST04:00:00, (UTC+04:00) Astrakhan Standard Time
+		AST04:00:00, (UTC+04:00) Azerbaijan Standard Time
+		RT3ST04:00:00, (UTC+04:00) Russia TZ 3 Standard Time
+		MST04:00:00, (UTC+04:00) Mauritius Standard Time
+		SST04:00:00, (UTC+04:00) Saratov Standard Time
+		GST04:00:00, (UTC+04:00) Georgian Standard Time
+		VST04:00:00, (UTC+04:00) Volgograd Standard Time
+		CST04:00:00, (UTC+04:00) Caucasus Standard Time
+		AST04:30:00, (UTC+04:30) Afghanistan Standard Time
+		WAST05:00:00, (UTC+05:00) West Asia Standard Time
+		RT4ST05:00:00, (UTC+05:00) Russia TZ 4 Standard Time
+		PST05:00:00, (UTC+05:00) Pakistan Standard Time
+		QST05:00:00, (UTC+05:00) Qyzylorda Standard Time
+		IST05:30:00, (UTC+05:30) India Standard Time
+		SLST05:30:00, (UTC+05:30) Sri Lanka Standard Time
+		NST05:45:00, (UTC+05:45) Nepal Standard Time
+		CAST06:00:00, (UTC+06:00) Central Asia Standard Time
+		BST06:00:00, (UTC+06:00) Bangladesh Standard Time
+		OST06:00:00, (UTC+06:00) Omsk Standard Time
+		MST06:30:00, (UTC+06:30) Myanmar Standard Time
+		SAST07:00:00, (UTC+07:00) SE Asia Standard Time
+		AST07:00:00, (UTC+07:00) Altai Standard Time
+		WMST07:00:00, (UTC+07:00) W. Mongolia Standard Time
+		RT6ST07:00:00, (UTC+07:00) Russia TZ 6 Standard Time
+		NST07:00:00, (UTC+07:00) Novosibirsk Standard Time
+		TST07:00:00, (UTC+07:00) Tomsk Standard Time
+		CST08:00:00, (UTC+08:00) China Standard Time
+		RT7ST08:00:00, (UTC+08:00) Russia TZ 7 Standard Time
+		MPST08:00:00, (UTC+08:00) Malay Peninsula Standard Time
+		WAST08:00:00, (UTC+08:00) W. Australia Standard Time
+		TST08:00:00, (UTC+08:00) Taipei Standard Time
+		UST08:00:00, (UTC+08:00) Ulaanbaatar Standard Time
+		ACWST08:45:00, (UTC+08:45) Aus Central W. Standard Time
+		TST09:00:00, (UTC+09:00) Transbaikal Standard Time
+		TST09:00:00, (UTC+09:00) Tokyo Standard Time
+		NKST09:00:00, (UTC+09:00) North Korea Standard Time
+		KST09:00:00, (UTC+09:00) Korea Standard Time
+		RT8ST09:00:00, (UTC+09:00) Russia TZ 8 Standard Time
+		CAST09:30:00, (UTC+09:30) Cen. Australia Standard Time
+		ACST09:30:00, (UTC+09:30) AUS Central Standard Time
+		EAST10:00:00, (UTC+10:00) E. Australia Standard Time
+		AEST10:00:00, (UTC+10:00) AUS Eastern Standard Time
+		WPST10:00:00, (UTC+10:00) West Pacific Standard Time
+		TST10:00:00, (UTC+10:00) Tasmania Standard Time
+		RT9ST10:00:00, (UTC+10:00) Russia TZ 9 Standard Time
+		LHST10:30:00, (UTC+10:30) Lord Howe Standard Time
+		BST11:00:00, (UTC+11:00) Bougainville Standard Time
+		RT1ST11:00:00, (UTC+11:00) Russia TZ 10 Standard Time
+		MST11:00:00, (UTC+11:00) Magadan Standard Time
+		NST11:00:00, (UTC+11:00) Norfolk Standard Time
+		SST11:00:00, (UTC+11:00) Sakhalin Standard Time
+		CPST11:00:00, (UTC+11:00) Central Pacific Standard Time
+		RT1ST12:00:00, (UTC+12:00) Russia TZ 11 Standard Time
+		NZST12:00:00, (UTC+12:00) New Zealand Standard Time
+		U12:00:00, (UTC+12:00) UTC+12
+		FST12:00:00, (UTC+12:00) Fiji Standard Time
+		KST12:00:00, (UTC+12:00) Kamchatka Standard Time
+		CIST12:45:00, (UTC+12:45) Chatham Islands Standard Time
+		U13:00:00, (UTC+13:00) UTC+13
+		TST13:00:00, (UTC+13:00) Tonga Standard Time
+		SST13:00:00, (UTC+13:00) Samoa Standard Time
+		LIST14:00:00, (UTC+14:00) Line Islands Standard Time</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>4b28eb29-41b7-4f1a-b8fa-645cc00ab5c0</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagTableKeyValues</dfField>
+    <dfDisplayName>xagTableKeyValues</dfDisplayName>
+    <dfSequence>5</dfSequence>
+    <dfCaption>Table Key Values</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>fa04dc63-3658-46f1-9199-659e9f861d6a</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadEmailAddress</dfField>
+    <dfDisplayName>xadEmailAddress</dfDisplayName>
+    <dfSequence>45</dfSequence>
+    <dfCaption>E-mail Address</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>EMAIL</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>1db0337d-8bc8-4f6e-97b2-67aa8bc95d32</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpUniqueID</dfField>
+    <dfDisplayName>mcpUniqueID</dfDisplayName>
+    <dfSequence>100</dfSequence>
+    <dfCaption>Unique ID</dfCaption>
+    <dfDBType>uniqueidentifier</dfDBType>
+    <dfLength>16</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>9a21b4f8-fb8b-4443-977c-67e5cabd9aef</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpDescription</dfField>
+    <dfDisplayName>mcpDescription</dfDisplayName>
+    <dfSequence>3</dfSequence>
+    <dfCaption>Description</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>CMDESC</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>190c0746-4e45-4904-8c82-6ac23c708bad</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCreatedBy</dfField>
+    <dfDisplayName>xadCreatedBy</dfDisplayName>
+    <dfSequence>98</dfSequence>
+    <dfCaption>Created By</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>App.UserID</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>USERID</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>e3b1f73f-36f5-466a-b2ed-7711c8052f3a</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadRegion</dfField>
+    <dfDisplayName>xadRegion</dfDisplayName>
+    <dfSequence>18</dfSequence>
+    <dfCaption>Region</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>3</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>"US"</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>"AUS",Australia
+"CAN",Canada (English)
+"NL",Dutch
+"DE",German
+"FR",French
+"PT",Portuguese
+"ES",Spanish
+"NZ",New Zealand
+"UK",United Kingdom
+"US",United States</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>cda4f527-4fc8-4f96-b4a5-7cc8668aa303</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadFaxNumber</dfField>
+    <dfDisplayName>xadFaxNumber</dfDisplayName>
+    <dfSequence>44</dfSequence>
+    <dfCaption>Fax No.</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBFAX</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8343d6a3-a07c-4fdd-81c3-8098d3fd4668</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadAddressLine2</dfField>
+    <dfDisplayName>xadAddressLine2</dfDisplayName>
+    <dfSequence>10</dfSequence>
+    <dfCaption>Address Line 2</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>ADDRESS</dfConv>
+    <dfVFld>DBADD2</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>41b18897-e1cc-4dac-bcc4-8a196860c6de</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadRowVersion</dfField>
+    <dfDisplayName>xadRowVersion</dfDisplayName>
+    <dfSequence>500</dfSequence>
+    <dfCaption>Internal Row Version</dfCaption>
+    <dfDBType>timestamp</dfDBType>
+    <dfLength>0</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfVisibleExpression>False</dfVisibleExpression>
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>ac579257-22f6-45cb-ab7a-8cdfa01eb343</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpCreatedDate</dfField>
+    <dfDisplayName>mcpCreatedDate</dfDisplayName>
+    <dfSequence>99</dfSequence>
+    <dfCaption>Created Date</dfCaption>
+    <dfDBType>datetime</dfDBType>
+    <dfLength>14</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>Now()</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>b4b85a0a-ee44-4c45-b3c4-8eb70440a61b</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclCreatedDate</dfField>
+    <dfDisplayName>mclCreatedDate</dfDisplayName>
+    <dfSequence>99</dfSequence>
+    <dfCaption>Created Date</dfCaption>
+    <dfDBType>datetime</dfDBType>
+    <dfLength>14</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>Now()</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>61c59918-1446-4f0d-a2a7-8fbbe61999e2</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpUnrealisedExLossGLAccountID</dfField>
+    <dfDisplayName>mcpUnrealisedExLossGLAccountID</dfDisplayName>
+    <dfSequence>9</dfSequence>
+    <dfCaption>Unrealised Exchange Loss Account</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>11</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>(App.SecurityInfo.IsModulePurchased("MC") = True) And (Trim(Fields("mcpCurrencyRateID").Value) &lt;&gt; Trim(App.HomeCurrencyID)) And (Trim(App.HomeCurrencyID) &lt;&gt; "")</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat>NNN-NNNNN-NNN</dfFormat>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>GLAccounts</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>true</dfRequiredForeignRelation>
+    <dfFFil>GLAINACTIVE = 0</dfFFil>
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1LOOKUPGLACCOUNTSALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>GLAGLACCOUNTID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>GLACCT</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>GLACCT</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>2d8d5cfe-1e8c-4f7c-bd92-920ef6df64f1</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagChangeDate</dfField>
+    <dfDisplayName>xagChangeDate</dfDisplayName>
+    <dfSequence>8</dfSequence>
+    <dfCaption>Change Date</dfCaption>
+    <dfDBType>datetime</dfDBType>
+    <dfLength>14</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>f7242b8f-299c-4c5f-9977-944ba493f7f8</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCompanyMessageRTF</dfField>
+    <dfDisplayName>xadCompanyMessageRTF</dfDisplayName>
+    <dfSequence>58</dfSequence>
+    <dfCaption>Company Message</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>EXTDDESC</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>04d24490-16d8-42d3-aedc-9a1201c480c6</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanRowVersion</dfField>
+    <dfDisplayName>xanRowVersion</dfDisplayName>
+    <dfSequence>500</dfSequence>
+    <dfCaption>Internal Row Version</dfCaption>
+    <dfDBType>timestamp</dfDBType>
+    <dfLength>0</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfVisibleExpression>False</dfVisibleExpression>
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8c7c78d8-7b26-4baf-adab-a3cad5ec7b4b</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanDatasets</dfField>
+    <dfDisplayName>xanDatasets</dfDisplayName>
+    <dfSequence>7</dfSequence>
+    <dfCaption>Datasets</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>36a9e988-9bab-4912-b230-a4d5fbdbdbee</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclUniqueID</dfField>
+    <dfDisplayName>mclUniqueID</dfDisplayName>
+    <dfSequence>100</dfSequence>
+    <dfCaption>Unique ID</dfCaption>
+    <dfDBType>uniqueidentifier</dfDBType>
+    <dfLength>16</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>add4a286-3db4-44c1-8d9f-a9e0aff37f7f</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpRowVersion</dfField>
+    <dfDisplayName>mcpRowVersion</dfDisplayName>
+    <dfSequence>500</dfSequence>
+    <dfCaption>Internal Row Version</dfCaption>
+    <dfDBType>timestamp</dfDBType>
+    <dfLength>0</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfVisibleExpression>False</dfVisibleExpression>
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>852cdcd0-e588-4b86-a7fd-acfade5c92c1</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclExchangeRate</dfField>
+    <dfDisplayName>mclExchangeRate</dfDisplayName>
+    <dfSequence>4</dfSequence>
+    <dfCaption>Exchange Rate</dfCaption>
+    <dfDBType>numeric</dfDBType>
+    <dfLength>13</dfLength>
+    <dfDecimals>6</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>1</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>CRRATE</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>799e8fc8-0473-496d-b752-afcd7dc0c6c8</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpCreatedBy</dfField>
+    <dfDisplayName>mcpCreatedBy</dfDisplayName>
+    <dfSequence>98</dfSequence>
+    <dfCaption>Created By</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>App.UserID</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>USERID</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>4860c43f-a7dd-4e5c-949e-b24e8b934f26</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadTimeFormat</dfField>
+    <dfDisplayName>xadTimeFormat</dfDisplayName>
+    <dfSequence>39</dfSequence>
+    <dfCaption>Time Format</dfCaption>
+    <dfDBType>tinyint</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>1</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>1,24 Hours
+2,AM/PM</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus>Specifies the format of time shown in the tree.</dfStatus>
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>0575ee51-b0df-4556-8cb7-b5bd46dd5625</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadState</dfField>
+    <dfDisplayName>xadState</dfDisplayName>
+    <dfSequence>13</dfSequence>
+    <dfCaption>State</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>3</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>STATE</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>536662d9-9cde-4906-9939-b7e7b16fd771</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadExtensionVersions</dfField>
+    <dfDisplayName>xadExtensionVersions</dfDisplayName>
+    <dfSequence>5</dfSequence>
+    <dfCaption>Extension Versions</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>4</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfHelp />
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>6736d446-e1f8-43cb-89eb-b8da6106b3da</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpExchangeGainGLAccountID</dfField>
+    <dfDisplayName>mcpExchangeGainGLAccountID</dfDisplayName>
+    <dfSequence>4</dfSequence>
+    <dfCaption>Realised Exchange Gain Account</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>11</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>(App.SecurityInfo.IsModulePurchased("MC") = True) And (Trim(Fields("mcpCurrencyRateID").Value) &lt;&gt; Trim(App.HomeCurrencyID)) And (Trim(App.HomeCurrencyID) &lt;&gt; "")</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat>NNN-NNNNN-NNN</dfFormat>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>GLAccounts</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>true</dfRequiredForeignRelation>
+    <dfFFil>GLAINACTIVE = 0</dfFFil>
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1LOOKUPGLACCOUNTSALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>GLAGLACCOUNTID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>GLACCT</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>GLACCT</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>e40d46cb-f427-4c04-88d9-ba865b92f7a1</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadUniqueID</dfField>
+    <dfDisplayName>xadUniqueID</dfDisplayName>
+    <dfSequence>100</dfSequence>
+    <dfCaption>Unique ID</dfCaption>
+    <dfDBType>uniqueidentifier</dfDBType>
+    <dfLength>16</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>26b875ad-7f34-46b0-bf88-bbca08d88ee6</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagChangeLogID</dfField>
+    <dfDisplayName>xagChangeLogID</dfDisplayName>
+    <dfSequence>1</dfSequence>
+    <dfCaption>Change Log ID</dfCaption>
+    <dfDBType>identity</dfDBType>
+    <dfLength>4</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1CHANGELOGALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>xagChangeLogID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>5374e900-7cb1-41db-be9c-beb1d170d99e</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCreatedDate</dfField>
+    <dfDisplayName>xadCreatedDate</dfDisplayName>
+    <dfSequence>99</dfSequence>
+    <dfCaption>Created Date</dfCaption>
+    <dfDBType>datetime</dfDBType>
+    <dfLength>14</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>Now()</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>93684ae8-54df-4430-93f8-bf7b21409c55</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadName</dfField>
+    <dfDisplayName>xadName</dfDisplayName>
+    <dfSequence>8</dfSequence>
+    <dfCaption>Company Name</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBCOMP</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>e9dbd886-a082-43ea-8b2c-c1eef1074027</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanNextID</dfField>
+    <dfDisplayName>xanNextID</dfDisplayName>
+    <dfSequence>2</dfSequence>
+    <dfCaption>Next ID</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>30</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>a10bd7b7-a14c-4252-b1ea-c3bfc328f0f9</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpSymbol</dfField>
+    <dfDisplayName>mcpSymbol</dfDisplayName>
+    <dfSequence>2</dfSequence>
+    <dfCaption>Symbol</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>4</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>CMSYMB</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8b1ea949-b304-4b9a-b782-c4112e1db666</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadPostCode</dfField>
+    <dfDisplayName>xadPostCode</dfDisplayName>
+    <dfSequence>14</dfSequence>
+    <dfCaption>Zip Code</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>10</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBZIP</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>ce76fa7b-aaeb-4117-b10c-c8218fc781dd</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCountryCode</dfField>
+    <dfDisplayName>xadCountryCode</dfDisplayName>
+    <dfSequence>19</dfSequence>
+    <dfCaption>Country Code</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>5</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>"US",U.S.A
+"AU",Australia
+"CA",Canada
+"GB",United Kingdom
+"AF",Afghanistan
+"AL",Albania
+"DZ",Algeria
+"AS",American Samoa
+"AD",Andorra
+"AO",Angola
+"AI",Anguilla
+"AG",Antigua/Barbuda
+"AR",Argentina
+"AM",Armenia
+"AW",Aruba
+"AT",Austria
+"AZ",Azerbaijan
+"A2",Azores
+"BS",Bahamas
+"BH",Bahrain
+"BD",Bangladesh
+"BB",Barbados
+"BY",Belarus
+"BE",Belgium
+"BZ",Belize
+"BJ",Benin
+"BM",Bermuda
+"BT",Bhutan
+"BO",Bolivia
+"BL",Bonaire
+"BA",Bosnia-Herzegovina
+"BW",Botswana
+"BR",Brazil
+"VG",British Virgin Islands
+"BN",Brunei
+"BG",Bulgaria
+"BF",Burkina Faso
+"BI",Burundi
+"KH",Cambodia
+"CM",Cameroon
+"IC",Canary Islands
+"CV",Cape Verde Island
+"KY",Cayman Islands
+"CF",Central African Republic
+"TD",Chad
+"CL",Chile
+"CN",China
+"CO",Colombia
+"KM",Comoros
+"CG",Congo
+"CD",Congo Dem. Rep. of
+"CK",Cook Islands
+"CR",Costa Rica
+"HR",Croatia
+"CB",Curacao
+"CY",Cyprus
+"CZ",Czech Republic
+"DK",Denmark
+"DJ",Djibouti
+"DM",Dominica
+"DO",Dominican Republic
+"TL",East Timor
+"EC",Ecuador
+"EG",Egypt
+"SV",El Salvador
+"EN",England
+"GQ",Equatorial Guinea
+"ER",Eritrea
+"EE",Estonia
+"ET",Ethiopia
+"EP",Europe
+"FO",Faeroe Islands
+"FJ",Fiji
+"FI",Finland
+"FR",France
+"GF",French Guiana
+"PF",French Polynesia
+"GA",Gabon
+"GM",Gambia
+"GE",Georgia Republic of
+"DE",Germany
+"GH",Ghana
+"GI",Gibraltar
+"GR",Greece
+"GL",Greenland
+"GD",Grenada
+"GP",Guadeloupe/St. Barthelemy
+"GU",Guam
+"GT",Guatemala
+"GG",Guernsey
+"GN",Guinea
+"GW",Guinea-Bissau
+"GY",Guyana
+"HT",Haiti
+"HO",Holland
+"HN",Honduras
+"HK",Hong Kong
+"HU",Hungary
+"IS",Iceland
+"IN",India
+"ID",Indonesia
+"IQ",Iraq
+"IE",Ireland Republic of
+"IL",Israel
+"IT",Italy/San Marino/Vatican
+"CI",Ivory Coast
+"JM",Jamaica
+"JP",Japan
+"JE",Jersey
+"JO",Jordan
+"KZ",Kazakhstan
+"KE",Kenya
+"KI",Kiribati
+"KR",Korea South
+"KO",Kosrae
+"KW",Kuwait
+"KG",Kyrgyzstan
+"LA",Laos
+"LV",Latvia
+"LB",Lebanon
+"LS",Lesotho
+"LR",Liberia
+"LY",Libya
+"LI",Liechtenstein
+"LT",Lithuania
+"LU",Luxembourg
+"MO",Macau
+"MK",Macedonia
+"MG",Madagascar
+"M3",Madeira
+"MW",Malawi
+"MY",Malaysia
+"MV",Maldives
+"ML",Mali
+"MT",Malta
+"MH",Marshall Islands
+"MQ",Martinique
+"MR",Mauritania
+"MU",Mauritius
+"YT",Mayotte
+"MX",Mexico
+"FM",Micronesia Federated States of
+"MD",Moldova
+"MC",Monaco
+"MN",Mongolia
+"ME",Montenegro
+"MS",Montserrat
+"MA",Morocco
+"MZ",Mozambique
+"NA",Namibia
+"NP",Nepal
+"NL",Netherlands
+"AN",Netherlands Antilles
+"NC",New Caledonia
+"NZ",New Zealand
+"NI",Nicaragua
+"NE",Niger
+"NG",Nigeria
+"NF",Norfolk Island
+"NB",Northern Ireland
+"MP",Northern Mariana Islands
+"NO",Norway
+"OM",Oman
+"PK",Pakistan
+"PW",Palau
+"PA",Panama
+"PG",Papua New Guinea
+"PY",Paraguay
+"PE",Peru
+"PH",Philippines
+"PL",Poland
+"PO",Ponape
+"PT",Portugal
+"PR",Puerto Rico
+"QA",Qatar
+"RE",Reunion
+"RO",Romania
+"RT",Rota
+"RU",Russia
+"RW",Rwanda
+"SS",Saba
+"SP",Saipan
+"WS",Samoa
+"SM",San Marino
+"SA",Saudi Arabia
+"SF",Scotland
+"SN",Senegal
+"CS",Serbia
+"SC",Seychelles
+"SL",Sierra Leone
+"SG",Singapore
+"SK",Slovakia
+"SI",Slovenia
+"SB",Solomon Islands
+"ZA",South Africa
+"ES",Spain
+"LK",Sri Lanka
+"NT",St. Barthelemy
+"SW",St. Christopher
+"SX",St. Croix
+"EU",St. Eustatius
+"UV",St. John
+"KN",St. Kitts and Nevis
+"LC",St. Lucia
+"MB",St. Maarten
+"TB",St. Martinique
+"VL",St. Thomas
+"VC",St. Vincent and the Grenadines
+"SR",Suriname
+"SZ",Swaziland
+"SE",Sweden
+"CH",Switzerland
+"TA",Tahiti
+"TW",Taiwan
+"TJ",Tajikistan
+"TZ",Tanzania
+"TH",Thailand
+"TI",Tinian
+"TG",Togo
+"TO",Tonga
+"ZZ",Tortola
+"TT",Trinidad and Tobago
+"TU",Truk
+"TN",Tunisia
+"TR",Turkey
+"TM",Turkmenistan
+"TC",Turks and Caicos Islands
+"TV",Tuvalu
+"VI",US Virgin Islands
+"UG",Uganda
+"UA",Ukraine
+"UI",Union Island
+"AE",United Arab Emirates
+"UY",Uruguay
+"UZ",Uzbekistan
+"VU",Vanuatu
+"VA",Vatican City States
+"VE",Venezuela
+"VN",Vietnam
+"VR",Virgin Gorda
+"WL",Wales
+"WF",Wallis and Futuna Islands
+"YA",Yap
+"YE",Yemen
+"ZM",Zambia
+"ZW",Zimbabwe</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>94ea7510-cd9d-44a2-90d3-ca749fcee425</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadVersion</dfField>
+    <dfDisplayName>xadVersion</dfDisplayName>
+    <dfSequence>4</dfSequence>
+    <dfCaption>Version Number</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>10</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBVERS</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>fbeb05e4-7b12-4b36-b86a-cee235fe3f43</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagTableOldValues</dfField>
+    <dfDisplayName>xagTableOldValues</dfDisplayName>
+    <dfSequence>6</dfSequence>
+    <dfCaption>Old Values</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>d4d50bc5-9a82-4428-8114-cfaa2e0f7ba1</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadLanguage</dfField>
+    <dfDisplayName>xadLanguage</dfDisplayName>
+    <dfSequence>16</dfSequence>
+    <dfCaption>Language</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>10</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>8eacf63a-7467-407c-a55b-d467a55924f6</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCompanyLogo</dfField>
+    <dfDisplayName>xadCompanyLogo</dfDisplayName>
+    <dfSequence>60</dfSequence>
+    <dfCaption>Company Logo</dfCaption>
+    <dfDBType>image</dfDBType>
+    <dfLength>4</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>3620a7c5-eedc-4d15-a3c7-d9acf678d1b8</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadCompanyMessageText</dfField>
+    <dfDisplayName>xadCompanyMessageText</dfDisplayName>
+    <dfSequence>59</dfSequence>
+    <dfCaption>Company Message</dfCaption>
+    <dfDBType>nvarchar(max)</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields>XADCOMPANYMESSAGERTF</dfRelatedFields>
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>4c022932-4904-401d-ae8d-dbd980f4b935</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadExtendedSearchOptions</dfField>
+    <dfDisplayName>xadExtendedSearchOptions</dfDisplayName>
+    <dfSequence>53</dfSequence>
+    <dfCaption>Extended Search Options?</dfCaption>
+    <dfDBType>bit</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDefaultExpression>CInt(True)</dfDefaultExpression>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>5926e8ca-07ad-4c65-a764-dc723ddedfa5</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpUnrealisedExGainGLAccountID</dfField>
+    <dfDisplayName>mcpUnrealisedExGainGLAccountID</dfDisplayName>
+    <dfSequence>8</dfSequence>
+    <dfCaption>Unrealised Exchange Gain Account</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>11</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>(App.SecurityInfo.IsModulePurchased("MC") = True) And (Trim(Fields("mcpCurrencyRateID").Value) &lt;&gt; Trim(App.HomeCurrencyID)) And (Trim(App.HomeCurrencyID) &lt;&gt; "")</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat>NNN-NNNNN-NNN</dfFormat>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>GLAccounts</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>true</dfRequiredForeignRelation>
+    <dfFFil>GLAINACTIVE = 0</dfFFil>
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1LOOKUPGLACCOUNTSALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>GLAGLACCOUNTID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>GLACCT</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>GLACCT</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>12804a75-1301-4159-90ed-ddd10ed2f670</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadWebAddress</dfField>
+    <dfDisplayName>xadWebAddress</dfDisplayName>
+    <dfSequence>77</dfSequence>
+    <dfCaption>Company Web Address</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>100</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>85ce12b4-ce40-40e1-a1a8-de4380dc10fa</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanNumericOnly</dfField>
+    <dfDisplayName>xanNumericOnly</dfDisplayName>
+    <dfSequence>5</dfSequence>
+    <dfCaption>Numeric Only?</dfCaption>
+    <dfDBType>tinyint</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>1,Next ID
+2,Next ID and Field</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>6af6ef76-6e55-4250-8011-dfc69197ea8d</dfUniqueID>
+    <dfTable>CurrencyRateLines</dfTable>
+    <dfField>mclRowVersion</dfField>
+    <dfDisplayName>mclRowVersion</dfDisplayName>
+    <dfSequence>500</dfSequence>
+    <dfCaption>Internal Row Version</dfCaption>
+    <dfDBType>timestamp</dfDBType>
+    <dfLength>0</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>true</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfVisibleExpression>False</dfVisibleExpression>
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>6fa75900-e810-4dd3-993b-e18dd22c7daf</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagTableUniqueID</dfField>
+    <dfDisplayName>xagTableUniqueID</dfDisplayName>
+    <dfSequence>4</dfSequence>
+    <dfCaption>Table Unique ID</dfCaption>
+    <dfDBType>uniqueidentifier</dfDBType>
+    <dfLength>16</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>93f3a044-a63a-4f5f-bee6-e58dfd64fb4d</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadDescription</dfField>
+    <dfDisplayName>xadDescription</dfDisplayName>
+    <dfSequence>1</dfSequence>
+    <dfCaption>Description</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>50</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>true</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld>DBDESC</dfVFld>
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>fbee42fd-a194-4a3e-84ba-e6a5b03db8fc</dfUniqueID>
+    <dfTable>DatasetProperties</dfTable>
+    <dfField>xadSuppressAddressOnReports</dfField>
+    <dfDisplayName>xadSuppressAddressOnReports</dfDisplayName>
+    <dfSequence>61</dfSequence>
+    <dfCaption>Suppress Address On Reports?</dfCaption>
+    <dfDBType>bit</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>16930d1b-9b8d-40ad-af3a-eb5d8a86f1c0</dfUniqueID>
+    <dfTable>FinancialProperties</dfTable>
+    <dfField>xafTestFileCode</dfField>
+    <dfDisplayName>xafTestFileCode</dfDisplayName>
+    <dfSequence>146</dfSequence>
+    <dfCaption>T/P Indicator</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>1</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfValueList>"T",T
+"P",P</dfValueList>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>affdc9ba-76b4-46b3-b453-f346f944ebb9</dfUniqueID>
+    <dfTable>FinancialProperties</dfTable>
+    <dfField>xafTransmitterControlCode</dfField>
+    <dfDisplayName>xafTransmitterControlCode</dfDisplayName>
+    <dfSequence>144</dfSequence>
+    <dfCaption>Transmitter Control Code</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>10</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>1ae0193e-deed-4931-83f4-fb577a455ed4</dfUniqueID>
+    <dfTable>CurrencyRates</dfTable>
+    <dfField>mcpExchangeLossGLAccountID</dfField>
+    <dfDisplayName>mcpExchangeLossGLAccountID</dfDisplayName>
+    <dfSequence>7</dfSequence>
+    <dfCaption>Realised Exchange Loss Account</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>11</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>false</dfIndexed>
+    <dfRequiredExpression>(App.SecurityInfo.IsModulePurchased("MC") = True) And (Trim(Fields("mcpCurrencyRateID").Value) &lt;&gt; Trim(App.HomeCurrencyID)) And (Trim(App.HomeCurrencyID) &lt;&gt; "")</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat>NNN-NNNNN-NNN</dfFormat>
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable>GLAccounts</dfRelatedTable>
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>true</dfRequiredForeignRelation>
+    <dfFFil>GLAINACTIVE = 0</dfFFil>
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId>M1LOOKUPGLACCOUNTSALL</dfRelatedTableSearchGridId>
+    <dfRelatedTableReturnField>GLAGLACCOUNTID</dfRelatedTableReturnField>
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>GLACCT</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv>GLACCT</dfConv>
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>53ee689d-1069-407c-ba0f-fe398d0afc55</dfUniqueID>
+    <dfTable>ChangeLog</dfTable>
+    <dfField>xagChangeUserID</dfField>
+    <dfDisplayName>xagChangeUserID</dfDisplayName>
+    <dfSequence>9</dfSequence>
+    <dfCaption>Change User</dfCaption>
+    <dfDBType>nvarchar</dfDBType>
+    <dfLength>20</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfRequiredExpression>True</dfRequiredExpression>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>false</dfHide>
+    <dfGroup>USERID</dfGroup>
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+  <DDFields>
+    <dfUniqueID>d3c9abff-0e9a-4939-bb53-fea01d8a1c63</dfUniqueID>
+    <dfTable>NextIDs</dfTable>
+    <dfField>xanUniqueID</dfField>
+    <dfDisplayName>xanUniqueID</dfDisplayName>
+    <dfSequence>100</dfSequence>
+    <dfCaption>Unique ID</dfCaption>
+    <dfDBType>uniqueidentifier</dfDBType>
+    <dfLength>16</dfLength>
+    <dfDecimals>0</dfDecimals>
+    <dfAllowNulls>false</dfAllowNulls>
+    <dfLower>false</dfLower>
+    <dfIndexed>true</dfIndexed>
+    <dfOLType />
+    <dfOLRelFld />
+    <dfFormat />
+    <dfDPrv>false</dfDPrv>
+    <dfReadonlyExpression>True</dfReadonlyExpression>
+    <dfModule />
+    <dfBoundParentField />
+    <dfBoundParentFieldType>0</dfBoundParentFieldType>
+    <dfBoundParentFieldProxy />
+    <dfRelationType>0</dfRelationType>
+    <dfRelatedTable />
+    <dfRelatedFields />
+    <dfRequiredForeignRelation>false</dfRequiredForeignRelation>
+    <dfFFil />
+    <dfCurrencyType>0</dfCurrencyType>
+    <dfCurrencyRelatedField />
+    <dfCurrencyUpdateRelatedField>false</dfCurrencyUpdateRelatedField>
+    <dfShowAsDropdown>false</dfShowAsDropdown>
+    <dfRelatedTableSearchGridId />
+    <dfRelatedTableReturnField />
+    <dfRelatedTableDescriptionField />
+    <dfRelatedTableOrderByField />
+    <dfHide>true</dfHide>
+    <dfGroup />
+    <dfStatus />
+    <dfCustom>false</dfCustom>
+    <dfConv />
+    <dfVFld />
+    <dfv3fd />
+    <dfAppExtensionID>M1CORE</dfAppExtensionID>
+  </DDFields>
+</NewDataSet>
